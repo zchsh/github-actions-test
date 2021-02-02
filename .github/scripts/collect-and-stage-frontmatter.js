@@ -15,33 +15,27 @@ async function collectAndCommitFrontmatter() {
   const outputFile = path.join(outputDir, OUTPUT_FILE);
   fs.mkdirSync(outputDir, { recursive: true });
 
-  // @TODO - traverse directories and parse frontmatter to get an actual fileString
-  // console.log({ grayMatter });
+  // Traverse directories and parse frontmatter
   const targetFilepaths = klawSync(INPUT_DIR, {
     traverseAll: true,
     filter: (f) => path.extname(f.path) === ".mdx",
-  })
-    .map((f) => f.path)
-    .slice(
-      0,
-      10
-    ); /* TODO process all files, will take longer so for dev not doing it */
-
+  }).map((f) => f.path);
   const inputDirPath = path.join(process.cwd(), INPUT_DIR);
   const collectedFrontmatter = await Promise.all(
     targetFilepaths.map(async (filePath) => {
+      const rawFile = fs.readFileSync(filePath, "utf-8");
+      const { data: frontmatter } = grayMatter(rawFile);
       const __resourcePath = path.relative(inputDirPath, filePath);
-      return { __resourcePath };
+      return { __resourcePath, ...frontmatter };
     })
   );
-  console.log(collectedFrontmatter);
-  const fileString = JSON.stringify(collectedFrontmatter, null, 2);
-  // @TODO - update the fileName to be something that makes sense given the frontmatter content
 
-  // Write the file
+  //  Stringify the collected frontmatter, and write the file
+  const fileString = JSON.stringify(collectedFrontmatter, null, 2);
   fs.writeFileSync(outputFile, fileString);
 
-  //  Commit the changes
+  //  Stage the changes so they're ready to commit
+  // (kind of relies on the outputDir, which is why it happens here)
   await exec(`git add ${outputDir}`);
 }
 

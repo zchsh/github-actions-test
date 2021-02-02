@@ -1,32 +1,2666 @@
 [
   {
-    "__resourcePath": "community-plugins.mdx"
+    "__resourcePath": "community-plugins.mdx",
+    "page_title": "Community vs HashiCorp Maintained Plugins",
+    "description": "Packer maintains these core plugins."
   },
   {
-    "__resourcePath": "community-tools.mdx"
+    "__resourcePath": "community-tools.mdx",
+    "page_title": "Download Packer Community Projects",
+    "description": "Packer has a vibrant community of contributors who have built a number of great tools on top of Packer. There are also quite a few projects demonstrating the power of Packer templates."
   },
   {
-    "__resourcePath": "docs/builders/alicloud-ecs.mdx"
+    "__resourcePath": "docs/builders/alicloud-ecs.mdx",
+    "description": "The `alicloud-ecs` Packer builder plugin provide the capability to build\ncustomized images based on an existing base images.\n",
+    "page_title": "Alicloud Image Builder",
+    "sidebar_title": "Alicloud ECS"
   },
   {
-    "__resourcePath": "docs/builders/amazon/chroot.mdx"
+    "__resourcePath": "docs/builders/amazon/chroot.mdx",
+    "description": "The amazon-chroot Packer builder is able to create Amazon AMIs backed by an EBS\nvolume as the root device. For more information on the difference between\ninstance storage and EBS-backed instances, storage for the root device section\nin the EC2 documentation.\n",
+    "page_title": "Amazon chroot - Builders",
+    "sidebar_title": "chroot"
   },
   {
-    "__resourcePath": "docs/builders/amazon/ebs.mdx"
+    "__resourcePath": "docs/builders/amazon/ebs.mdx",
+    "description": "The amazon-ebs Packer builder is able to create Amazon AMIs backed by EBS\nvolumes for use in EC2. For more information on the difference between\nEBS-backed instances and instance-store backed instances, see the storage for\nthe root device section in the EC2 documentation.\n",
+    "page_title": "Amazon EBS - Builders",
+    "sidebar_title": "EBS"
   },
   {
-    "__resourcePath": "docs/builders/amazon/ebssurrogate.mdx"
+    "__resourcePath": "docs/builders/amazon/ebssurrogate.mdx",
+    "description": "The amazon-ebssurrogate Packer builder is like the chroot builder, but does not\nrequire running inside an EC2 instance.\n",
+    "page_title": "Amazon EBS Surrogate - Builders",
+    "sidebar_title": "EBS Surrogate"
   },
   {
-    "__resourcePath": "docs/builders/amazon/ebsvolume.mdx"
+    "__resourcePath": "docs/builders/amazon/ebsvolume.mdx",
+    "description": "The amazon-ebsvolume Packer builder is like the EBS builder, but is\nintended to create EBS volumes rather than a machine image.\n",
+    "page_title": "Amazon EBS Volume - Builders",
+    "sidebar_title": "EBS Volume"
   },
   {
-    "__resourcePath": "docs/builders/amazon/index.mdx"
+    "__resourcePath": "docs/builders/amazon/index.mdx",
+    "description": "Packer is able to create Amazon AMIs. To achieve this, Packer comes with\nmultiple builders depending on the strategy you want to use to build the AMI.\n",
+    "page_title": "Amazon AMI - Builders",
+    "sidebar_title": "Amazon EC2"
   },
   {
-    "__resourcePath": "docs/builders/amazon/instance.mdx"
+    "__resourcePath": "docs/builders/amazon/instance.mdx",
+    "description": "The amazon-instance Packer builder is able to create Amazon AMIs backed by\ninstance storage as the root device. For more information on the difference\nbetween instance storage and EBS-backed instances, see the storage for the root\ndevice section in the EC2 documentation.\n",
+    "page_title": "Amazon instance-store - Builders",
+    "sidebar_title": "Instance"
   },
   {
-    "__resourcePath": "docs/builders/azure/arm.mdx"
+    "__resourcePath": "docs/builders/azure/arm.mdx",
+    "description": "Packer supports building VHDs in Azure Resource manager.",
+    "page_title": "Azure arm - Builders",
+    "sidebar_title": "ARM"
+  },
+  {
+    "__resourcePath": "docs/builders/azure/chroot.mdx",
+    "description": "The azure-chroot Packer builder is able to create Azure Managed Images leveraging\na VM in Azure.\n",
+    "page_title": "Azure chroot - Builders",
+    "sidebar_title": "chroot"
+  },
+  {
+    "__resourcePath": "docs/builders/azure/index.mdx",
+    "description": "Packer is able to create Azure VM images. To achieve this, Packer comes with\nmultiple builders depending on the strategy you want to use to build the images.\n",
+    "page_title": "Azure images - Builders",
+    "sidebar_title": "Azure"
+  },
+  {
+    "__resourcePath": "docs/builders/cloudstack.mdx",
+    "description": "The cloudstack Packer builder is able to create new templates for use with\nCloudStack. The builder takes either an ISO or an existing template as it's\nsource, runs any provisioning necessary on the instance after launching it and\nthen creates a new template from that instance.\n",
+    "page_title": "CloudStack - Builders",
+    "sidebar_title": "CloudStack"
+  },
+  {
+    "__resourcePath": "docs/builders/community-supported.mdx",
+    "description": "Community-maintained builders are not part of the core Packer binary, but\ncan run alongside Packer with minimal extra effort.\n",
+    "page_title": "Community - Builders",
+    "sidebar_title": "Community-Supported"
+  },
+  {
+    "__resourcePath": "docs/builders/custom.mdx",
+    "description": "Packer is extensible, allowing you to write new builders without having to\nmodify the core source code of Packer itself. Documentation for creating new\nbuilders is covered in the custom builders page of the Packer plugin section.\n",
+    "page_title": "Custom - Builders",
+    "sidebar_title": "Custom"
+  },
+  {
+    "__resourcePath": "docs/builders/digitalocean.mdx",
+    "description": "The digitalocean Packer builder is able to create new images for use with\nDigitalOcean. The builder takes a source image, runs any provisioning necessary\non the image after launching it, then snapshots it into a reusable image. This\nreusable image can then be used as the foundation of new servers that are\nlaunched within DigitalOcean.\n",
+    "page_title": "DigitalOcean - Builders",
+    "sidebar_title": "DigitalOcean"
+  },
+  {
+    "__resourcePath": "docs/builders/docker.mdx",
+    "description": "The docker Packer builder builds Docker images using Docker. The builder starts\na Docker container, runs provisioners within this container, then exports the\ncontainer for reuse or commits the image.\n",
+    "page_title": "Docker - Builders",
+    "sidebar_title": "Docker"
+  },
+  {
+    "__resourcePath": "docs/builders/file.mdx",
+    "description": "The file Packer builder is not really a builder, it just creates an artifact\nfrom a file. It can be used to debug post-processors without incurring high\nwait times.\n",
+    "page_title": "File - Builders",
+    "sidebar_title": "File"
+  },
+  {
+    "__resourcePath": "docs/builders/googlecompute.mdx",
+    "description": "The googlecompute Packer builder is able to create images for use with Google\nCloud Compute Engine (GCE) based on existing images.\n",
+    "page_title": "Google Compute - Builders",
+    "sidebar_title": "Google Cloud"
+  },
+  {
+    "__resourcePath": "docs/builders/hetzner-cloud.mdx",
+    "description": "The Hetzner Cloud Packer builder is able to create new images for use with the\nHetzner Cloud. The builder takes a source image, runs any provisioning\nnecessary on the image after launching it, then snapshots it into a reusable\nimage. This reusable image can then be used as the foundation of new servers\nthat are launched within the Hetzner Cloud.\n",
+    "page_title": "Hetzner Cloud - Builders",
+    "sidebar_title": "Hetzner Cloud"
+  },
+  {
+    "__resourcePath": "docs/builders/hyperone.mdx",
+    "description": "HyperOne Packer builder creates new images on the HyperOne platform.\nThe builder takes a source image, runs any provisioning necessary on\nthe image after launching it, then creates a reusable image.\n",
+    "page_title": "HyperOne - Builders",
+    "sidebar_title": "HyperOne"
+  },
+  {
+    "__resourcePath": "docs/builders/hyperv/index.mdx",
+    "description": "The Hyper-V Packer builder is able to create Hyper-V virtual machines and\nexport them.\n",
+    "page_title": "Hyper-V - Builders",
+    "sidebar_title": "Hyper-V"
+  },
+  {
+    "__resourcePath": "docs/builders/hyperv/iso.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "The Hyper-V Packer builder is able to create Hyper-V virtual machines and\nexport them.\n",
+    "page_title": "Hyper-V ISO - Builders",
+    "sidebar_title": "ISO"
+  },
+  {
+    "__resourcePath": "docs/builders/hyperv/vmcx.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "The Hyper-V Packer builder is able to clone an existing Hyper-V virtual machine and export them.",
+    "page_title": "Hyper-V Builder (from a vmcx)",
+    "sidebar_title": "VMCX"
+  },
+  {
+    "__resourcePath": "docs/builders/index.mdx",
+    "description": "Builders are responsible for creating machines and generating images from them\nfor various platforms.\n",
+    "page_title": "Builders",
+    "sidebar_title": "Builders"
+  },
+  {
+    "__resourcePath": "docs/builders/jdcloud.mdx",
+    "description": "The `jdcloud` Packer builder helps you to build instance images\nbased on an existing image\n",
+    "page_title": "JDCloud Image Builder",
+    "sidebar_title": "JDCloud"
+  },
+  {
+    "__resourcePath": "docs/builders/linode.mdx",
+    "description": "The linode Packer builder is able to create new images for use with Linode. The\nbuilder takes a source image, runs any provisioning necessary on the image\nafter launching it, then snapshots it into a reusable image. This reusable\nimage can then be used as the foundation of new servers that are launched\nwithin all Linode regions.\n",
+    "page_title": "Linode - Builders",
+    "sidebar_title": "Linode"
+  },
+  {
+    "__resourcePath": "docs/builders/lxc.mdx",
+    "description": "The `lxc` Packer builder builds containers for lxc1. The builder starts an LXC\ncontainer, runs provisioners within this container, then exports the container\nas a tar.gz of the root file system.\n",
+    "page_title": "LXC - Builders",
+    "sidebar_title": "LXC"
+  },
+  {
+    "__resourcePath": "docs/builders/lxd.mdx",
+    "description": "The `lxd` Packer builder builds containers for LXD. The builder starts an LXD\ncontainer, runs provisioners within this container, then saves the container as\nan LXD image.\n",
+    "page_title": "LXD - Builders",
+    "sidebar_title": "LXD"
+  },
+  {
+    "__resourcePath": "docs/builders/ncloud.mdx",
+    "description": "The ncloud builder allows you to create server images using the NAVER Cloud\nPlatform.\n",
+    "page_title": "Naver Cloud Platform - Builders",
+    "sidebar_title": "NAVER Cloud"
+  },
+  {
+    "__resourcePath": "docs/builders/null.mdx",
+    "description": "The null Packer builder is not really a builder, it just sets up an SSH\nconnection and runs the provisioners. It can be used to debug provisioners\nwithout incurring high wait times. It does not create any kind of image or\nartifact.\n",
+    "page_title": "Null - Builders",
+    "sidebar_title": "Null"
+  },
+  {
+    "__resourcePath": "docs/builders/oneandone.mdx",
+    "description": "The 1&1 builder is able to create images for 1&1 cloud.",
+    "page_title": "1&1 - Builders",
+    "sidebar_title": "1&amp;1"
+  },
+  {
+    "__resourcePath": "docs/builders/openstack.mdx",
+    "description": "The openstack Packer builder is able to create new images for use with\nOpenStack. The builder takes a source image, runs any provisioning necessary on\nthe image after launching it, then creates a new reusable image. This reusable\nimage can then be used as the foundation of new servers that are launched\nwithin OpenStack.\n",
+    "page_title": "OpenStack - Builders",
+    "sidebar_title": "OpenStack"
+  },
+  {
+    "__resourcePath": "docs/builders/oracle/classic.mdx",
+    "description": "The oracle-classic builder is able to create new custom images for use with\nOracle Cloud Infrastructure Classic Compute.\n",
+    "page_title": "Oracle Cloud Infrastructure Classic - Builders",
+    "sidebar_title": "Oracle Classic"
+  },
+  {
+    "__resourcePath": "docs/builders/oracle/index.mdx",
+    "description": "Packer is able to create custom images using Oracle Cloud Infrastructure.",
+    "page_title": "Oracle - Builders",
+    "sidebar_title": "Oracle"
+  },
+  {
+    "__resourcePath": "docs/builders/oracle/oci.mdx",
+    "description": "The oracle-oci builder is able to create new custom images for use with Oracle\nCloud Infrastructure (OCI).\n",
+    "page_title": "Oracle OCI - Builders",
+    "sidebar_title": "Oracle OCI"
+  },
+  {
+    "__resourcePath": "docs/builders/outscale/bsu.mdx",
+    "description": "The osc-bsu Packer builder is able to create Outscale OMIs backed by BSU volumes for use in Outscale. For more information on the difference between\nBSU-backed VMs and VM-store backed VMs, see the storage for\nthe root device section in the Outscale documentation.\n",
+    "page_title": "Outscale BSU - Builders",
+    "sidebar_title": "BSU"
+  },
+  {
+    "__resourcePath": "docs/builders/outscale/bsusurrogate.mdx",
+    "description": "The osc-bsusurrogate Packer builder is like the chroot builder, but does not\nrequire running inside an Outscale virtual machine.\n",
+    "page_title": "Outscale BSU Surrogate - Builders",
+    "sidebar_title": "BSU Surrogate"
+  },
+  {
+    "__resourcePath": "docs/builders/outscale/bsuvolume.mdx",
+    "description": "The osc-bsuvolume Packer builder is like the BSU builder, but is intended to\ncreate BSU volumes rather than a machine image.\n",
+    "page_title": "Outscale BSU Volume - Builders",
+    "sidebar_title": "BSU Volume"
+  },
+  {
+    "__resourcePath": "docs/builders/outscale/chroot.mdx",
+    "description": "The amazon-chroot Packer builder is able to create Outscale OMIs backed by an BSU\nvolume as the root device. For more information on the difference between\ninstance storage and BSU-backed instances, storage for the root device section\nin the Outscale documentation.\n",
+    "page_title": "Outscale chroot - Builders",
+    "sidebar_title": "chroot"
+  },
+  {
+    "__resourcePath": "docs/builders/outscale/index.mdx",
+    "description": "Packer is able to create Outscale Machine Images (OMIs). To achieve this, Packer comes with\nmultiple builders depending on the strategy you want to use to build the OMI.\n",
+    "page_title": "Outscale OMI - Builders",
+    "sidebar_title": "Outscale"
+  },
+  {
+    "__resourcePath": "docs/builders/parallels/index.mdx",
+    "description": "The Parallels Packer builder is able to create Parallels Desktop for Mac\nvirtual machines and export them in the PVM format.\n",
+    "page_title": "Parallels - Builders",
+    "sidebar_title": "Parallels"
+  },
+  {
+    "__resourcePath": "docs/builders/parallels/iso.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "The Parallels Packer builder is able to create Parallels Desktop for Mac\nvirtual machines and export them in the PVM format, starting from an ISO\nimage.\n",
+    "page_title": "Parallels ISO - Builders",
+    "sidebar_title": "ISO"
+  },
+  {
+    "__resourcePath": "docs/builders/parallels/pvm.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "This Parallels builder is able to create Parallels Desktop for Mac virtual\nmachines and export them in the PVM format, starting from an existing PVM\n(exported virtual machine image).\n",
+    "page_title": "Parallels PVM - Builders",
+    "sidebar_title": "PVM"
+  },
+  {
+    "__resourcePath": "docs/builders/profitbricks.mdx",
+    "description": "The ProfitBricks builder is able to create images for ProfitBricks cloud.",
+    "page_title": "ProfitBricks - Builders",
+    "sidebar_title": "ProfitBricks"
+  },
+  {
+    "__resourcePath": "docs/builders/proxmox/clone.mdx",
+    "description": "The proxmox image Packer builder is able to create new images for use with\nProxmox VE. The builder takes a cloud-init enabled virtual machine\ntemplate name, runs any provisioning necessary on the image after\nlaunching it, then creates a virtual machine template.\n",
+    "page_title": "Proxmox Clone - Builders",
+    "sidebar_title": "Clone"
+  },
+  {
+    "__resourcePath": "docs/builders/proxmox/index.mdx",
+    "description": "The Proxmox Packer builder is able to create Cloud-Init virtual machine images on a Proxmox server.\n",
+    "page_title": "Proxmox - Builders",
+    "sidebar_title": "Proxmox"
+  },
+  {
+    "__resourcePath": "docs/builders/proxmox/iso.mdx",
+    "description": "The proxmox Packer builder is able to create new images for use with\nProxmox VE. The builder takes an ISO source, runs any provisioning\nnecessary on the image after launching it, then creates a virtual machine\ntemplate.\n",
+    "page_title": "Proxmox ISO - Builders",
+    "sidebar_title": "ISO"
+  },
+  {
+    "__resourcePath": "docs/builders/qemu.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "The Qemu Packer builder is able to create KVM virtual machine images.\n",
+    "page_title": "QEMU - Builders",
+    "sidebar_title": "QEMU"
+  },
+  {
+    "__resourcePath": "docs/builders/scaleway.mdx",
+    "description": "The Scaleway Packer builder is able to create new images for use with Scaleway\nBareMetal and Virtual cloud server. The builder takes a source image, runs any\nprovisioning necessary on the image after launching it, then snapshots it into\na reusable image. This reusable image can then be used as the foundation of new\nservers that are launched within Scaleway.\n",
+    "page_title": "Scaleway - Builders",
+    "sidebar_title": "Scaleway"
+  },
+  {
+    "__resourcePath": "docs/builders/tencentcloud-cvm.mdx",
+    "description": "The `tencentcloud-cvm` Packer builder plugin provide the capability to build\ncustomized images based on an existing base images.\n",
+    "page_title": "Tencentcloud Image Builder",
+    "sidebar_title": "Tencent Cloud"
+  },
+  {
+    "__resourcePath": "docs/builders/triton.mdx",
+    "description": "The triton Packer builder is able to create new images for use with Triton.\nThese images can be used with both the Joyent public cloud (which is powered by\nTriton) as well with private Triton installations. This builder uses the Triton\nCloud API to create images.\n",
+    "page_title": "Triton - Builders",
+    "sidebar_title": "Triton"
+  },
+  {
+    "__resourcePath": "docs/builders/ucloud-uhost.mdx",
+    "description": "The `ucloud-uhost` Packer builder plugin provides the capability to build\ncustomized images based on an existing base image for use in UHost Instance.\n",
+    "page_title": "UCloud Image Builder",
+    "sidebar_title": "UCloud"
+  },
+  {
+    "__resourcePath": "docs/builders/vagrant.mdx",
+    "description": "The Vagrant Packer builder is able to launch Vagrant boxes and\nre-package them into .box files\n",
+    "page_title": "Vagrant - Builders",
+    "sidebar_title": "Vagrant"
+  },
+  {
+    "__resourcePath": "docs/builders/virtualbox/index.mdx",
+    "description": "The VirtualBox Packer builder is able to create VirtualBox virtual machines and\nexport them in the OVA or OVF format.\n",
+    "page_title": "VirtualBox - Builders",
+    "sidebar_title": "VirtualBox"
+  },
+  {
+    "__resourcePath": "docs/builders/virtualbox/iso.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "The VirtualBox Packer builder is able to create VirtualBox virtual machines\nand export them in the OVF format, starting from an ISO image.\n",
+    "page_title": "VirtualBox ISO - Builders",
+    "sidebar_title": "ISO"
+  },
+  {
+    "__resourcePath": "docs/builders/virtualbox/ovf.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "This VirtualBox Packer builder is able to create VirtualBox virtual machines\nand export them in the OVF format, starting from an existing OVF/OVA (exported\nvirtual machine image).\n",
+    "page_title": "VirtualBox OVF/OVA - Builders",
+    "sidebar_title": "OVF"
+  },
+  {
+    "__resourcePath": "docs/builders/virtualbox/vm.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "The VirtualBox Packer builder is able to create VirtualBox virtual machines snapshots\nand export them in the OVF format, starting from an ISO image.\n",
+    "page_title": "VirtualBox Snapshot - Builders",
+    "sidebar_title": "VM"
+  },
+  {
+    "__resourcePath": "docs/builders/vmware/index.mdx",
+    "description": "The VMware Packer builder is able to create VMware virtual machines for use\nwith any VMware product.\n",
+    "page_title": "VMware - Builders",
+    "sidebar_title": "VMware"
+  },
+  {
+    "__resourcePath": "docs/builders/vmware/iso.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "This VMware Packer builder is able to create VMware virtual machines from an\nISO file as a source. It currently supports building virtual machines on hosts\nrunning VMware Fusion for OS X, VMware Workstation for Linux and Windows, and\nVMware Player on Linux. It can also build machines directly on VMware vSphere\nHypervisor using SSH as opposed to the vSphere API.\n",
+    "page_title": "VMware ISO - Builders",
+    "sidebar_title": "VMWare ISO"
+  },
+  {
+    "__resourcePath": "docs/builders/vmware/vmx.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "This VMware Packer builder is able to create VMware virtual machines from an\nexisting VMware virtual machine (a VMX file). It currently supports building\nvirtual machines on hosts running VMware Fusion Professional for OS X, VMware\nWorkstation for Linux and Windows, and VMware Player on Linux.\n",
+    "page_title": "VMware VMX - Builders",
+    "sidebar_title": "VMWare VMX"
+  },
+  {
+    "__resourcePath": "docs/builders/vmware/vsphere-clone.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "This VMware Packer builder uses the vSphere API to clone an existing vSphere template and create a new virtual machine remotely.\n",
+    "page_title": "VSphere Clone - Builders",
+    "sidebar_title": "VSphere Clone"
+  },
+  {
+    "__resourcePath": "docs/builders/vmware/vsphere-iso.mdx",
+    "modeline": "vim: set ft=pandoc:\n",
+    "description": "This VMware Packer builder starts from an ISO and creates a vm using the\nvSphere API to build on a remote VMWare machine.\n",
+    "page_title": "VSphere ISO - Builders",
+    "sidebar_title": "VSphere ISO"
+  },
+  {
+    "__resourcePath": "docs/builders/yandex.mdx",
+    "description": "The yandex Packer builder is able to create images for use with\nYandex.Cloud based on existing images.\n",
+    "page_title": "Yandex Compute - Builders",
+    "sidebar_title": "Yandex.Cloud"
+  },
+  {
+    "__resourcePath": "docs/commands/build.mdx",
+    "description": "The `packer build` command takes a template and runs all the builds within it\nin order to generate a set of artifacts. The various builds specified within a\ntemplate are executed in parallel, unless otherwise specified. And the\nartifacts that are created will be outputted at the end of the build.\n",
+    "page_title": "packer build - Commands",
+    "sidebar_title": "<tt>build</tt>"
+  },
+  {
+    "__resourcePath": "docs/commands/console.mdx",
+    "description": "The `packer console` command allows you to experiment with Packer variable\ninterpolations.\n",
+    "page_title": "packer console - Commands",
+    "sidebar_title": "<tt>console</tt>"
+  },
+  {
+    "__resourcePath": "docs/commands/fix.mdx",
+    "description": "The `packer fix` command takes a template and finds backwards incompatible\nparts of it and brings it up to date so it can be used with the latest version\nof Packer. After you update to a new Packer release, you should run the fix\ncommand to make sure your templates work with the new release.\n",
+    "page_title": "packer fix - Commands",
+    "sidebar_title": "<tt>fix</tt>"
+  },
+  {
+    "__resourcePath": "docs/commands/fmt.mdx",
+    "description": "The `packer fmt` Packer command is used to format HCL2\nconfiguration files to a canonical format and style.\n",
+    "page_title": "packer fmt - Commands",
+    "sidebar_title": "<tt>fmt</tt>"
+  },
+  {
+    "__resourcePath": "docs/commands/hcl2_upgrade.mdx",
+    "description": "The `packer hcl2_upgrade` Packer command is used to transpile a JSON\nconfiguration template to it's formatted HCL2 counterpart. The command will\nreturn a zero exit status on success, and a non-zero exit status on failure.\n",
+    "page_title": "packer hcl2_upgrade - Commands",
+    "sidebar_title": "<tt>hcl2_upgrade</tt>"
+  },
+  {
+    "__resourcePath": "docs/commands/index.mdx",
+    "description": "Packer is controlled using a command-line interface. All interaction with\nPacker is done via the `packer` tool. Like many other command-line tools, the\n`packer` tool takes a subcommand to execute, and that subcommand may have\nadditional options as well. Subcommands are executed with `packer SUBCOMMAND`,\nwhere \"SUBCOMMAND\" is the actual command you wish to execute.\n",
+    "page_title": "Commands",
+    "sidebar_title": "Commands (CLI)"
+  },
+  {
+    "__resourcePath": "docs/commands/inspect.mdx",
+    "description": "The `packer inspect` command takes a template and outputs the various\ncomponents a template defines. This can help you quickly learn about a template\nwithout having to dive into the JSON itself. The command will tell you things\nlike what variables a template accepts, the builders it defines, the\nprovisioners it defines and the order they'll run, and more.\n",
+    "page_title": "packer inspect - Commands",
+    "sidebar_title": "<tt>inspect</tt>"
+  },
+  {
+    "__resourcePath": "docs/commands/validate.mdx",
+    "description": "The `packer validate` Packer command is used to validate the syntax and\nconfiguration of a template. The command will return a zero exit status on\nsuccess, and a non-zero exit status on failure. Additionally, if a template\ndoesn't validate, any error messages will be outputted.\n",
+    "page_title": "packer validate - Commands",
+    "sidebar_title": "<tt>validate</tt>"
+  },
+  {
+    "__resourcePath": "docs/communicators/index.mdx",
+    "description": "Communicators are the mechanism Packer uses to upload files, execute\nscripts, etc. with the machine being created.\n",
+    "page_title": "Communicators",
+    "sidebar_title": "Communicators"
+  },
+  {
+    "__resourcePath": "docs/communicators/ssh.mdx",
+    "description": "The SSH communicator uses SSH to upload files, execute scripts, etc. on\nthe machine being created.\n",
+    "page_title": "Communicators - SSH",
+    "sidebar_title": "SSH"
+  },
+  {
+    "__resourcePath": "docs/communicators/winrm.mdx",
+    "description": "Communicators are the mechanism Packer uses to upload files, execute scripts,\netc. with the machine being created.\n",
+    "page_title": "Communicators - Templates",
+    "sidebar_title": "WINRM"
+  },
+  {
+    "__resourcePath": "docs/core-configuration.mdx",
+    "description": "There are a few configuration settings that affect Packer globally by\nconfiguring the core of Packer. These settings all have reasonable defaults, so\nyou generally don't have to worry about it until you want to tweak a\nconfiguration.\n",
+    "page_title": "Core Configuration - Other",
+    "sidebar_title": "Core Configuration"
+  },
+  {
+    "__resourcePath": "docs/datasources/amazon/ami.mdx",
+    "description": "The Amazon AMI data source provides information from an AMI that will be fetched based\non the filter options provided in the configuration.\n",
+    "page_title": "Amazon AMI - Data Source",
+    "sidebar_title": "Amazon AMI"
+  },
+  {
+    "__resourcePath": "docs/datasources/amazon/index.mdx",
+    "description": "Packer is able to fetch data from AWS. To achieve this, Packer comes with\ndata sources to retrieve AMI and secrets information.\n",
+    "page_title": "Amazon - Data Sources",
+    "sidebar_title": "Amazon"
+  },
+  {
+    "__resourcePath": "docs/datasources/amazon/secretsmanager.mdx",
+    "description": "The Amazon Secrets Manager data source provides information about a Secrets Manager secret version,\nincluding its secret value.\n",
+    "page_title": "Secrets Manager - Data Source",
+    "sidebar_title": "Secrets Manager"
+  },
+  {
+    "__resourcePath": "docs/datasources/index.mdx",
+    "description": "Data sources allow data to be fetched for use in Packer configuration. Use of data sources\nallows a build to use information defined outside of Packer.\n",
+    "page_title": "Data Sources",
+    "sidebar_title": "Data Sources"
+  },
+  {
+    "__resourcePath": "docs/debugging.mdx",
+    "description": "Packer strives to be stable and bug-free, but issues inevitably arise where\ncertain things may not work entirely correctly, or may not appear to work\ncorrectly.\n",
+    "page_title": "Debugging - Other",
+    "sidebar_title": "Debugging"
+  },
+  {
+    "__resourcePath": "docs/environment-variables.mdx",
+    "description": "Packer uses a variety of environmental variables.",
+    "page_title": "Environment Variables - Other",
+    "sidebar_title": "Environment Variables"
+  },
+  {
+    "__resourcePath": "docs/extending/custom-builders.mdx",
+    "description": "It is possible to write custom builders using the Packer plugin interface, and\nthis page documents how to do that.\n",
+    "page_title": "Custom Builders - Extending",
+    "sidebar_title": "Custom Builders"
+  },
+  {
+    "__resourcePath": "docs/extending/custom-datasources.mdx",
+    "description": "Packer Data Sources are the components of Packer that allow data to be fetched for use within the Packer configuration. Use of data sources allows a build to use information defined outside of Packer.\n",
+    "page_title": "Custom Data Sources - Extending",
+    "sidebar_title": "Custom Data Sources"
+  },
+  {
+    "__resourcePath": "docs/extending/custom-post-processors.mdx",
+    "description": "Packer Post-processors are the components of Packer that transform one artifact\ninto another, for example by compressing files, or uploading them.\n",
+    "page_title": "Custom Post-Processors - Extending",
+    "sidebar_title": "Custom Post-Processors"
+  },
+  {
+    "__resourcePath": "docs/extending/custom-provisioners.mdx",
+    "description": "Packer Provisioners are the components of Packer that install and configure\nsoftware into a running machine prior to turning that machine into an image. An\nexample of a provisioner is the shell provisioner, which runs shell scripts\nwithin the machines.\n",
+    "page_title": "Custom Provisioners - Extending",
+    "sidebar_title": "Custom Provisioners"
+  },
+  {
+    "__resourcePath": "docs/extending/index.mdx",
+    "description": "Packer is designed to be extensible. Because the surface area for workloads is\ninfinite, Packer supports plugins for builders, provisioners, and\npost-processors.\n",
+    "page_title": "Extending",
+    "sidebar_title": "Extending Packer"
+  },
+  {
+    "__resourcePath": "docs/extending/plugins.mdx",
+    "description": "Packer Plugins allow new functionality to be added to Packer without modifying\nthe core source code. Packer plugins are able to add new builders,\nprovisioners, hooks, and more.\n",
+    "page_title": "Plugins - Extending",
+    "sidebar_title": "Plugins"
+  },
+  {
+    "__resourcePath": "docs/index.mdx",
+    "description": "Welcome to the Packer documentation! This documentation is more of a reference\nguide for all available features and options in Packer. If you're just getting\nstarted with Packer, please start with the introduction and getting started\nguide instead.\n",
+    "page_title": "Documentation"
+  },
+  {
+    "__resourcePath": "docs/install.mdx",
+    "description": "Installing Packer is simple. You can download a precompiled binary or compile\nfrom source. This page details both methods.\n",
+    "page_title": "Install",
+    "sidebar_title": "Installing Packer"
+  },
+  {
+    "__resourcePath": "docs/post-processors/alicloud-import.mdx",
+    "description": "The Packer Alicloud Import post-processor takes a RAW or VHD artifact from\nvarious builders and imports it to an Alicloud customized image list.\n",
+    "page_title": "Alicloud Import Post-Processor",
+    "sidebar_title": "Alicloud Import"
+  },
+  {
+    "__resourcePath": "docs/post-processors/amazon-import.mdx",
+    "description": "The Packer Amazon Import post-processor takes an OVA artifact from various\nbuilders and imports it to an AMI available to Amazon Web Services EC2.\n",
+    "page_title": "Amazon Import - Post-Processors",
+    "sidebar_title": "Amazon Import"
+  },
+  {
+    "__resourcePath": "docs/post-processors/artifice.mdx",
+    "description": "The artifice post-processor overrides the artifact list from an upstream\nbuilder or post-processor. All downstream post-processors will see the new\nartifacts you specify. The primary use-case is to build artifacts inside a\npacker builder -- for example, spinning up an EC2 instance to build a docker\ncontainer -- and then extracting the docker container and throwing away the EC2\ninstance.\n",
+    "page_title": "Artifice - Post-Processors",
+    "sidebar_title": "Artifice"
+  },
+  {
+    "__resourcePath": "docs/post-processors/checksum.mdx",
+    "description": "The checksum post-processor computes specified checksum for the artifact list from an upstream builder or post-processor. All downstream post-processors will see the new artifacts. The primary use-case is compute checksum for artifacts allows to verify it later. So firstly this post-processor get artifact, compute it checksum and pass to next post-processor original artifacts and checksum files.\n",
+    "page_title": "Checksum - Post-Processors",
+    "sidebar_title": "Checksum"
+  },
+  {
+    "__resourcePath": "docs/post-processors/community-supported.mdx",
+    "description": "Community-maintained post-processors are not part of the core Packer binary, but\ncan run alongside Packer with minimal extra effort.\n",
+    "page_title": "Community - Post-Processors",
+    "sidebar_title": "Community-Supported"
+  },
+  {
+    "__resourcePath": "docs/post-processors/compress.mdx",
+    "description": "The Packer compress post-processor takes an artifact with files (such as from\nVMware or VirtualBox) and compresses the artifact into a single archive.\n",
+    "page_title": "Compress - Post-Processors",
+    "sidebar_title": "Compress"
+  },
+  {
+    "__resourcePath": "docs/post-processors/digitalocean-import.mdx",
+    "description": "The Packer DigitalOcean Import post-processor takes an image artifact\nfrom various builders and imports it to DigitalOcean.\n",
+    "page_title": "DigitalOcean Import - Post-Processors",
+    "sidebar_title": "DigitalOcean Import"
+  },
+  {
+    "__resourcePath": "docs/post-processors/docker-import.mdx",
+    "description": "The Packer Docker import post-processor takes an artifact from the docker\nbuilder and imports it with Docker locally. This allows you to apply a\nrepository and tag to the image and lets you use the other Docker\npost-processors such as docker-push to push the image to a registry.\n",
+    "page_title": "Docker Import - Post-Processors",
+    "sidebar_title": "Docker Import"
+  },
+  {
+    "__resourcePath": "docs/post-processors/docker-push.mdx",
+    "description": "The Packer Docker push post-processor takes an artifact from the docker-import\npost-processor and pushes it to a Docker registry.\n",
+    "page_title": "Docker Push - Post-Processors",
+    "sidebar_title": "Docker Push"
+  },
+  {
+    "__resourcePath": "docs/post-processors/docker-save.mdx",
+    "description": "The Packer Docker Save post-processor takes an artifact from the docker builder\nthat was committed and saves it to a file. This is similar to exporting the\nDocker image directly from the builder, except that it preserves the hierarchy\nof images and metadata.\n",
+    "page_title": "Docker Save - Post-Processors",
+    "sidebar_title": "Docker Save"
+  },
+  {
+    "__resourcePath": "docs/post-processors/docker-tag.mdx",
+    "description": "The Packer Docker Tag post-processor takes an artifact from the docker builder\nthat was committed and tags it into a repository. This allows you to use the\nother Docker post-processors such as docker-push to push the image to a\nregistry.\n",
+    "page_title": "Docker Tag - Post-Processors",
+    "sidebar_title": "Docker Tag"
+  },
+  {
+    "__resourcePath": "docs/post-processors/exoscale-import.mdx",
+    "description": "The Packer Exoscale Import post-processor takes an image artifact\nfrom various builders and imports it to Exoscale.\n",
+    "page_title": "Exoscale Import - Post-Processors",
+    "sidebar_title": "Exoscale Import"
+  },
+  {
+    "__resourcePath": "docs/post-processors/googlecompute-export.mdx",
+    "description": "The Google Compute Image Exporter post-processor exports an image from a Packer googlecompute builder run and uploads it to Google Cloud Storage. The exported images can be easily shared and uploaded to other Google Cloud Projects.\n",
+    "page_title": "Google Compute Image Exporter - Post-Processors",
+    "sidebar_title": "Google Compute Export"
+  },
+  {
+    "__resourcePath": "docs/post-processors/googlecompute-import.mdx",
+    "description": "The Google Compute Image Import post-processor takes a compressed raw disk\nimage and imports it to a GCE image available to Google Compute Engine.\n",
+    "page_title": "Google Compute Image Import - Post-Processors",
+    "sidebar_title": "Google Compute Import"
+  },
+  {
+    "__resourcePath": "docs/post-processors/index.mdx",
+    "description": "Post-processors run after the image is built by the builder and provisioned by\nthe provisioner(s).\n",
+    "page_title": "Post-Processors",
+    "sidebar_title": "Post-Processors"
+  },
+  {
+    "__resourcePath": "docs/post-processors/manifest.mdx",
+    "description": "The manifest post-processor writes a JSON file with the build artifacts and IDs from a packer run.\n",
+    "page_title": "Manifest - Post-Processors",
+    "sidebar_title": "Manifest"
+  },
+  {
+    "__resourcePath": "docs/post-processors/shell-local.mdx",
+    "description": "The shell-local Packer post processor enables users to do some post processing\nafter artifacts have been built.\n",
+    "page_title": "Local Shell - Post-Processors",
+    "sidebar_title": "Shell (Local)"
+  },
+  {
+    "__resourcePath": "docs/post-processors/ucloud-import.mdx",
+    "description": "The Packer UCloud Import post-processor takes the RAW, VHD, VMDK, or qcow2 artifact from various builders and imports it to UCloud customized image list for UHost Instance.\n",
+    "page_title": "UCloud Import Post-Processors",
+    "sidebar_title": "UCloud Import"
+  },
+  {
+    "__resourcePath": "docs/post-processors/vagrant-cloud.mdx",
+    "description": "The Vagrant Cloud post-processor enables the upload of Vagrant boxes to\nVagrant Cloud.\n",
+    "page_title": "Vagrant Cloud - Post-Processors",
+    "sidebar_title": "Vagrant Cloud"
+  },
+  {
+    "__resourcePath": "docs/post-processors/vagrant.mdx",
+    "description": "The Packer Vagrant post-processor takes a build and converts the artifact into\na valid Vagrant box, if it can. This lets you use Packer to automatically\ncreate arbitrarily complex Vagrant boxes, and is in fact how the official boxes\ndistributed by Vagrant are created.\n",
+    "page_title": "Vagrant - Post-Processors",
+    "sidebar_title": "Vagrant"
+  },
+  {
+    "__resourcePath": "docs/post-processors/vsphere-template.mdx",
+    "description": "The Packer vSphere Template post-processor takes an artifact from the VMware-iso builder, built on ESXi (i.e. remote) or an artifact from the [vSphere](/docs/post-processors/vsphere) post-processor, marks the VM as a template, and leaves it in the path of your choice.\n",
+    "page_title": "vSphere Template - Post-Processors",
+    "sidebar_title": "vSphere Template"
+  },
+  {
+    "__resourcePath": "docs/post-processors/vsphere.mdx",
+    "description": "The Packer vSphere post-processor takes an artifact and uploads it to a vSphere endpoint.\n",
+    "page_title": "vSphere - Post-Processors",
+    "sidebar_title": "vSphere"
+  },
+  {
+    "__resourcePath": "docs/post-processors/yandex-export.mdx",
+    "description": "The Yandex.Cloud Compute Image Exporter post-processor exports an image from a Packer\nyandex builder run and uploads it to Yandex Object Storage. The exported\nimages can be easily shared and uploaded to other Yandex.Cloud Cloud folders.\n",
+    "page_title": "Yandex.Cloud Compute Image Exporter - Post-Processors",
+    "sidebar_title": "Yandex.Cloud Compute Export"
+  },
+  {
+    "__resourcePath": "docs/post-processors/yandex-import.mdx",
+    "description": "The Yandex.Cloud Compute Image Import post-processor create an image from a qcow2 image (or from provided Storage object in near future). It uploads qcow2 to Yandex Object Storage and create new one Compute Image in target folder.\n",
+    "page_title": "Yandex.Cloud Compute Image Import - Post-Processors",
+    "sidebar_title": "Yandex.Cloud Compute Import"
+  },
+  {
+    "__resourcePath": "docs/provisioners/ansible-local.mdx",
+    "description": "The ansible-local Packer provisioner will run ansible in ansible's \"local\" mode on the remote/guest VM using Playbook and Role files that exist on the guest VM. This means ansible must be installed on the remote/guest VM. Playbooks and Roles can be uploaded from your build machine (the one running Packer) to the vm.\n",
+    "page_title": "Ansible Local - Provisioners",
+    "sidebar_title": "Ansible Local"
+  },
+  {
+    "__resourcePath": "docs/provisioners/ansible.mdx",
+    "description": "The ansible Packer provisioner allows Ansible playbooks to be run to provision\nthe machine.\n",
+    "page_title": "Ansible - Provisioners",
+    "sidebar_title": "Ansible (Remote)"
+  },
+  {
+    "__resourcePath": "docs/provisioners/breakpoint.mdx",
+    "description": "The breakpoint provisioner will pause until the user presses \"enter\" to resume\nthe build. This is intended for debugging purposes, and allows you to halt at a\nparticular part of the provisioning process.\n",
+    "page_title": "breakpoint - Provisioners",
+    "sidebar_title": "Breakpoint"
+  },
+  {
+    "__resourcePath": "docs/provisioners/chef-client.mdx",
+    "description": "The chef-client Packer provisioner installs and configures software on machines\nbuilt by Packer using chef-client. Packer configures a Chef client to talk to a\nremote Chef Server to provision the machine.\n",
+    "page_title": "Chef Client - Provisioners",
+    "sidebar_title": "Chef Client"
+  },
+  {
+    "__resourcePath": "docs/provisioners/chef-solo.mdx",
+    "description": "The chef-solo Packer provisioner installs and configures software on machines\nbuilt by Packer using chef-solo. Cookbooks can be uploaded from your local\nmachine to the remote machine or remote paths can be used.\n",
+    "page_title": "Chef Solo - Provisioners",
+    "sidebar_title": "Chef Solo"
+  },
+  {
+    "__resourcePath": "docs/provisioners/community-supported.mdx",
+    "description": "Community-maintained provisioners are not part of the core Packer binary, but\ncan run alongside Packer with minimal extra effort.\n",
+    "page_title": "Community - Provisioners",
+    "sidebar_title": "Community-Supported"
+  },
+  {
+    "__resourcePath": "docs/provisioners/converge.mdx",
+    "description": "The converge Packer provisioner uses Converge modules to provision the machine.",
+    "page_title": "Converge - Provisioners",
+    "sidebar_title": "Converge"
+  },
+  {
+    "__resourcePath": "docs/provisioners/custom.mdx",
+    "description": "Packer is extensible, allowing you to write new provisioners without having to\nmodify the core source code of Packer itself. Documentation for creating new\nprovisioners is covered in the custom provisioners page of the Packer plugin\nsection.\n",
+    "page_title": "Custom - Provisioners",
+    "sidebar_title": "Custom"
+  },
+  {
+    "__resourcePath": "docs/provisioners/file.mdx",
+    "description": "The file Packer provisioner uploads files to machines built by Packer. The\nrecommended usage of the file provisioner is to use it to upload files, and\nthen use shell provisioner to move them to the proper place, set permissions,\netc.\n",
+    "page_title": "File - Provisioners",
+    "sidebar_title": "File"
+  },
+  {
+    "__resourcePath": "docs/provisioners/index.mdx",
+    "description": "Provisioners use builtin and third-party software to install and configure the\nmachine image after booting.\n",
+    "page_title": "Provisioners",
+    "sidebar_title": "Provisioners"
+  },
+  {
+    "__resourcePath": "docs/provisioners/inspec.mdx",
+    "description": "The inspec Packer provisioner allows inspec profiles to be run to test the\nmachine.\n",
+    "page_title": "InSpec - Provisioners",
+    "sidebar_title": "InSpec"
+  },
+  {
+    "__resourcePath": "docs/provisioners/powershell.mdx",
+    "description": "The PowerShell Packer provisioner runs PowerShell scripts on Windows machines.\nIt assumes that the communicator in use is WinRM.\n",
+    "page_title": "PowerShell - Provisioners",
+    "sidebar_title": "PowerShell"
+  },
+  {
+    "__resourcePath": "docs/provisioners/puppet-masterless.mdx",
+    "description": "The masterless Puppet Packer provisioner configures Puppet to run on the\nmachines by Packer from local modules and manifest files. Modules and manifests\ncan be uploaded from your local machine to the remote machine or can simply use\nremote paths. Puppet is run in masterless mode, meaning it never communicates\nto a Puppet master.\n",
+    "page_title": "Puppet Masterless - Provisioners",
+    "sidebar_title": "Puppet Masterless"
+  },
+  {
+    "__resourcePath": "docs/provisioners/puppet-server.mdx",
+    "description": "The puppet-server Packer provisioner provisions Packer machines with Puppet by\nconnecting to a Puppet master.\n",
+    "page_title": "Puppet Server - Provisioners",
+    "sidebar_title": "Puppet Server"
+  },
+  {
+    "__resourcePath": "docs/provisioners/salt-masterless.mdx",
+    "description": "The salt-masterless Packer provisioner provisions machines built by Packer\nusing Salt states, without connecting to a Salt master.\n",
+    "page_title": "Salt Masterless - Provisioners",
+    "sidebar_title": "Salt Masterless"
+  },
+  {
+    "__resourcePath": "docs/provisioners/shell-local.mdx",
+    "description": "shell-local will run a shell script of your choosing on the machine where\nPacker is being run - in other words, shell-local will run the shell script on\nyour build server, or your desktop, etc., rather than the remote/guest machine\nbeing provisioned by Packer.\n",
+    "page_title": "Shell (Local) - Provisioners",
+    "sidebar_title": "Shell (Local)"
+  },
+  {
+    "__resourcePath": "docs/provisioners/shell.mdx",
+    "description": "The shell Packer provisioner provisions machines built by Packer using shell\nscripts. Shell provisioning is the easiest way to get software installed and\nconfigured on a machine.\n",
+    "page_title": "Shell - Provisioners",
+    "sidebar_title": "Shell"
+  },
+  {
+    "__resourcePath": "docs/provisioners/windows-restart.mdx",
+    "description": "The Windows restart provisioner restarts a Windows machine and waits for it to\ncome back up.\n",
+    "page_title": "Windows Restart - Provisioners",
+    "sidebar_title": "Windows Restart"
+  },
+  {
+    "__resourcePath": "docs/provisioners/windows-shell.mdx",
+    "description": "The windows-shell Packer provisioner runs commands on Windows using the cmd\nshell.\n",
+    "page_title": "Windows Shell - Provisioners",
+    "sidebar_title": "Windows Shell"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/build/index.mdx",
+    "description": "The source block defines what builders are started.\n",
+    "page_title": "build - Blocks",
+    "sidebar_title": "<tt>build</tt>"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/build/post-processor.mdx",
+    "description": "The post-processor block defines how a post-processor is configured.\n",
+    "page_title": "post-processor - build - Blocks",
+    "sidebar_title": "<tt>post-processor</tt>"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/build/post-processors.mdx",
+    "description": "The post-processors block allows to define lists of post-processors to apply to an artifact.\n",
+    "page_title": "post-processors - build - Blocks",
+    "sidebar_title": "<tt>post-processors</tt>"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/build/provisioner.mdx",
+    "description": "The provisioner block defines how a provisioner is configured.\n",
+    "page_title": "provisioner - build - Blocks",
+    "sidebar_title": "<tt>provisioner</tt>"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/build/source.mdx",
+    "description": "A source block nested in a build block allows you to use an already defined source and to set specific fields which aren't already set in the top-level  source block.\n",
+    "page_title": "source - build - Blocks",
+    "sidebar_title": "<tt>source</tt>"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/data.mdx",
+    "description": "The data block defines data sources within your Packer configuration.\n",
+    "page_title": "data - Blocks",
+    "sidebar_title": "<tt>data</tt>"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/index.mdx",
+    "page_title": "Blocks - Configuration Language",
+    "sidebar_title": "Blocks",
+    "description": "The HCL language has a number of blocks that can be used to configure builds."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/locals.mdx",
+    "description": "The locals block also called the local-variable block defines locals within your Packer configuration.\n",
+    "page_title": "locals - Blocks",
+    "sidebar_title": "<tt>locals</tt>"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/packer.mdx",
+    "page_title": "packer - Blocks",
+    "sidebar_title": "<tt>packer</tt>",
+    "description": "The \"packer\" configuration section is used to configure some behaviors\nof Packer itself."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/source.mdx",
+    "description": "The top-level source block defines reusable builder configuration blocks\n",
+    "page_title": "source - Blocks",
+    "sidebar_title": "<tt>source</tt>"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/blocks/variable.mdx",
+    "description": "The variable block, also called the input-variable block, defines variables within your Packer configuration.\n",
+    "page_title": "variable - Blocks",
+    "sidebar_title": "<tt>variable</tt>"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/contextual-variables.mdx",
+    "page_title": "Contextual Variables - HCL Configuration Language",
+    "sidebar_title": "Contextual Variables",
+    "description": "Special variables provide connection information and basic instance state information.\nThis page covers all existing special variables."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/datasources.mdx",
+    "page_title": "Data Sources",
+    "sidebar_title": "Data Sources",
+    "description": "Data sources allow data to be fetched or computed for use elsewhere in local variables and build sources configuration. Use of data sources allows a Builder to make use of information defined outside of Packer."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/expressions.mdx",
+    "page_title": "Expressions - Configuration Language",
+    "sidebar_title": "Expressions",
+    "description": "HCL allows the use of expressions to access data exported\nby sources and to transform and combine that data to produce other values."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/chunklist.mdx",
+    "page_title": "chunklist - Functions - Configuration Language",
+    "sidebar_title": "chunklist",
+    "description": "The chunklist function splits a single list into fixed-size chunks, returning\na list of lists."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/coalesce.mdx",
+    "page_title": "coalesce - Functions - Configuration Language",
+    "sidebar_title": "coalesce",
+    "description": "The coalesce function takes any number of arguments and returns the\nfirst one that isn't null nor empty."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/coalescelist.mdx",
+    "page_title": "coalescelist - Functions - Configuration Language",
+    "sidebar_title": "coalescelist",
+    "description": "The coalescelist function takes any number of list arguments and returns the\nfirst one that isn't empty."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/compact.mdx",
+    "page_title": "compact - Functions - Configuration Language",
+    "sidebar_title": "compact",
+    "description": "The compact function removes empty string elements from a list."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/concat.mdx",
+    "page_title": "concat - Functions - Configuration Language",
+    "sidebar_title": "concat",
+    "description": "The concat function combines two or more lists into a single list."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/contains.mdx",
+    "page_title": "contains - Functions - Configuration Language",
+    "sidebar_title": "contains",
+    "description": "The contains function determines whether a list or set contains a given value."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/distinct.mdx",
+    "page_title": "distinct - Functions - Configuration Language",
+    "sidebar_title": "distinct",
+    "description": "The distinct function removes duplicate elements from a list."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/element.mdx",
+    "page_title": "element - Functions - Configuration Language",
+    "sidebar_title": "element",
+    "description": "The element function retrieves a single element from a list."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/flatten.mdx",
+    "page_title": "flatten - Functions - Configuration Language",
+    "sidebar_title": "flatten",
+    "description": "The flatten function eliminates nested lists from a list."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/index-fn.mdx",
+    "page_title": "index - Functions - Configuration Language",
+    "sidebar_title": "index",
+    "description": "The index function finds the element index for a given value in a list."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/index.mdx",
+    "page_title": "Collection - Functions - Configuration Language",
+    "sidebar_title": "Collection Functions",
+    "description": "Overview of available collection functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/keys.mdx",
+    "page_title": "keys - Functions - Configuration Language",
+    "sidebar_title": "keys",
+    "description": "The keys function returns a list of the keys in a given map."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/length.mdx",
+    "page_title": "length - Functions - Configuration Language",
+    "sidebar_title": "length",
+    "description": "The length function determines the length of a collection or string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/lookup.mdx",
+    "page_title": "lookup - Functions - Configuration Language",
+    "sidebar_title": "lookup",
+    "description": "The lookup function retrieves an element value from a map given its key."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/merge.mdx",
+    "page_title": "merge - Functions - Configuration Language",
+    "sidebar_title": "merge",
+    "description": "The merge function takes an arbitrary number of maps and returns a single\nmap after merging the keys from each argument."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/range.mdx",
+    "page_title": "range - Functions - Configuration Language",
+    "sidebar_title": "range",
+    "description": "The range function generates sequences of numbers."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/reverse.mdx",
+    "page_title": "reverse - Functions - Configuration Language",
+    "sidebar_title": "reverse",
+    "description": "The reverse function reverses a sequence."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/setintersection.mdx",
+    "page_title": "setintersection - Functions - Configuration Language",
+    "sidebar_title": "setintersection",
+    "description": "The setintersection function takes multiple sets and produces a single set\ncontaining only the elements that all of the given sets have in common."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/setproduct.mdx",
+    "page_title": "setproduct - Functions - Configuration Language",
+    "sidebar_title": "setproduct",
+    "description": "The setproduct function finds all of the possible combinations of elements\nfrom all of the given sets by computing the cartesian product."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/setunion.mdx",
+    "page_title": "setunion - Functions - Configuration Language",
+    "sidebar_title": "setunion",
+    "description": "The setunion function takes multiple sets and produces a single set\ncontaining the elements from all of the given sets."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/slice.mdx",
+    "page_title": "slice - Functions - Configuration Language",
+    "sidebar_title": "slice",
+    "description": "The slice function extracts some consecutive elements from within a list."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/sort.mdx",
+    "page_title": "sort - Functions - Configuration Language",
+    "sidebar_title": "sort",
+    "description": "The sort function takes a list of strings and returns a new list with those\nstrings sorted lexicographically."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/values.mdx",
+    "page_title": "values - Functions - Configuration Language",
+    "sidebar_title": "values",
+    "description": "The values function returns a list of the element values in a given map."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/collection/zipmap.mdx",
+    "page_title": "zipmap - Functions - Configuration Language",
+    "sidebar_title": "zipmap",
+    "description": "The zipmap function constructs a map from a list of keys and a corresponding\nlist of values."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/contextual/aws_secretsmanager.mdx",
+    "page_title": "aws_secretsmanager - Functions - Configuration Language",
+    "sidebar_title": "aws_secretsmanager",
+    "description": "The aws_secretsmanager function retrieves secrets from Amazon secretsmanager stores."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/contextual/consul.mdx",
+    "page_title": "consul - Functions - Configuration Language",
+    "sidebar_title": "consul",
+    "description": "The consul function retrieves secrets from HashiCorp consul KV stores."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/contextual/env.mdx",
+    "page_title": "env - Functions - Configuration Language",
+    "sidebar_title": "env",
+    "description": "The env function retrieves environment values for input variables."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/contextual/index.mdx",
+    "page_title": "Contextual - Functions - Configuration Language",
+    "sidebar_title": "Contextual Functions",
+    "description": "Overview of available Contextual functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/contextual/vault.mdx",
+    "page_title": "vault - Functions - Configuration Language",
+    "sidebar_title": "vault",
+    "description": "The vault function retrieves secrets from HashiCorp Vault KV stores."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/conversion/can.mdx",
+    "page_title": "can - Functions - Configuration Language",
+    "sidebar_title": "can",
+    "description": "The can function tries to evaluate an expression given as an argument and\nindicates whether the evaluation succeeded."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/conversion/convert.mdx",
+    "page_title": "convert - Functions - Configuration Language",
+    "sidebar_title": "convert",
+    "description": "The convert function converts a value or an expression to a given type. "
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/conversion/index.mdx",
+    "page_title": "conversion - Functions - Configuration Language",
+    "sidebar_title": "Type Conversion Functions",
+    "description": "Overview of available conversion functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/conversion/try.mdx",
+    "page_title": "try - Functions - Configuration Language",
+    "sidebar_title": "try",
+    "description": "The try function tries to evaluate a sequence of expressions given as\narguments and returns the result of the first one that does not produce\nany errors."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/crypto/bcrypt.mdx",
+    "page_title": "bcrypt - Functions - Configuration Language",
+    "sidebar_title": "bcrypt",
+    "description": "The bcrypt function computes a hash of the given string using the Blowfish\ncipher."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/crypto/index.mdx",
+    "page_title": "crypto - Functions - Configuration Language",
+    "sidebar_title": "Hash and Crypto Functions",
+    "description": "Overview of available crypto functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/crypto/md5.mdx",
+    "page_title": "md5 - Functions - Configuration Language",
+    "sidebar_title": "md5",
+    "description": "The md5 function computes the MD5 hash of a given string and encodes it\nwith hexadecimal digits."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/crypto/rsadecrypt.mdx",
+    "page_title": "rsadecrypt - Functions - Configuration Language",
+    "sidebar_title": "rsadecrypt",
+    "description": "The rsadecrypt function decrypts an RSA-encrypted message."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/crypto/sha1.mdx",
+    "page_title": "sha1 - Functions - Configuration Language",
+    "sidebar_title": "sha1",
+    "description": "The sha1 function computes the SHA1 hash of a given string and encodes it\nwith hexadecimal digits."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/crypto/sha256.mdx",
+    "page_title": "sha256 - Functions - Configuration Language",
+    "sidebar_title": "sha256",
+    "description": "The sha256 function computes the SHA256 hash of a given string and encodes it\nwith hexadecimal digits."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/crypto/sha512.mdx",
+    "page_title": "sha512 - Functions - Configuration Language",
+    "sidebar_title": "sha512",
+    "description": "The sha512 function computes the SHA512 hash of a given string and encodes it\nwith hexadecimal digits."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/datetime/formatdate.mdx",
+    "page_title": "formatdate - Functions - Configuration Language",
+    "sidebar_title": "formatdate",
+    "description": "The formatdate function converts a timestamp into a different time format."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/datetime/index.mdx",
+    "page_title": "datetime - Functions - Configuration Language",
+    "sidebar_title": "Date and Time Functions",
+    "description": "Overview of available datetime functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/datetime/timeadd.mdx",
+    "page_title": "timeadd - Functions - Configuration Language",
+    "sidebar_title": "timeadd",
+    "description": "The timeadd function adds a duration to a timestamp, returning a new\ntimestamp."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/datetime/timestamp.mdx",
+    "page_title": "timestamp - Functions - Configuration Language",
+    "sidebar_title": "timestamp",
+    "description": "The timestamp function returns a string representation of the current date\nand time."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/encoding/base64decode.mdx",
+    "page_title": "base64decode - Functions - Configuration Language",
+    "sidebar_title": "base64decode",
+    "description": "The base64decode function decodes a string containing a base64 sequence."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/encoding/base64encode.mdx",
+    "page_title": "base64encode - Functions - Configuration Language",
+    "sidebar_title": "base64encode",
+    "description": "The base64encode function applies Base64 encoding to a string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/encoding/csvdecode.mdx",
+    "page_title": "csvdecode - Functions - Configuration Language",
+    "sidebar_title": "csvdecode",
+    "description": "The csvdecode function decodes CSV data into a list of maps."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/encoding/index.mdx",
+    "page_title": "encoding - Functions - Configuration Language",
+    "sidebar_title": "Encoding Functions",
+    "description": "Overview of available encoding functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/encoding/jsondecode.mdx",
+    "page_title": "jsondecode - Functions - Configuration Language",
+    "sidebar_title": "jsondecode",
+    "description": "The jsondecode function decodes a JSON string into a representation of its\nvalue."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/encoding/jsonencode.mdx",
+    "page_title": "jsonencode - Functions - Configuration Language",
+    "sidebar_title": "jsonencode",
+    "description": "The jsonencode function encodes a given value as a JSON string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/encoding/urlencode.mdx",
+    "page_title": "urlencode - Functions - Configuration Language",
+    "sidebar_title": "urlencode",
+    "description": "The urlencode function applies URL encoding to a given string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/encoding/yamldecode.mdx",
+    "page_title": "yamldecode - Functions - Configuration Language",
+    "sidebar_title": "yamldecode",
+    "description": "The yamldecode function decodes a YAML string into a representation of its\nvalue."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/encoding/yamlencode.mdx",
+    "page_title": "yamlencode - Functions - Configuration Language",
+    "sidebar_title": "yamlencode",
+    "description": "The yamlencode function encodes a given value as a YAML string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/file/abspath.mdx",
+    "page_title": "abspath - Functions - Configuration Language",
+    "sidebar_title": "abspath",
+    "description": "The abspath function converts the argument to an absolute filesystem path."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/file/basename.mdx",
+    "page_title": "basename - Functions - Configuration Language",
+    "sidebar_title": "basename",
+    "description": "The basename function removes all except the last portion from a filesystem\npath."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/file/dirname.mdx",
+    "page_title": "dirname - Functions - Configuration Language",
+    "sidebar_title": "dirname",
+    "description": "The dirname function removes the last portion from a filesystem path."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/file/file.mdx",
+    "page_title": "file - Functions - Configuration Language",
+    "sidebar_title": "file",
+    "description": "The file function reads the contents of the file at the given path and\nreturns them as a string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/file/fileexists.mdx",
+    "page_title": "fileexists - Functions - Configuration Language",
+    "sidebar_title": "fileexists",
+    "description": "The fileexists function determines whether a file exists at a given path."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/file/fileset.mdx",
+    "page_title": "fileset - Functions - Configuration Language",
+    "sidebar_title": "fileset",
+    "description": "The fileset function enumerates a set of regular file names given a pattern."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/file/index.mdx",
+    "page_title": "filesystem - Functions - Configuration Language",
+    "sidebar_title": "Filesystem Functions",
+    "description": "Overview of available filesystem functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/file/pathexpand.mdx",
+    "page_title": "pathexpand - Functions - Configuration Language",
+    "sidebar_title": "pathexpand",
+    "description": "The pathexpand function expands a leading ~ character to the current user's\nhome directory."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/index.mdx",
+    "page_title": "Functions - Configuration Language",
+    "sidebar_title": "Functions",
+    "description": "The HCL language has a number of built-in functions that can be called\nfrom within expressions to transform and combine values."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/ipnet/cidrhost.mdx",
+    "page_title": "cidrhost - Functions - Configuration Language",
+    "sidebar_title": "cidrhost",
+    "description": "The cidrhost function calculates a full host IP address within a given\nIP network address prefix."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/ipnet/cidrnetmask.mdx",
+    "page_title": "cidrnetmask - Functions - Configuration Language",
+    "sidebar_title": "cidrnetmask",
+    "description": "The cidrnetmask function converts an IPv4 address prefix given in CIDR\nnotation into a subnet mask address."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/ipnet/cidrsubnet.mdx",
+    "page_title": "cidrsubnet - Functions - Configuration Language",
+    "sidebar_title": "cidrsubnet",
+    "description": "The cidrsubnet function calculates a subnet address within a given IP network\naddress prefix."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/ipnet/cidrsubnets.mdx",
+    "page_title": "cidrsubnets - Functions - Configuration Language",
+    "description": "The cidrsubnets function calculates a sequence of consecutive IP address\nranges within a particular CIDR prefix."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/ipnet/index.mdx",
+    "page_title": "ipnet - Functions - Configuration Language",
+    "sidebar_title": "IP Network Functions",
+    "description": "Overview of available ipnet functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/abs.mdx",
+    "page_title": "abs - Functions - Configuration Language",
+    "sidebar_title": "abs",
+    "description": "The abs function returns the absolute value of the given number."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/ceil.mdx",
+    "page_title": "ceil - Functions - Configuration Language",
+    "sidebar_title": "ceil",
+    "description": "The ceil function returns the closest whole number greater than or equal to\nthe given value."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/floor.mdx",
+    "page_title": "floor - Functions - Configuration Language",
+    "sidebar_title": "floor",
+    "description": "The floor function returns the closest whole number less than or equal to\nthe given value."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/index.mdx",
+    "page_title": "Numeric - Functions - Configuration Language",
+    "sidebar_title": "Numeric Functions",
+    "description": "Overview of available numeric functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/log.mdx",
+    "page_title": "log - Functions - Configuration Language",
+    "sidebar_title": "log",
+    "description": "The log function returns the logarithm of a given number in a given base."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/max.mdx",
+    "page_title": "max - Functions - Configuration Language",
+    "sidebar_title": "max",
+    "description": "The max function takes one or more numbers and returns the greatest number."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/min.mdx",
+    "page_title": "min - Functions - Configuration Language",
+    "sidebar_title": "min",
+    "description": "The min function takes one or more numbers and returns the smallest number."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/parseint.mdx",
+    "page_title": "parseint - Functions - Configuration Language",
+    "sidebar_title": "parseint",
+    "description": "The parseint function parses the given string as a representation of an integer."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/pow.mdx",
+    "page_title": "pow - Functions - Configuration Language",
+    "sidebar_title": "pow",
+    "description": "The pow function raises a number to a power."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/numeric/signum.mdx",
+    "page_title": "signum - Functions - Configuration Language",
+    "sidebar_title": "signum",
+    "description": "The signum function determines the sign of a number."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/chomp.mdx",
+    "page_title": "chomp - Functions - Configuration Language",
+    "sidebar_title": "chomp",
+    "description": "The chomp function removes newline characters at the end of a string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/format.mdx",
+    "page_title": "format - Functions - Configuration Language",
+    "sidebar_title": "format",
+    "description": "The format function produces a string by formatting a number of other values\naccording to a specification string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/formatlist.mdx",
+    "page_title": "formatlist - Functions - Configuration Language",
+    "sidebar_title": "formatlist",
+    "description": "The formatlist function produces a list of strings by formatting a number of\nother values according to a specification string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/indent.mdx",
+    "page_title": "indent - Functions - Configuration Language",
+    "sidebar_title": "indent",
+    "description": "The indent function adds a number of spaces to the beginnings of all but the\nfirst line of a given multi-line string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/index.mdx",
+    "page_title": "string - Functions - Configuration Language",
+    "sidebar_title": "String Functions",
+    "description": "Overview of available string functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/join.mdx",
+    "page_title": "join - Functions - Configuration Language",
+    "sidebar_title": "join",
+    "description": "The join function produces a string by concatenating the elements of a list\nwith a given delimiter."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/lower.mdx",
+    "page_title": "lower - Functions - Configuration Language",
+    "sidebar_title": "lower",
+    "description": "The lower function converts all cased letters in the given string to lowercase."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/regex_replace.mdx",
+    "page_title": "regex_replace - Functions - Configuration Language",
+    "sidebar_title": "regex_replace",
+    "description": "The regex_replace function searches a given string for another given substring,\nand replaces all occurrences with a given replacement string. The substring\nargument can be a valid regular expression or a string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/replace.mdx",
+    "page_title": "replace - Functions - Configuration Language",
+    "sidebar_title": "replace",
+    "description": "The replace function searches a given string for another given substring,\nand replaces all occurrences with a given replacement string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/split.mdx",
+    "page_title": "split - Functions - Configuration Language",
+    "sidebar_title": "split",
+    "description": "The split function produces a list by dividing a given string at all\noccurrences of a given separator."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/strrev.mdx",
+    "page_title": "strrev - Functions - Configuration Language",
+    "sidebar_title": "strrev",
+    "description": "The strrev function reverses a string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/substr.mdx",
+    "page_title": "substr - Functions - Configuration Language",
+    "sidebar_title": "substr",
+    "description": "The substr function extracts a substring from a given string by offset and\nlength."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/title.mdx",
+    "page_title": "title - Functions - Configuration Language",
+    "sidebar_title": "title",
+    "description": "The title function converts the first letter of each word in a given string\nto uppercase."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/trim.mdx",
+    "page_title": "trim - Functions - Configuration Language",
+    "sidebar_title": "trim",
+    "description": "The trim function removes the specified characters from the start and end of\na given string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/trimprefix.mdx",
+    "page_title": "trimprefix - Functions - Configuration Language",
+    "sidebar_title": "trimprefix",
+    "description": "The trimprefix function removes the specified prefix from the start of a\ngiven string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/trimspace.mdx",
+    "page_title": "trimspace - Functions - Configuration Language",
+    "sidebar_title": "trimspace",
+    "description": "The trimspace function removes space characters from the start and end of\na given string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/trimsuffix.mdx",
+    "page_title": "trimsuffix - Functions - Configuration Language",
+    "sidebar_title": "trimsuffix",
+    "description": "The trimsuffix function removes the specified suffix from the end of a\ngiven string."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/string/upper.mdx",
+    "page_title": "upper - Functions - Configuration Language",
+    "sidebar_title": "upper",
+    "description": "The upper function converts all cased letters in the given string to uppercase."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/uuid/index.mdx",
+    "page_title": "uuid - Functions - Configuration Language",
+    "sidebar_title": "UUID Functions",
+    "description": "Overview of available uuid functions"
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/uuid/uuidv4.mdx",
+    "page_title": "v4 - uuid - Functions - Configuration Language",
+    "sidebar_title": "uuidv4",
+    "description": "The uuidv4 function generates a unique id."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/functions/uuid/uuidv5.mdx",
+    "page_title": "uuidv5 - Functions - Configuration Language",
+    "sidebar_title": "uuidv5",
+    "description": "The uuidv5 function generates a uuid v5 string representation of the value in\nthe specified namespace."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/index.mdx",
+    "page_title": "HCL Templates",
+    "sidebar_title": "HCL Templates",
+    "description": "Packer uses text files to describe infrastructure and to set variables.\nThese text files are called Packer _configurations_ and are\nwritten in the HCL2 HashiCorp Configuration Language."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/locals.mdx",
+    "page_title": "Local Values - HCL Configuration Language",
+    "sidebar_title": "Locals",
+    "description": "Local values assign a name to an expression that can then be used multiple times within a folder."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/onlyexcept.mdx",
+    "page_title": "Only Except - HCL Configuration Language",
+    "sidebar_title": "Only Except",
+    "description": "Only and Except can be used as a command line argument to selectively run builds. Only and Except can also be used in a provisioner to not run it for a source."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/path-variables.mdx",
+    "page_title": "Path Variables - HCL Configuration Language",
+    "sidebar_title": "Path Variables",
+    "description": "Special variables provide directory information. This page covers all path\nvariables."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/syntax-json.mdx",
+    "page_title": "JSON Configuration Syntax - Configuration Language",
+    "sidebar_title": "JSON Syntax",
+    "description": "In addition to the native syntax that is most commonly used with Packer,\nthe HCL language can also be expressed in a JSON-compatible syntax."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/syntax.mdx",
+    "page_title": "Syntax - Configuration Language",
+    "sidebar_title": "Syntax",
+    "description": "HCL has its own syntax, intended to combine declarative\nstructure with expressions in a way that is easy for humans to read and\nunderstand."
+  },
+  {
+    "__resourcePath": "docs/templates/hcl_templates/variables.mdx",
+    "page_title": "Input Variables - HCL Configuration Language",
+    "sidebar_title": "Variables",
+    "description": "Input variables are parameters for Packer modules.\nThis page covers configuration syntax for variables."
+  },
+  {
+    "__resourcePath": "docs/templates/index.mdx",
+    "description": "This section describes the configruation language used to create Packer\ntemplates.\n",
+    "page_title": "Templates"
+  },
+  {
+    "__resourcePath": "docs/templates/legacy_json_templates/builders.mdx",
+    "description": "Within the template, the builders section contains an array of all the builders\nthat Packer should use to generate machine images for the template.\n",
+    "page_title": "Builders - Templates",
+    "sidebar_title": "Builders"
+  },
+  {
+    "__resourcePath": "docs/templates/legacy_json_templates/communicator.mdx",
+    "description": "Communicators are the mechanism Packer uses to upload files, execute scripts,\netc. with the machine being created.\n",
+    "page_title": "Communicators - Templates",
+    "sidebar_title": "Communicators"
+  },
+  {
+    "__resourcePath": "docs/templates/legacy_json_templates/engine.mdx",
+    "description": "All strings within templates are processed by a common Packer templating\nengine, where variables and functions can be used to modify the value of a\nconfiguration parameter at runtime.\n",
+    "page_title": "Template Engine - Templates",
+    "sidebar_title": "Engine"
+  },
+  {
+    "__resourcePath": "docs/templates/legacy_json_templates/index.mdx",
+    "description": "The JSON templates are JSON files that configure the various components of Packer in order to create one or more machine images. Templates are portable, static, and readable and writable by both humans and computers. This has the added benefit of being able to not only create and modify templates by hand, but also write scripts to dynamically create or modify templates.\n",
+    "page_title": "JSON Templates",
+    "sidebar_title": "JSON Templates"
+  },
+  {
+    "__resourcePath": "docs/templates/legacy_json_templates/post-processors.mdx",
+    "description": "The post-processor section within a template configures any post-processing\nthat will be done to images built by the builders. Examples of post-processing\nwould be compressing files, uploading artifacts, etc.\n",
+    "page_title": "Post-Processors - Templates",
+    "sidebar_title": "Post-Processors"
+  },
+  {
+    "__resourcePath": "docs/templates/legacy_json_templates/provisioners.mdx",
+    "description": "Within the template, the provisioners section contains an array of all the\nprovisioners that Packer should use to install and configure software within\nrunning machines prior to turning them into machine images.\n",
+    "page_title": "Provisioners - Templates",
+    "sidebar_title": "Provisioners"
+  },
+  {
+    "__resourcePath": "docs/templates/legacy_json_templates/user-variables.mdx",
+    "description": "User variables allow your templates to be further configured with variables\nfrom the command-line, environment variables, or files. This lets you\nparameterize your templates so that you can keep secret tokens,\nenvironment-specific data, and other types of information out of your\ntemplates. This maximizes the portability and shareability of the template.\n",
+    "page_title": "User Variables - Templates",
+    "sidebar_title": "User Variables"
+  },
+  {
+    "__resourcePath": "docs/terminology.mdx",
+    "description": "There are a handful of terms used throughout the Packer documentation where the\nmeaning may not be immediately obvious if you haven't used Packer before.\nLuckily, there are relatively few. This page documents all the terminology\nrequired to understand and use Packer. The terminology is in alphabetical order\nfor quick referencing.\n",
+    "page_title": "Terminology",
+    "sidebar_title": "Terminology"
+  },
+  {
+    "__resourcePath": "guides/1.7-plugin-upgrade/index.mdx",
+    "page_title": "Upgrading your plugin to use the Packer plugin sdk",
+    "sidebar_title": "Upgrade Your Plugin to use the Packer plugin sdk"
+  },
+  {
+    "__resourcePath": "guides/automatic-operating-system-installs/autounattend_windows.mdx",
+    "page_title": "Unattended Windows Installation",
+    "sidebar_title": "Unattended Installation for Windows",
+    "description": "Learn how to use an autounattend file to automatically answer installation\nquestions and enable Packer to connect to your windows instnace."
+  },
+  {
+    "__resourcePath": "guides/automatic-operating-system-installs/index.mdx",
+    "page_title": "Automatic OS Installs",
+    "sidebar_title": "Automatic OS Installs",
+    "description": "Learn how to use preseed, kickstart, and autounattend files to automatically\nanswer installation questions and enable Packer to connect to your instnace."
+  },
+  {
+    "__resourcePath": "guides/automatic-operating-system-installs/preseed_ubuntu.mdx",
+    "page_title": "Unattended Debian/Ubuntu Installation",
+    "sidebar_title": "Unattended Installation for Debian",
+    "description": "Learn how to use a preseed file to automatically answer installation\nquestions and enable Packer to connect to your Debian instnace."
+  },
+  {
+    "__resourcePath": "guides/hcl/component-object-spec.mdx",
+    "page_title": "Generating code for config spec.",
+    "sidebar_title": "Making a plugin HCL2 enabled",
+    "description": "Learn how to generate the HCL2 configuration of your component easily."
+  },
+  {
+    "__resourcePath": "guides/hcl/from-json-v1.mdx",
+    "page_title": "Transforming Packer v1 files for Packer v1.5.0",
+    "sidebar_title": "From JSON v1",
+    "description": "Learn how to manually move from a Packer v1 working JSON build file to a\nworking v1.5.0 HCL file."
+  },
+  {
+    "__resourcePath": "guides/hcl/index.mdx",
+    "page_title": "Getting started configuring Packer with HCL2 files",
+    "sidebar_title": "HCL guides"
+  },
+  {
+    "__resourcePath": "guides/hcl/variables.mdx",
+    "page_title": "Input and Local Variables guide",
+    "sidebar_title": "Variables",
+    "description": "This page introduces input variables and local variables as a way to\nparameterize a configuration."
+  },
+  {
+    "__resourcePath": "guides/index.mdx",
+    "page_title": "Guides",
+    "description": "Welcome to the Packer guides. If you are just getting started with Packer,\nplease see the Packer introduction instead and then continue on to the guides.\nThese guides provide examples for common Packer workflows and actions for\nusers of Packer."
+  },
+  {
+    "__resourcePath": "guides/packer-on-cicd/build-image-in-cicd.mdx",
+    "page_title": "Build Images in CI/CD",
+    "sidebar_title": "Build Images in CI/CD"
+  },
+  {
+    "__resourcePath": "guides/packer-on-cicd/build-virtualbox-image.mdx",
+    "page_title": "Build a VirtualBox Image with Packer in TeamCity",
+    "sidebar_title": "Build a VirtualBox Image with Packer in TeamCity"
+  },
+  {
+    "__resourcePath": "guides/packer-on-cicd/index.mdx",
+    "page_title": "Build Immutable Infrastructure with Packer in CI/CD",
+    "sidebar_title": "Build Immutable Infrastructure with Packer in CI/CD"
+  },
+  {
+    "__resourcePath": "guides/packer-on-cicd/pipelineing-builds.mdx",
+    "page_title": "Packer Build Pipelines",
+    "sidebar_title": "Pipelineing Builds",
+    "description": "Here we explore how to break your builds into discrete steps so that your\nbuilds can be shorter and more reliable."
+  },
+  {
+    "__resourcePath": "guides/packer-on-cicd/trigger-tfe.mdx",
+    "page_title": "Trigger Terraform Enterprise runs",
+    "sidebar_title": "Trigger Terraform Enterprise runs"
+  },
+  {
+    "__resourcePath": "guides/packer-on-cicd/upload-images-to-artifact.mdx",
+    "page_title": "Upload VirtualBox Image to S3",
+    "sidebar_title": "Upload a VirtualBox Image to S3"
+  },
+  {
+    "__resourcePath": "guides/workflow-tips-and-tricks/index.mdx",
+    "page_title": "Tips and Tricks",
+    "sidebar_title": "Workflow Tips and Tricks",
+    "description": "The guides stored in this section are miscellanious tips and tricks that might\nmake your experience of using Packer easier"
+  },
+  {
+    "__resourcePath": "guides/workflow-tips-and-tricks/isotime-template-function.mdx",
+    "page_title": "Using the isotime template function - Guides",
+    "sidebar_title": "Isotime Template Function",
+    "description": "It can be a bit confusing to figure out how to format your isotime using the\ngolang reference date string. Here is a small guide and some examples."
+  },
+  {
+    "__resourcePath": "guides/workflow-tips-and-tricks/use-packer-with-comment.mdx",
+    "page_title": "Use jq and Packer to comment your templates - Guides",
+    "sidebar_title": "Use jq to strip comments from a Packer template",
+    "description": "You can add detailed comments beyond the root-level underscore-prefixed field\nsupported by Packer, and remove them using jq."
+  },
+  {
+    "__resourcePath": "guides/workflow-tips-and-tricks/veewee-to-packer.mdx",
+    "page_title": "Convert Veewee Definitions to Packer Templates - Guides",
+    "sidebar_title": "Veewee to Packer",
+    "description": "If you are or were a user of Veewee, then there is an official tool called\nveewee-to-packer that will convert your Veewee definition into an equivalent\nPacker template. Even if you're not a Veewee user, Veewee has a large library\nof templates that can be readily used with Packer by simply converting them."
+  },
+  {
+    "__resourcePath": "intro/index.mdx",
+    "page_title": "Introduction",
+    "description": "Welcome to the world of Packer! This introduction guide will show you what\nPacker is, explain why it exists, the benefits it has to offer, and how you\ncan get started with it. If you're already familiar with Packer, the\ndocumentation provides more of a reference for all available features."
+  },
+  {
+    "__resourcePath": "intro/use-cases.mdx",
+    "page_title": "Use Cases - Introduction",
+    "sidebar_title": "Use Cases",
+    "description": "By now you should know what Packer does and what the benefits of image\ncreation are. In this section, we'll enumerate *some* of the use cases for\nPacker. Note that this is not an exhaustive list by any means. There are\ndefinitely use cases for Packer not listed here. This list is just meant to\ngive you an idea of how Packer may improve your processes."
+  },
+  {
+    "__resourcePath": "intro/why.mdx",
+    "page_title": "Why Packer - Introduction",
+    "sidebar_title": "Why Use Packer?",
+    "description": "Pre-baked machine images have a lot of advantages, but most have been unable\nto benefit from them because images have been too tedious to create and\nmanage. There were either no existing tools to automate the creation of\nmachine images or they had too high of a learning curve. The result is that,\nprior to Packer, creating machine images threatened the agility of operations\nteams, and therefore aren't used, despite the massive benefits."
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/AlicloudAccessConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/AlicloudAccessConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/AlicloudAccessConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/AlicloudDiskDevice-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/AlicloudDiskDevice.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/AlicloudDiskDevices-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/AlicloudDiskDevices.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/AlicloudImageConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/AlicloudImageConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/RunConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/alicloud/ecs/RunConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/chroot/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/chroot/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/chroot/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AMIConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AMIConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AMIConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AWSPollingConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AWSPollingConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AccessConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AccessConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AccessConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AmiFilterOptions-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AssumeRoleConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/AssumeRoleConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/BlockDevice-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/BlockDevice.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/PolicyDocument-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/RunConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/RunConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/RunConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/StateChangeConf.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/Statement-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/SubnetFilterOptions-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/common/VaultAWSEngineOptions-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/ebs/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/ebssurrogate/BlockDevice-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/ebssurrogate/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/ebssurrogate/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/ebssurrogate/RootBlockDevice-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/ebsvolume/BlockDevice-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/ebsvolume/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/instance/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/instance/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/amazon/instance/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/arm/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/arm/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/arm/PlanInformation-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/arm/SharedImageGallery-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/arm/SharedImageGalleryDestination-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/chroot/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/chroot/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/chroot/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/chroot/SharedImageGalleryDestination-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/chroot/SharedImageGalleryDestination-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/chroot/SharedImageGalleryDestination.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/chroot/TargetRegion-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/chroot/TargetRegion-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/chroot/TargetRegion.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/common/client/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/common/client/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/dtl/ArtifactParameter-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/dtl/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/dtl/DtlArtifact-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/dtl/SharedImageGallery-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/azure/dtl/SharedImageGalleryDestination-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/cloudstack/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/cloudstack/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/cloudstack/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/digitalocean/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/digitalocean/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/docker/AwsAccessConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/docker/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/docker/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/googlecompute/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/googlecompute/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/googlecompute/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/googlecompute/CustomerEncryptionKey-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/googlecompute/IAPConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/googlecompute/IAPConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/hyperone/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/hyperone/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/hyperv/common/CommonConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/hyperv/common/OutputConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/hyperv/iso/Builder.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/hyperv/iso/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/hyperv/vmcx/Builder.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/hyperv/vmcx/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/lxc/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/lxc/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/lxd/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/lxd/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ncloud/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ncloud/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ncloud/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/AccessConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/AccessConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/AccessConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/ImageConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/ImageConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/ImageConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/ImageFilter-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/ImageFilterOptions-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/RunConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/RunConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/openstack/RunConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/HWConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/OutputConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/OutputConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/PrlctlConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/PrlctlConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/PrlctlPostConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/PrlctlPostConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/PrlctlVersionConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/PrlctlVersionConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/ToolsConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/ToolsConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/common/ToolsConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/iso/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/pvm/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/pvm/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/parallels/pvm/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/qemu/CommConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/qemu/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/qemu/QemuImgArgs-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/scaleway/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/scaleway/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/tencentcloud/cvm/TencentCloudAccessConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/tencentcloud/cvm/TencentCloudAccessConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/tencentcloud/cvm/TencentCloudImageConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/tencentcloud/cvm/TencentCloudImageConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/tencentcloud/cvm/TencentCloudRunConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/tencentcloud/cvm/TencentCloudRunConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/tencentcloud/cvm/tencentCloudDataDisk-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/AccessConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/AccessConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/AccessConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/MachineImageFilter-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/SourceMachineConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/SourceMachineConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/SourceMachineConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/TargetImageConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/TargetImageConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/triton/TargetImageConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ucloud/common/AccessConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ucloud/common/AccessConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ucloud/common/ImageConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ucloud/common/ImageConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ucloud/common/ImageDestination-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ucloud/common/RunConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/ucloud/common/RunConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vagrant/Builder.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vagrant/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vagrant/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/CommConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/ExportConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/GuestAdditionsConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/HWConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/OutputConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/RunConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/ShutdownConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/VBoxBundleConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/VBoxManageConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/VBoxManageConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/common/VBoxVersionConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/iso/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/ovf/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/ovf/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/ovf/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/vm/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/vm/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/virtualbox/vm/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/DiskConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/DriverConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/ExportConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/HWConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/OutputConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/ParallelUnion.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/RunConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/RunConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/SerialConfigPipe.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/ToolsConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/common/VMXConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/iso/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/vmx/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/vmx/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vmware/vmx/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/CloneConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/CustomizeConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/CustomizeConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/GlobalDnsSettings-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/GlobalDnsSettings.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/GlobalRoutingSettings-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/GlobalRoutingSettings.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/LinuxOptions-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/NetworkInterface-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/clone/vAppConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/BootConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/CDRomConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/ConfigParamsConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/ConnectConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/ContentLibraryDestinationConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/ContentLibraryDestinationConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/DiskConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/DiskConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/DiskConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/ExportConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/ExportConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/FloppyConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/HardwareConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/LocationConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/OutputConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/RemoveCDRomConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/RunConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/ShutdownConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/StorageConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/common/WaitIpConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/iso/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/iso/CreateConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/iso/NIC-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/iso/NIC-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/vsphere/iso/NIC.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/AccessConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/AccessConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/AccessConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/CloudConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/CommonConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/DiskConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/ImageConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/InstanceConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/NetworkConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/SourceImageConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builder/yandex/SourceImageConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/aws-common-block-device-a-i.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/aws-common-block-device-i-v.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/aws-common-opional-fields.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/aws-session-manager.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/aws-spot-docs.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/aws-ssh-differentiation-table.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/boot-command.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/building_on_remote_vsphere_hypervisor.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/community_builders.mdx"
+  },
+  {
+    "__resourcePath": "partials/builders/virtualbox-ssh-key-pair.mdx"
+  },
+  {
+    "__resourcePath": "partials/commands/except.mdx"
+  },
+  {
+    "__resourcePath": "partials/commands/only.mdx"
+  },
+  {
+    "__resourcePath": "partials/datasource/amazon/ami/DatasourceOutput.mdx"
+  },
+  {
+    "__resourcePath": "partials/datasource/amazon/secretsmanager/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/datasource/amazon/secretsmanager/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/datasource/amazon/secretsmanager/DatasourceOutput.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/beta-hcl2-note.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/builds/example-block.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/contextual-source-variables.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/datasources/example-block.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/legacy-json-warning.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/locals/example-block.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/sources/example-block.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/variables/assignment.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/variables/custom-validation.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/variables/foo-block.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/variables/foo-pkrvar.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/variables/must-be-set.mdx"
+  },
+  {
+    "__resourcePath": "partials/from-1.5/variables/sensitive.mdx"
+  },
+  {
+    "__resourcePath": "partials/guides/hcl2-beta-note.mdx"
+  },
+  {
+    "__resourcePath": "partials/helper/communicator/SSH-Agent-Auth-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/helper/communicator/SSH-Key-Pair-Name-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/helper/communicator/SSH-Private-Key-File-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/helper/communicator/SSH-Temporary-Key-Pair-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/bootcommand/BootConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/bootcommand/BootConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/bootcommand/VNCConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/bootcommand/VNCConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/SSH-Agent-Auth-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/SSH-Key-Pair-Name-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/SSH-Private-Key-File-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/SSH-Temporary-Key-Pair-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/SSH-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/SSHInterface-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/SSHTemporaryKeyPair-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/SSHTemporaryKeyPair.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/communicator/WinRM-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/multistep/commonsteps/CDConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/multistep/commonsteps/CDConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/multistep/commonsteps/FloppyConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/multistep/commonsteps/FloppyConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/multistep/commonsteps/HTTPConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/multistep/commonsteps/HTTPConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/multistep/commonsteps/ISOConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/multistep/commonsteps/ISOConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/multistep/commonsteps/ISOConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/shutdowncommand/ShutdownConfig-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/packer-plugin-sdk/shutdowncommand/ShutdownConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/alicloud-import/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/alicloud-import/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/alicloud-import/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/googlecompute-export/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/googlecompute-export/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/googlecompute-import/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/googlecompute-import/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/manifest/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/ucloud-import/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/ucloud-import/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/ucloud-import/Config.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/yandex-export/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/yandex-export/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/yandex-export/ExchangeConfig-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/yandex-import/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processor/yandex-import/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/post-processors/community_post-processors.mdx"
+  },
+  {
+    "__resourcePath": "partials/provisioner/ansible/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/provisioner/ansible/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/provisioner/file/Config-not-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/provisioner/file/Config-required.mdx"
+  },
+  {
+    "__resourcePath": "partials/provisioners/common-config.mdx"
+  },
+  {
+    "__resourcePath": "partials/provisioners/community_provisioners.mdx"
+  },
+  {
+    "__resourcePath": "partials/provisioners/shell-config.mdx"
+  },
+  {
+    "__resourcePath": "partials/provisioners/unmaintained-plugin.mdx"
+  },
+  {
+    "__resourcePath": "security.mdx",
+    "page_title": "Security",
+    "description": "Packer takes security very seriously. Please responsibly disclose any security vulnerabilities found and we'll handle it quickly."
   }
 ]
