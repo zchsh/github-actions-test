@@ -6,6 +6,8 @@ const exec = util.promisify(require("child_process").exec);
 const OUTPUT_DIR = ".generated";
 const GIT_NAME = "GitHub Actions";
 const GIT_EMAIL = "actions@github.com";
+const GITHUB_ACTOR = process.env.GITHUB_ACTOR;
+const GIT_AUTHOR = `${GITHUB_ACTOR} <${GITHUB_ACTOR}@users.noreply.github.com>`;
 
 async function collectAndCommitFrontmatter() {
   // Set up a directory for output
@@ -25,7 +27,9 @@ async function collectAndCommitFrontmatter() {
   await exec(`git config user.email "${GIT_EMAIL}"`);
   console.log({ OUTPUT_DIR, outputDir });
   await exec(`git add ${outputDir}`);
-  await exec(`git commit -m "chore: update test file"`);
+  await exec(
+    `git commit -m "chore: update test file" --author="${GIT_AUTHOR}"`
+  );
 }
 
 collectAndCommitFrontmatter().then(() => console.log("✅ Done"));
