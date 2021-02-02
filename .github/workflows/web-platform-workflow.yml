@@ -10,3 +10,5 @@ jobs:
       - run: touch .generated/test-file.txt
       - run: echo "Hello generated file" > .generated/test-file.txt
       - run: git status
+      - run: git add .generated/test-file.txt
+      - run: 'git commit -m "chore: update test file"'
