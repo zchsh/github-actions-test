@@ -1,4 +1,4 @@
-name: web-platform-workflow
+name: web-platform
 on: [push]
 jobs:
   collect-frontmatter:

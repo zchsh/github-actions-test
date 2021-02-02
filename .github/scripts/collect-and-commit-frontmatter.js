@@ -5,7 +5,7 @@ const exec = util.promisify(require("child_process").exec);
 
 const OUTPUT_DIR = ".generated";
 const GIT_NAME = "GitHub Actions";
-const GIT_EMAIL = "actions@github.com";
+const GIT_EMAIL = "actions@users.noreply.github.com";
 const GITHUB_ACTOR = process.env.GITHUB_ACTOR;
 const GIT_AUTHOR = `${GITHUB_ACTOR} <${GITHUB_ACTOR}@users.noreply.github.com>`;
 const COMMIT_MSG = "chore: update test file";
