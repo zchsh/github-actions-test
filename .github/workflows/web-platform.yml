@@ -6,4 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
+      - run: git config user.name "GitHub Actions"
+      - run: git config user.email "actions@github.com"
+      - run: npm ci
       - run: node .github/scripts/collect-and-commit-frontmatter.js
