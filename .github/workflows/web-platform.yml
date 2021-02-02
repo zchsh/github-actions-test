@@ -1,0 +1,13 @@
+name: web-platform
+on: [push]
+jobs:
+  collect-frontmatter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: git config user.name "GitHub Actions"
+      - run: git config user.email "actions@github.com"
+      - run: npm ci
+      - run: node .github/scripts/collect-and-stage-frontmatter.js
+      - run: 'git diff-index --quiet HEAD -- || git commit -m "chore: update test file" && git push'

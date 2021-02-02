@@ -1,0 +1,32 @@
+[
+  {
+    "__resourcePath": "community-plugins.mdx"
+  },
+  {
+    "__resourcePath": "community-tools.mdx"
+  },
+  {
+    "__resourcePath": "docs/builders/alicloud-ecs.mdx"
+  },
+  {
+    "__resourcePath": "docs/builders/amazon/chroot.mdx"
+  },
+  {
+    "__resourcePath": "docs/builders/amazon/ebs.mdx"
+  },
+  {
+    "__resourcePath": "docs/builders/amazon/ebssurrogate.mdx"
+  },
+  {
+    "__resourcePath": "docs/builders/amazon/ebsvolume.mdx"
+  },
+  {
+    "__resourcePath": "docs/builders/amazon/index.mdx"
+  },
+  {
+    "__resourcePath": "docs/builders/amazon/instance.mdx"
+  },
+  {
+    "__resourcePath": "docs/builders/azure/arm.mdx"
+  }
+]
