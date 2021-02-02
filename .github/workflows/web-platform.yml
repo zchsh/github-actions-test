@@ -9,5 +9,9 @@ jobs:
       - run: git config user.name "GitHub Actions"
       - run: git config user.email "actions@github.com"
       - run: npm ci
+<<<<<<< HEAD
       - run: node .github/scripts/collect-and-stage-frontmatter.js
       - run: 'git diff-index --quiet HEAD -- || git commit -m "chore: update test file" && git push'
+=======
+      - run: node .github/scripts/collect-and-commit-frontmatter.js
+>>>>>>> 99bc485 (Test use of npm deps)
