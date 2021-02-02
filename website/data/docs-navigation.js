@@ -11,7 +11,6 @@ export default [
   {
     category: "commands",
     content: [
-      "init",
       "build",
       "console",
       "fix",
@@ -313,23 +312,19 @@ export default [
   },
   "----------",
   "install",
-  "configure",
   "----------",
   {
-    category: "plugins",
+    category: "extending",
     content: [
-      {
-        category: "creation",
-        content: [
-          "custom-builders",
-          "custom-post-processors",
-          "custom-provisioners",
-          "custom-datasources",
-        ],
-      },
+      "plugins",
+      "custom-builders",
+      "custom-post-processors",
+      "custom-provisioners",
+      "custom-datasources",
     ],
   },
-
   "---------",
+  "environment-variables",
+  "core-configuration",
   "debugging",
 ];
