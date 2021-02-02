@@ -8,7 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: mkdir -p .generated
       - run: touch .generated/test-file.txt
-      - run: echo "Hello to some changes" > .generated/test-file.txt
+      - run: node .github/scripts/collect-frontmatter.js
       - run: git status
       - run: git add .generated/test-file.txt
       - run: 'git config user.name "GitHub Actions"'
