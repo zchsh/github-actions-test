@@ -15,3 +15,4 @@ jobs:
       - run: 'git config user.email "actions@github.com"'
       - run: 'git commit -m "chore: update test file"'
       - run: echo running on branch ${GITHUB_REF##*/}
+      - run: git remote -v
