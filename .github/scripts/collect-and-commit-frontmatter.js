@@ -28,7 +28,10 @@ async function collectAndCommitFrontmatter() {
   await exec(`git config user.name "${GIT_NAME}"`);
   await exec(`git config user.email "${GIT_EMAIL}"`);
   await exec(`git add ${outputDir}`);
-  await exec(`git commit -m "${COMMIT_MSG}" --author="${GIT_AUTHOR}"`);
+  const { stdout, stderr } = await exec(
+    `git commit -m "${COMMIT_MSG}" --author="${GIT_AUTHOR}"`
+  );
+  console.log({ stdout, stderr });
 }
 
 collectAndCommitFrontmatter().then(() => console.log("✅ Done"));
