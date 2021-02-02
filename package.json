@@ -16,9 +16,13 @@
   "bugs": {
     "url": "https://github.com/zchsh/github-actions-test/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/zchsh/github-actions-test#readme",
   "devDependencies": {
     "gray-matter": "^4.0.2",
     "klaw-sync": "^6.0.0"
   }
+=======
+  "homepage": "https://github.com/zchsh/github-actions-test#readme"
+>>>>>>> 6c72b4e... Add node script to write test-file
 }
