@@ -11,4 +11,6 @@ jobs:
       - run: echo "Hello generated file" > .generated/test-file.txt
       - run: git status
       - run: git add .generated/test-file.txt
+      - run: 'git config user.name "GitHub Actions"'
+      - run: 'git config user.email "actions@github.com"'
       - run: 'git commit -m "chore: update test file"'
