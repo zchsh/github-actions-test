@@ -1,70 +1,16 @@
 [
+  { "divider": "true" },
+  { "title": "Terminology", "path": "terminology" },
   {
-    "title": "Vault Agent",
+    "title": "Commands",
     "routes": [
-      {
-        "title": "Overview",
-        "path": "agent"
-      },
-      {
-        "title": "Auto-Auth",
-        "routes": [
-          {
-            "title": "Overview",
-            "path": "agent/autoauth"
-          },
-          {
-            "title": "Methods",
-            "routes": [
-              {
-                "title": "Overview",
-                "path": "agent/autoauth/methods"
-              },
-              {
-                "title": "External Link",
-                "href": "https://google.com"
-              },
-              {
-                "title": "AliCloud",
-                "path": "agent/autoauth/methods/alicloud"
-              },
-              { "divider": true },
-              {
-                "title": "<code>GCP</code>",
-                "path": "agent/autoauth/methods/gcp"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "No Index Category",
-        "routes": [
-          {
-            "title": "Foo Item",
-            "path": "agent/no-index-test/foo"
-          }
-        ]
-      },
-      {
-        "title": "Only Index Test <sup>ENT</sup>",
-        "routes": [
-          {
-            "title": "Overview",
-            "path": "agent/only-index-test"
-          }
-        ]
-      },
-      {
-        "title": "Internal Href",
-        "routes": [
-          {
-            "title": "Internal Link",
-            "path": "agent/autoauth/aws",
-            "canonical": false
-          }
-        ]
-      }
+      { "title": "<code>build</code>", "path": "commands/build" },
+      { "title": "<code>console</code>", "path": "commands/console" },
+      { "title": "<code>fix</code>", "path": "commands/fix" },
+      { "title": "<code>fmt</code>", "path": "commands/fmt" },
+      { "title": "<code>inspect</code>", "path": "commands/inspect" },
+      { "title": "<code>validate</code>", "path": "commands/validate" },
+      { "title": "<code>hcl2_upgrade</code>", "path": "commands/hcl2_upgrade" }
     ]
   }
 ]
