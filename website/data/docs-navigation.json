@@ -4,6 +4,7 @@
   {
     "title": "Commands",
     "routes": [
+      { "title": "Overview", "path": "commands/index" },
       { "title": "<code>build</code>", "path": "commands/build" },
       { "title": "<code>console</code>", "path": "commands/console" },
       { "title": "<code>fix</code>", "path": "commands/fix" },
