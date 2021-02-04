@@ -18,6 +18,108 @@
       { "title": "<code>hcl2_upgrade</code>", "path": "commands/hcl2_upgrade" }
     ]
   },
+  {
+    "title": "Templates",
+    "routes": [
+      { "title": "Overview", "path": "templates/index" },
+      {
+        "title": "Legacy JSON Templates",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "templates/legacy_json_templates/index"
+          },
+          {
+            "title": "Builders",
+            "path": "templates/legacy_json_templates/builders"
+          },
+          {
+            "title": "Communicators",
+            "path": "templates/legacy_json_templates/communicator"
+          },
+          {
+            "title": "Engine",
+            "path": "templates/legacy_json_templates/engine"
+          },
+          {
+            "title": "Post-Processors",
+            "path": "templates/legacy_json_templates/post-processors"
+          },
+          {
+            "title": "Provisioners",
+            "path": "templates/legacy_json_templates/provisioners"
+          },
+          {
+            "title": "User Variables",
+            "path": "templates/legacy_json_templates/user-variables"
+          }
+        ]
+      },
+      {
+        "title": "HCL Templates",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "templates/hcl_templates/index"
+          },
+          {
+            "title": "Blocks",
+            "routes": [
+              {
+                "title": "Overview",
+                "path": "templates/hcl_templates/blocks/index"
+              }
+            ]
+          },
+          {
+            "title": "Functions",
+            "routes": [
+              {
+                "title": "Overview",
+                "path": "templates/hcl_templates/functions/index"
+              }
+            ]
+          },
+          {
+            "title": "Variables",
+            "path": "templates/hcl_templates/variables"
+          },
+          {
+            "title": "Locals",
+            "path": "templates/hcl_templates/locals"
+          },
+          {
+            "title": "Contextual Variables",
+            "path": "templates/hcl_templates/contextual-variables"
+          },
+          {
+            "title": "Data Sources",
+            "path": "templates/hcl_templates/datasources"
+          },
+          {
+            "title": "Path Variables",
+            "path": "templates/hcl_templates/path-variables"
+          },
+          {
+            "title": "Syntax",
+            "path": "templates/hcl_templates/syntax"
+          },
+          {
+            "title": "Only Except",
+            "path": "templates/hcl_templates/onlyexcept"
+          },
+          {
+            "title": "Expressions",
+            "path": "templates/hcl_templates/expressions"
+          },
+          {
+            "title": "JSON Syntax",
+            "path": "templates/hcl_templates/syntax-json"
+          }
+        ]
+      }
+    ]
+  },
   { "divider": "true" },
   { "title": "Environment Variables", "path": "environment-variables" },
   { "title": "Core Configuration", "path": "core-configuration" },
