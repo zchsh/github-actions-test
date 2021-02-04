@@ -17,5 +17,9 @@
       { "title": "<code>validate</code>", "path": "commands/validate" },
       { "title": "<code>hcl2_upgrade</code>", "path": "commands/hcl2_upgrade" }
     ]
-  }
+  },
+  { "divider": "true" },
+  { "title": "Environment Variables", "path": "environment-variables" },
+  { "title": "Core Configuration", "path": "core-configuration" },
+  { "title": "Debugging", "path": "debugging" }
 ]
