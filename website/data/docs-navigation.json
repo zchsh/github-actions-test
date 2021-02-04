@@ -1,6 +1,12 @@
 [
   { "divider": "true" },
   { "title": "Terminology", "path": "terminology" },
+  { "divider": "true" },
+  {
+    "title": "External Link Test",
+    "href": "https://google.com"
+  },
+  { "divider": "true" },
   {
     "title": "Commands",
     "routes": [
