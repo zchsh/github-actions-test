@@ -9,7 +9,6 @@ const navigationJs = require("../../website/data/docs-navigation");
 const util = require("util");
 const exec = util.promisify(require("child_process").exec);
 
-
 const INPUT_DIR = "website/content";
 const OUTPUT_DIR = ".generated";
 const OUTPUT_FILE = "docs-navigation.json";
@@ -18,7 +17,9 @@ convertAndWrite().then(() => {
   //  Stage the changes so they're ready to commit
   // (kind of relies on the outputDir, which is why it happens here)
   const outputFile = path.join(process.cwd(), OUTPUT_DIR, OUTPUT_FILE);
-  await exec(`git add ${outputFile}`);
+  exec(`git add ${outputFile}`).then(() => {
+    console.log("✅ Done");
+  });
 });
 
 async function convertAndWrite() {
@@ -31,7 +32,6 @@ async function convertAndWrite() {
     "docs"
   );
   writeJsonFile(navJson, OUTPUT_DIR, OUTPUT_FILE);
-  console.log("✅ Done");
 }
 
 function convertNavTree(navTree, collectedFrontmatter, pathStack, subfolder) {
