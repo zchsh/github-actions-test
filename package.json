@@ -4,7 +4,8 @@
   "description": "This repo is meant to help me learn how to set up GitHub Actions.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "refresh-content": "rm -rf ./website && mkdir ./website && cp -r ../packer/website/content ./website/content && cp -r ../packer/website/data ./website/data"
   },
   "repository": {
     "type": "git",
