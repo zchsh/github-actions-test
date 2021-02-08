@@ -50,10 +50,14 @@ function convertNavTree(navTree, collectedFrontmatter, pathStack, subfolder) {
         pathStack,
         subfolder
       );
-    // if the node has an `href`, it's a direct link
-    if (navNode.href) {
-      // TODO - handle direct links
-      throw new Error("TO DO - handle direct links");
+    // if the node has an `href` or `title`, it's a direct link
+    if (navNode.href || navNode.title) {
+      // if a direct link doesn't have both `href` and `title`, we throw an error
+      throw new Error(
+        `Direct sidebar links must have both a "href" and "title". Found a direct link with only one of the two:\n\n ${JSON.stringify(
+          navNode
+        )}`
+      );
     }
     // Otherwise, we expect the node to be a nested category
     return convertNavCategory(
