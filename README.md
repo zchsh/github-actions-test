@@ -23,3 +23,41 @@ Specifically, I want to set up an action that:
 - Specifically, can import `docs-navigation.js` into a copied version of `.github/scripts/collect-and-stage-frontmatter`. Rather than staging collected frontmatter...
   1. Use this imported `order` data, plus the frontmatter, to generate the new `.json` format.
   2. Note the (hopefully) explicit inclusion of `overview` pages.
+
+## 2021-02-08 - Next Steps
+
+- [ ] Move `path` vs `filepath` normalization into GitHub Action. Current format as proposed in the RFC feels like it presents some issues:
+  1. How do we handle "Overview" / `index.mdx` files?
+     - We could automatically add and title these pages via a GitHub Action
+       - This seems to be what the RFC implies
+       - We likely want to do a filesystem check as part of the action anyways, to missing files from silently breaking builds
+       - We probably also want to allow "overriding" the auto-added pages by explicitly listing, eg to allow custom titles (?)
+         - This makes things a bit more complicated though...
+         - Maybe an explicit
+     - We could require authors to explicitly list these files
+       - For example, `{ "title": "Overview", "path": "commands/index" }`
+       - `path` may be able to be shortened to `commands` rather than `commands/index` (see below)
+     - **Proposed** approach is to require index pages to be **explicitly listed**
+  2. When consuming content, how do we distinguish "named" file paths from "index" file paths?
+     - Some paths reference an index file
+       - For example `commands` >> `commands/index.mdx`
+     - Other paths reference a named file
+       - For example `terminology` >> `terminology.mdx`
+     - We need to be able to do tell which is which to request the correct file path from the GitHub API
+     - Option: index paths **must include the filename**
+       - For example, we must have `commands/index`, and not `commands`
+       - On the consumption side, we have to normalize the file path to the desired route
+       - **🚨 This approach doesn't feel ideal**
+     - Option: items with `title == "Overview"` are **assumed be index files**
+       - When consuming content, we'd do something like `title === "Overview" ? fetchIndexFile() : fetchNamedFile()`
+       - **🚨 But this feels brittle**, and requires consumption-side normalization (as above)
+     - Option: check filesystem via GitHub action, and \*\*add `filePath` to each item
+     - **Proposed** approach is to **automatically add a `filePath`** to each nav item via GitHub Actions
+       - In this same Action, we can ensure the `filePath` actually exists
+       - This will minimize errors fetching page content
+       - It will also remove the need for path normalization in the deployment project that consumes content
+       - ... and it could allow authors to imply index files like `commands` for `commands/index.mdx`
+         - For each item, we'll try to resolve both `commands.mdx` and `commands/index.mdx`
+         - If only one exists, great, we'll add that as the `filePath`
+         - If neither exists, we throw an error - we're missing a file!
+         - If both exists, we throw an error - it's ambiguous which file was intended.
