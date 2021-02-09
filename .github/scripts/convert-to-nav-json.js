@@ -94,10 +94,17 @@ function convertNavCategory(
   //  First, we try to gather index data for the entry
   //  The path we want for our new format does NOT contain
   // the content subfolder or the file extension (always `.mdx`)
-  const pathNewFormat = pathStack.concat([navNode.category, "index"]).join("/");
+  const USE_EXPLICIT_INDEX = false;
+  const pathParts = USE_EXPLICIT_INDEX
+    ? [navNode.category, "index"]
+    : [navNode.category];
+  const pathNewFormat = pathStack.concat(pathParts).join("/");
   // The path we need to match from the older format
   // includes the content subfolder as well as the file extension
-  const pathToMatch = path.join(subfolder, `${pathNewFormat}.mdx`);
+  const pathFromSubfolder = `${pathNewFormat}${
+    USE_EXPLICIT_INDEX ? "" : "/index"
+  }.mdx`;
+  const pathToMatch = path.join(subfolder, pathFromSubfolder);
   // Try to find the corresponding index page resource
   const matchedFrontmatter = collectedFrontmatter.filter((resource) => {
     return resource.__resourcePath === pathToMatch;
