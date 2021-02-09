@@ -1,0 +1,1472 @@
+[
+  {
+    "divider": true
+  },
+  {
+    "title": "Terminology",
+    "path": "terminology",
+    "filePath": "website/content/docs/terminology/index.mdx"
+  },
+  {
+    "title": "Commands (CLI)",
+    "routes": [
+      {
+        "title": "Overview",
+        "path": "commands",
+        "filePath": "website/content/docs/commands/index.mdx"
+      },
+      {
+        "title": "<code>init</code>",
+        "path": "commands/init",
+        "filePath": "website/content/docs/commands/init/index.mdx"
+      },
+      {
+        "title": "<code>build</code>",
+        "path": "commands/build",
+        "filePath": "website/content/docs/commands/build/index.mdx"
+      },
+      {
+        "title": "<code>console</code>",
+        "path": "commands/console",
+        "filePath": "website/content/docs/commands/console/index.mdx"
+      },
+      {
+        "title": "<code>fix</code>",
+        "path": "commands/fix",
+        "filePath": "website/content/docs/commands/fix/index.mdx"
+      },
+      {
+        "title": "<code>fmt</code>",
+        "path": "commands/fmt",
+        "filePath": "website/content/docs/commands/fmt/index.mdx"
+      },
+      {
+        "title": "<code>inspect</code>",
+        "path": "commands/inspect",
+        "filePath": "website/content/docs/commands/inspect/index.mdx"
+      },
+      {
+        "title": "<code>validate</code>",
+        "path": "commands/validate",
+        "filePath": "website/content/docs/commands/validate/index.mdx"
+      },
+      {
+        "title": "<code>hcl2_upgrade</code>",
+        "path": "commands/hcl2_upgrade",
+        "filePath": "website/content/docs/commands/hcl2_upgrade/index.mdx"
+      }
+    ]
+  },
+  {
+    "title": "Templates",
+    "routes": [
+      {
+        "title": "Overview",
+        "path": "templates",
+        "filePath": "website/content/docs/templates/index.mdx"
+      },
+      {
+        "title": "JSON Templates",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "templates/legacy_json_templates",
+            "filePath": "website/content/docs/templates/legacy_json_templates/index.mdx"
+          },
+          {
+            "title": "Builders",
+            "path": "templates/legacy_json_templates/builders",
+            "filePath": "website/content/docs/templates/legacy_json_templates/builders/index.mdx"
+          },
+          {
+            "title": "Communicators",
+            "path": "templates/legacy_json_templates/communicator",
+            "filePath": "website/content/docs/templates/legacy_json_templates/communicator/index.mdx"
+          },
+          {
+            "title": "Engine",
+            "path": "templates/legacy_json_templates/engine",
+            "filePath": "website/content/docs/templates/legacy_json_templates/engine/index.mdx"
+          },
+          {
+            "title": "Post-Processors",
+            "path": "templates/legacy_json_templates/post-processors",
+            "filePath": "website/content/docs/templates/legacy_json_templates/post-processors/index.mdx"
+          },
+          {
+            "title": "Provisioners",
+            "path": "templates/legacy_json_templates/provisioners",
+            "filePath": "website/content/docs/templates/legacy_json_templates/provisioners/index.mdx"
+          },
+          {
+            "title": "User Variables",
+            "path": "templates/legacy_json_templates/user-variables",
+            "filePath": "website/content/docs/templates/legacy_json_templates/user-variables/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "HCL Templates",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "templates/hcl_templates",
+            "filePath": "website/content/docs/templates/hcl_templates/index.mdx"
+          },
+          {
+            "title": "Blocks",
+            "routes": [
+              {
+                "title": "Overview",
+                "path": "templates/hcl_templates/blocks",
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/index.mdx"
+              },
+              {
+                "title": "<code>build</code>",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/blocks/build",
+                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/index.mdx"
+                  },
+                  {
+                    "title": "<code>source</code>",
+                    "path": "templates/hcl_templates/blocks/build/source",
+                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/source/index.mdx"
+                  },
+                  {
+                    "title": "<code>provisioner</code>",
+                    "path": "templates/hcl_templates/blocks/build/provisioner",
+                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/provisioner/index.mdx"
+                  },
+                  {
+                    "title": "<code>post-processor</code>",
+                    "path": "templates/hcl_templates/blocks/build/post-processor",
+                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/post-processor/index.mdx"
+                  },
+                  {
+                    "title": "<code>post-processors</code>",
+                    "path": "templates/hcl_templates/blocks/build/post-processors",
+                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/post-processors/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "<code>locals</code>",
+                "path": "templates/hcl_templates/blocks/locals",
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/locals/index.mdx"
+              },
+              {
+                "title": "<code>source</code>",
+                "path": "templates/hcl_templates/blocks/source",
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/source/index.mdx"
+              },
+              {
+                "title": "<code>variable</code>",
+                "path": "templates/hcl_templates/blocks/variable",
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/variable/index.mdx"
+              },
+              {
+                "title": "<code>packer</code>",
+                "path": "templates/hcl_templates/blocks/packer",
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/packer/index.mdx"
+              },
+              {
+                "title": "<code>data</code>",
+                "path": "templates/hcl_templates/blocks/data",
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/data/index.mdx"
+              }
+            ]
+          },
+          {
+            "title": "Functions",
+            "routes": [
+              {
+                "title": "Overview",
+                "path": "templates/hcl_templates/functions",
+                "filePath": "website/content/docs/templates/hcl_templates/functions/index.mdx"
+              },
+              {
+                "title": "Contextual Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/contextual",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/index.mdx"
+                  },
+                  {
+                    "title": "aws_secretsmanager",
+                    "path": "templates/hcl_templates/functions/contextual/aws_secretsmanager",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/aws_secretsmanager/index.mdx"
+                  },
+                  {
+                    "title": "consul",
+                    "path": "templates/hcl_templates/functions/contextual/consul",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/consul/index.mdx"
+                  },
+                  {
+                    "title": "env",
+                    "path": "templates/hcl_templates/functions/contextual/env",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/env/index.mdx"
+                  },
+                  {
+                    "title": "vault",
+                    "path": "templates/hcl_templates/functions/contextual/vault",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/vault/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "Numeric Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/numeric",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/index.mdx"
+                  },
+                  {
+                    "title": "abs",
+                    "path": "templates/hcl_templates/functions/numeric/abs",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/abs/index.mdx"
+                  },
+                  {
+                    "title": "ceil",
+                    "path": "templates/hcl_templates/functions/numeric/ceil",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/ceil/index.mdx"
+                  },
+                  {
+                    "title": "floor",
+                    "path": "templates/hcl_templates/functions/numeric/floor",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/floor/index.mdx"
+                  },
+                  {
+                    "title": "log",
+                    "path": "templates/hcl_templates/functions/numeric/log",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/log/index.mdx"
+                  },
+                  {
+                    "title": "max",
+                    "path": "templates/hcl_templates/functions/numeric/max",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/max/index.mdx"
+                  },
+                  {
+                    "title": "min",
+                    "path": "templates/hcl_templates/functions/numeric/min",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/min/index.mdx"
+                  },
+                  {
+                    "title": "parseint",
+                    "path": "templates/hcl_templates/functions/numeric/parseint",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/parseint/index.mdx"
+                  },
+                  {
+                    "title": "pow",
+                    "path": "templates/hcl_templates/functions/numeric/pow",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/pow/index.mdx"
+                  },
+                  {
+                    "title": "signum",
+                    "path": "templates/hcl_templates/functions/numeric/signum",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/signum/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "String Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/string",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/index.mdx"
+                  },
+                  {
+                    "title": "chomp",
+                    "path": "templates/hcl_templates/functions/string/chomp",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/chomp/index.mdx"
+                  },
+                  {
+                    "title": "format",
+                    "path": "templates/hcl_templates/functions/string/format",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/format/index.mdx"
+                  },
+                  {
+                    "title": "formatlist",
+                    "path": "templates/hcl_templates/functions/string/formatlist",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/formatlist/index.mdx"
+                  },
+                  {
+                    "title": "indent",
+                    "path": "templates/hcl_templates/functions/string/indent",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/indent/index.mdx"
+                  },
+                  {
+                    "title": "join",
+                    "path": "templates/hcl_templates/functions/string/join",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/join/index.mdx"
+                  },
+                  {
+                    "title": "lower",
+                    "path": "templates/hcl_templates/functions/string/lower",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/lower/index.mdx"
+                  },
+                  {
+                    "title": "replace",
+                    "path": "templates/hcl_templates/functions/string/replace",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/replace/index.mdx"
+                  },
+                  {
+                    "title": "regex_replace",
+                    "path": "templates/hcl_templates/functions/string/regex_replace",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/regex_replace/index.mdx"
+                  },
+                  {
+                    "title": "split",
+                    "path": "templates/hcl_templates/functions/string/split",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/split/index.mdx"
+                  },
+                  {
+                    "title": "strrev",
+                    "path": "templates/hcl_templates/functions/string/strrev",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/strrev/index.mdx"
+                  },
+                  {
+                    "title": "substr",
+                    "path": "templates/hcl_templates/functions/string/substr",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/substr/index.mdx"
+                  },
+                  {
+                    "title": "title",
+                    "path": "templates/hcl_templates/functions/string/title",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/title/index.mdx"
+                  },
+                  {
+                    "title": "trim",
+                    "path": "templates/hcl_templates/functions/string/trim",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trim/index.mdx"
+                  },
+                  {
+                    "title": "trimprefix",
+                    "path": "templates/hcl_templates/functions/string/trimprefix",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trimprefix/index.mdx"
+                  },
+                  {
+                    "title": "trimsuffix",
+                    "path": "templates/hcl_templates/functions/string/trimsuffix",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trimsuffix/index.mdx"
+                  },
+                  {
+                    "title": "trimspace",
+                    "path": "templates/hcl_templates/functions/string/trimspace",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trimspace/index.mdx"
+                  },
+                  {
+                    "title": "upper",
+                    "path": "templates/hcl_templates/functions/string/upper",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/upper/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "Collection Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/collection",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/index.mdx"
+                  },
+                  {
+                    "title": "chunklist",
+                    "path": "templates/hcl_templates/functions/collection/chunklist",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/chunklist/index.mdx"
+                  },
+                  {
+                    "title": "coalesce",
+                    "path": "templates/hcl_templates/functions/collection/coalesce",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/coalesce/index.mdx"
+                  },
+                  {
+                    "title": "coalescelist",
+                    "path": "templates/hcl_templates/functions/collection/coalescelist",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/coalescelist/index.mdx"
+                  },
+                  {
+                    "title": "compact",
+                    "path": "templates/hcl_templates/functions/collection/compact",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/compact/index.mdx"
+                  },
+                  {
+                    "title": "concat",
+                    "path": "templates/hcl_templates/functions/collection/concat",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/concat/index.mdx"
+                  },
+                  {
+                    "title": "contains",
+                    "path": "templates/hcl_templates/functions/collection/contains",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/contains/index.mdx"
+                  },
+                  {
+                    "title": "distinct",
+                    "path": "templates/hcl_templates/functions/collection/distinct",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/distinct/index.mdx"
+                  },
+                  {
+                    "title": "element",
+                    "path": "templates/hcl_templates/functions/collection/element",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/element/index.mdx"
+                  },
+                  {
+                    "title": "flatten",
+                    "path": "templates/hcl_templates/functions/collection/flatten",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/flatten/index.mdx"
+                  },
+                  {
+                    "title": "keys",
+                    "path": "templates/hcl_templates/functions/collection/keys",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/keys/index.mdx"
+                  },
+                  {
+                    "title": "length",
+                    "path": "templates/hcl_templates/functions/collection/length",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/length/index.mdx"
+                  },
+                  {
+                    "title": "lookup",
+                    "path": "templates/hcl_templates/functions/collection/lookup",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/lookup/index.mdx"
+                  },
+                  {
+                    "title": "merge",
+                    "path": "templates/hcl_templates/functions/collection/merge",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/merge/index.mdx"
+                  },
+                  {
+                    "title": "range",
+                    "path": "templates/hcl_templates/functions/collection/range",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/range/index.mdx"
+                  },
+                  {
+                    "title": "reverse",
+                    "path": "templates/hcl_templates/functions/collection/reverse",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/reverse/index.mdx"
+                  },
+                  {
+                    "title": "setintersection",
+                    "path": "templates/hcl_templates/functions/collection/setintersection",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/setintersection/index.mdx"
+                  },
+                  {
+                    "title": "setproduct",
+                    "path": "templates/hcl_templates/functions/collection/setproduct",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/setproduct/index.mdx"
+                  },
+                  {
+                    "title": "setunion",
+                    "path": "templates/hcl_templates/functions/collection/setunion",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/setunion/index.mdx"
+                  },
+                  {
+                    "title": "slice",
+                    "path": "templates/hcl_templates/functions/collection/slice",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/slice/index.mdx"
+                  },
+                  {
+                    "title": "sort",
+                    "path": "templates/hcl_templates/functions/collection/sort",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/sort/index.mdx"
+                  },
+                  {
+                    "title": "values",
+                    "path": "templates/hcl_templates/functions/collection/values",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/values/index.mdx"
+                  },
+                  {
+                    "title": "zipmap",
+                    "path": "templates/hcl_templates/functions/collection/zipmap",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/zipmap/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "Encoding Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/encoding",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/index.mdx"
+                  },
+                  {
+                    "title": "base64decode",
+                    "path": "templates/hcl_templates/functions/encoding/base64decode",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/base64decode/index.mdx"
+                  },
+                  {
+                    "title": "base64encode",
+                    "path": "templates/hcl_templates/functions/encoding/base64encode",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/base64encode/index.mdx"
+                  },
+                  {
+                    "title": "csvdecode",
+                    "path": "templates/hcl_templates/functions/encoding/csvdecode",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/csvdecode/index.mdx"
+                  },
+                  {
+                    "title": "jsondecode",
+                    "path": "templates/hcl_templates/functions/encoding/jsondecode",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/jsondecode/index.mdx"
+                  },
+                  {
+                    "title": "jsonencode",
+                    "path": "templates/hcl_templates/functions/encoding/jsonencode",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/jsonencode/index.mdx"
+                  },
+                  {
+                    "title": "urlencode",
+                    "path": "templates/hcl_templates/functions/encoding/urlencode",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/urlencode/index.mdx"
+                  },
+                  {
+                    "title": "yamldecode",
+                    "path": "templates/hcl_templates/functions/encoding/yamldecode",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/yamldecode/index.mdx"
+                  },
+                  {
+                    "title": "yamlencode",
+                    "path": "templates/hcl_templates/functions/encoding/yamlencode",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/yamlencode/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "Filesystem Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/file",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/index.mdx"
+                  },
+                  {
+                    "title": "abspath",
+                    "path": "templates/hcl_templates/functions/file/abspath",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/abspath/index.mdx"
+                  },
+                  {
+                    "title": "basename",
+                    "path": "templates/hcl_templates/functions/file/basename",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/basename/index.mdx"
+                  },
+                  {
+                    "title": "dirname",
+                    "path": "templates/hcl_templates/functions/file/dirname",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/dirname/index.mdx"
+                  },
+                  {
+                    "title": "file",
+                    "path": "templates/hcl_templates/functions/file/file",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/file/index.mdx"
+                  },
+                  {
+                    "title": "fileexists",
+                    "path": "templates/hcl_templates/functions/file/fileexists",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/fileexists/index.mdx"
+                  },
+                  {
+                    "title": "fileset",
+                    "path": "templates/hcl_templates/functions/file/fileset",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/fileset/index.mdx"
+                  },
+                  {
+                    "title": "pathexpand",
+                    "path": "templates/hcl_templates/functions/file/pathexpand",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/pathexpand/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "Date and Time Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/datetime",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/index.mdx"
+                  },
+                  {
+                    "title": "formatdate",
+                    "path": "templates/hcl_templates/functions/datetime/formatdate",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/formatdate/index.mdx"
+                  },
+                  {
+                    "title": "timeadd",
+                    "path": "templates/hcl_templates/functions/datetime/timeadd",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/timeadd/index.mdx"
+                  },
+                  {
+                    "title": "timestamp",
+                    "path": "templates/hcl_templates/functions/datetime/timestamp",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/timestamp/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "Hash and Crypto Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/crypto",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/index.mdx"
+                  },
+                  {
+                    "title": "bcrypt",
+                    "path": "templates/hcl_templates/functions/crypto/bcrypt",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/bcrypt/index.mdx"
+                  },
+                  {
+                    "title": "md5",
+                    "path": "templates/hcl_templates/functions/crypto/md5",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/md5/index.mdx"
+                  },
+                  {
+                    "title": "rsadecrypt",
+                    "path": "templates/hcl_templates/functions/crypto/rsadecrypt",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/rsadecrypt/index.mdx"
+                  },
+                  {
+                    "title": "sha1",
+                    "path": "templates/hcl_templates/functions/crypto/sha1",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/sha1/index.mdx"
+                  },
+                  {
+                    "title": "sha256",
+                    "path": "templates/hcl_templates/functions/crypto/sha256",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/sha256/index.mdx"
+                  },
+                  {
+                    "title": "sha512",
+                    "path": "templates/hcl_templates/functions/crypto/sha512",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/sha512/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "UUID Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/uuid",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/uuid/index.mdx"
+                  },
+                  {
+                    "title": "uuidv4",
+                    "path": "templates/hcl_templates/functions/uuid/uuidv4",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/uuid/uuidv4/index.mdx"
+                  },
+                  {
+                    "title": "uuidv5",
+                    "path": "templates/hcl_templates/functions/uuid/uuidv5",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/uuid/uuidv5/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "IP Network Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/ipnet",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/index.mdx"
+                  },
+                  {
+                    "title": "cidrhost",
+                    "path": "templates/hcl_templates/functions/ipnet/cidrhost",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/cidrhost/index.mdx"
+                  },
+                  {
+                    "title": "cidrnetmask",
+                    "path": "templates/hcl_templates/functions/ipnet/cidrnetmask",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/cidrnetmask/index.mdx"
+                  },
+                  {
+                    "title": "cidrsubnet",
+                    "path": "templates/hcl_templates/functions/ipnet/cidrsubnet",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/cidrsubnet/index.mdx"
+                  }
+                ]
+              },
+              {
+                "title": "Type Conversion Functions",
+                "routes": [
+                  {
+                    "title": "Overview",
+                    "path": "templates/hcl_templates/functions/conversion",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/index.mdx"
+                  },
+                  {
+                    "title": "can",
+                    "path": "templates/hcl_templates/functions/conversion/can",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/can/index.mdx"
+                  },
+                  {
+                    "title": "convert",
+                    "path": "templates/hcl_templates/functions/conversion/convert",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/convert/index.mdx"
+                  },
+                  {
+                    "title": "try",
+                    "path": "templates/hcl_templates/functions/conversion/try",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/try/index.mdx"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Variables",
+            "path": "templates/hcl_templates/variables",
+            "filePath": "website/content/docs/templates/hcl_templates/variables/index.mdx"
+          },
+          {
+            "title": "Locals",
+            "path": "templates/hcl_templates/locals",
+            "filePath": "website/content/docs/templates/hcl_templates/locals/index.mdx"
+          },
+          {
+            "title": "Contextual Variables",
+            "path": "templates/hcl_templates/contextual-variables",
+            "filePath": "website/content/docs/templates/hcl_templates/contextual-variables/index.mdx"
+          },
+          {
+            "title": "Data Sources",
+            "path": "templates/hcl_templates/datasources",
+            "filePath": "website/content/docs/templates/hcl_templates/datasources/index.mdx"
+          },
+          {
+            "title": "Path Variables",
+            "path": "templates/hcl_templates/path-variables",
+            "filePath": "website/content/docs/templates/hcl_templates/path-variables/index.mdx"
+          },
+          {
+            "title": "Syntax",
+            "path": "templates/hcl_templates/syntax",
+            "filePath": "website/content/docs/templates/hcl_templates/syntax/index.mdx"
+          },
+          {
+            "title": "Only Except",
+            "path": "templates/hcl_templates/onlyexcept",
+            "filePath": "website/content/docs/templates/hcl_templates/onlyexcept/index.mdx"
+          },
+          {
+            "title": "Expressions",
+            "path": "templates/hcl_templates/expressions",
+            "filePath": "website/content/docs/templates/hcl_templates/expressions/index.mdx"
+          },
+          {
+            "title": "JSON Syntax",
+            "path": "templates/hcl_templates/syntax-json",
+            "filePath": "website/content/docs/templates/hcl_templates/syntax-json/index.mdx"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "divider": true
+  },
+  {
+    "title": "Communicators",
+    "routes": [
+      {
+        "title": "Overview",
+        "path": "communicators",
+        "filePath": "website/content/docs/communicators/index.mdx"
+      },
+      {
+        "title": "SSH",
+        "path": "communicators/ssh",
+        "filePath": "website/content/docs/communicators/ssh/index.mdx"
+      },
+      {
+        "title": "WINRM",
+        "path": "communicators/winrm",
+        "filePath": "website/content/docs/communicators/winrm/index.mdx"
+      }
+    ]
+  },
+  {
+    "title": "Builders",
+    "routes": [
+      {
+        "title": "Overview",
+        "path": "builders",
+        "filePath": "website/content/docs/builders/index.mdx"
+      },
+      {
+        "title": "Alicloud ECS",
+        "path": "builders/alicloud-ecs",
+        "filePath": "website/content/docs/builders/alicloud-ecs/index.mdx"
+      },
+      {
+        "title": "Amazon EC2",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "builders/amazon",
+            "filePath": "website/content/docs/builders/amazon/index.mdx"
+          },
+          {
+            "title": "chroot",
+            "path": "builders/amazon/chroot",
+            "filePath": "website/content/docs/builders/amazon/chroot/index.mdx"
+          },
+          {
+            "title": "EBS",
+            "path": "builders/amazon/ebs",
+            "filePath": "website/content/docs/builders/amazon/ebs/index.mdx"
+          },
+          {
+            "title": "EBS Surrogate",
+            "path": "builders/amazon/ebssurrogate",
+            "filePath": "website/content/docs/builders/amazon/ebssurrogate/index.mdx"
+          },
+          {
+            "title": "EBS Volume",
+            "path": "builders/amazon/ebsvolume",
+            "filePath": "website/content/docs/builders/amazon/ebsvolume/index.mdx"
+          },
+          {
+            "title": "Instance",
+            "path": "builders/amazon/instance",
+            "filePath": "website/content/docs/builders/amazon/instance/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "Azure",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "builders/azure",
+            "filePath": "website/content/docs/builders/azure/index.mdx"
+          },
+          {
+            "title": "ARM",
+            "path": "builders/azure/arm",
+            "filePath": "website/content/docs/builders/azure/arm/index.mdx"
+          },
+          {
+            "title": "chroot",
+            "path": "builders/azure/chroot",
+            "filePath": "website/content/docs/builders/azure/chroot/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "CloudStack",
+        "path": "builders/cloudstack",
+        "filePath": "website/content/docs/builders/cloudstack/index.mdx"
+      },
+      {
+        "title": "DigitalOcean",
+        "path": "builders/digitalocean",
+        "filePath": "website/content/docs/builders/digitalocean/index.mdx"
+      },
+      {
+        "title": "Docker",
+        "path": "builders/docker",
+        "filePath": "website/content/docs/builders/docker/index.mdx"
+      },
+      {
+        "title": "File",
+        "path": "builders/file",
+        "filePath": "website/content/docs/builders/file/index.mdx"
+      },
+      {
+        "title": "Google Cloud",
+        "path": "builders/googlecompute",
+        "filePath": "website/content/docs/builders/googlecompute/index.mdx"
+      },
+      {
+        "title": "Hetzner Cloud",
+        "path": "builders/hetzner-cloud",
+        "filePath": "website/content/docs/builders/hetzner-cloud/index.mdx"
+      },
+      {
+        "title": "HyperOne",
+        "path": "builders/hyperone",
+        "filePath": "website/content/docs/builders/hyperone/index.mdx"
+      },
+      {
+        "title": "Hyper-V",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "builders/hyperv",
+            "filePath": "website/content/docs/builders/hyperv/index.mdx"
+          },
+          {
+            "title": "ISO",
+            "path": "builders/hyperv/iso",
+            "filePath": "website/content/docs/builders/hyperv/iso/index.mdx"
+          },
+          {
+            "title": "VMCX",
+            "path": "builders/hyperv/vmcx",
+            "filePath": "website/content/docs/builders/hyperv/vmcx/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "Linode",
+        "path": "builders/linode",
+        "filePath": "website/content/docs/builders/linode/index.mdx"
+      },
+      {
+        "title": "LXC",
+        "path": "builders/lxc",
+        "filePath": "website/content/docs/builders/lxc/index.mdx"
+      },
+      {
+        "title": "LXD",
+        "path": "builders/lxd",
+        "filePath": "website/content/docs/builders/lxd/index.mdx"
+      },
+      {
+        "title": "NAVER Cloud",
+        "path": "builders/ncloud",
+        "filePath": "website/content/docs/builders/ncloud/index.mdx"
+      },
+      {
+        "title": "Null",
+        "path": "builders/null",
+        "filePath": "website/content/docs/builders/null/index.mdx"
+      },
+      {
+        "title": "1&amp;1",
+        "path": "builders/oneandone",
+        "filePath": "website/content/docs/builders/oneandone/index.mdx"
+      },
+      {
+        "title": "OpenStack",
+        "path": "builders/openstack",
+        "filePath": "website/content/docs/builders/openstack/index.mdx"
+      },
+      {
+        "title": "Oracle",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "builders/oracle",
+            "filePath": "website/content/docs/builders/oracle/index.mdx"
+          },
+          {
+            "title": "Oracle Classic",
+            "path": "builders/oracle/classic",
+            "filePath": "website/content/docs/builders/oracle/classic/index.mdx"
+          },
+          {
+            "title": "Oracle OCI",
+            "path": "builders/oracle/oci",
+            "filePath": "website/content/docs/builders/oracle/oci/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "Outscale",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "builders/outscale",
+            "filePath": "website/content/docs/builders/outscale/index.mdx"
+          },
+          {
+            "title": "chroot",
+            "path": "builders/outscale/chroot",
+            "filePath": "website/content/docs/builders/outscale/chroot/index.mdx"
+          },
+          {
+            "title": "BSU",
+            "path": "builders/outscale/bsu",
+            "filePath": "website/content/docs/builders/outscale/bsu/index.mdx"
+          },
+          {
+            "title": "BSU Surrogate",
+            "path": "builders/outscale/bsusurrogate",
+            "filePath": "website/content/docs/builders/outscale/bsusurrogate/index.mdx"
+          },
+          {
+            "title": "BSU Volume",
+            "path": "builders/outscale/bsuvolume",
+            "filePath": "website/content/docs/builders/outscale/bsuvolume/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "Parallels",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "builders/parallels",
+            "filePath": "website/content/docs/builders/parallels/index.mdx"
+          },
+          {
+            "title": "ISO",
+            "path": "builders/parallels/iso",
+            "filePath": "website/content/docs/builders/parallels/iso/index.mdx"
+          },
+          {
+            "title": "PVM",
+            "path": "builders/parallels/pvm",
+            "filePath": "website/content/docs/builders/parallels/pvm/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "ProfitBricks",
+        "path": "builders/profitbricks",
+        "filePath": "website/content/docs/builders/profitbricks/index.mdx"
+      },
+      {
+        "title": "Proxmox",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "builders/proxmox",
+            "filePath": "website/content/docs/builders/proxmox/index.mdx"
+          },
+          {
+            "title": "ISO",
+            "path": "builders/proxmox/iso",
+            "filePath": "website/content/docs/builders/proxmox/iso/index.mdx"
+          },
+          {
+            "title": "Clone",
+            "path": "builders/proxmox/clone",
+            "filePath": "website/content/docs/builders/proxmox/clone/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "QEMU",
+        "path": "builders/qemu",
+        "filePath": "website/content/docs/builders/qemu/index.mdx"
+      },
+      {
+        "title": "Scaleway",
+        "path": "builders/scaleway",
+        "filePath": "website/content/docs/builders/scaleway/index.mdx"
+      },
+      {
+        "title": "Tencent Cloud",
+        "path": "builders/tencentcloud-cvm",
+        "filePath": "website/content/docs/builders/tencentcloud-cvm/index.mdx"
+      },
+      {
+        "title": "JDCloud",
+        "path": "builders/jdcloud",
+        "filePath": "website/content/docs/builders/jdcloud/index.mdx"
+      },
+      {
+        "title": "Triton",
+        "path": "builders/triton",
+        "filePath": "website/content/docs/builders/triton/index.mdx"
+      },
+      {
+        "title": "UCloud",
+        "path": "builders/ucloud-uhost",
+        "filePath": "website/content/docs/builders/ucloud-uhost/index.mdx"
+      },
+      {
+        "title": "Vagrant",
+        "path": "builders/vagrant",
+        "filePath": "website/content/docs/builders/vagrant/index.mdx"
+      },
+      {
+        "title": "VirtualBox",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "builders/virtualbox",
+            "filePath": "website/content/docs/builders/virtualbox/index.mdx"
+          },
+          {
+            "title": "ISO",
+            "path": "builders/virtualbox/iso",
+            "filePath": "website/content/docs/builders/virtualbox/iso/index.mdx"
+          },
+          {
+            "title": "OVF",
+            "path": "builders/virtualbox/ovf",
+            "filePath": "website/content/docs/builders/virtualbox/ovf/index.mdx"
+          },
+          {
+            "title": "VM",
+            "path": "builders/virtualbox/vm",
+            "filePath": "website/content/docs/builders/virtualbox/vm/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "VMware",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "builders/vmware",
+            "filePath": "website/content/docs/builders/vmware/index.mdx"
+          },
+          {
+            "title": "VMWare ISO",
+            "path": "builders/vmware/iso",
+            "filePath": "website/content/docs/builders/vmware/iso/index.mdx"
+          },
+          {
+            "title": "VMWare VMX",
+            "path": "builders/vmware/vmx",
+            "filePath": "website/content/docs/builders/vmware/vmx/index.mdx"
+          },
+          {
+            "title": "VSphere ISO",
+            "path": "builders/vmware/vsphere-iso",
+            "filePath": "website/content/docs/builders/vmware/vsphere-iso/index.mdx"
+          },
+          {
+            "title": "VSphere Clone",
+            "path": "builders/vmware/vsphere-clone",
+            "filePath": "website/content/docs/builders/vmware/vsphere-clone/index.mdx"
+          }
+        ]
+      },
+      {
+        "title": "Yandex.Cloud",
+        "path": "builders/yandex",
+        "filePath": "website/content/docs/builders/yandex/index.mdx"
+      },
+      {
+        "title": "Custom",
+        "path": "builders/custom",
+        "filePath": "website/content/docs/builders/custom/index.mdx"
+      },
+      {
+        "title": "Community-Supported",
+        "path": "builders/community-supported",
+        "filePath": "website/content/docs/builders/community-supported/index.mdx"
+      }
+    ]
+  },
+  {
+    "title": "Data Sources",
+    "routes": [
+      {
+        "title": "Overview",
+        "path": "datasources",
+        "filePath": "website/content/docs/datasources/index.mdx"
+      },
+      {
+        "title": "Amazon",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "datasources/amazon",
+            "filePath": "website/content/docs/datasources/amazon/index.mdx"
+          },
+          {
+            "title": "Amazon AMI",
+            "path": "datasources/amazon/ami",
+            "filePath": "website/content/docs/datasources/amazon/ami/index.mdx"
+          },
+          {
+            "title": "Secrets Manager",
+            "path": "datasources/amazon/secretsmanager",
+            "filePath": "website/content/docs/datasources/amazon/secretsmanager/index.mdx"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Provisioners",
+    "routes": [
+      {
+        "title": "Overview",
+        "path": "provisioners",
+        "filePath": "website/content/docs/provisioners/index.mdx"
+      },
+      {
+        "title": "Ansible Local",
+        "path": "provisioners/ansible-local",
+        "filePath": "website/content/docs/provisioners/ansible-local/index.mdx"
+      },
+      {
+        "title": "Ansible (Remote)",
+        "path": "provisioners/ansible",
+        "filePath": "website/content/docs/provisioners/ansible/index.mdx"
+      },
+      {
+        "title": "Breakpoint",
+        "path": "provisioners/breakpoint",
+        "filePath": "website/content/docs/provisioners/breakpoint/index.mdx"
+      },
+      {
+        "title": "Chef Client",
+        "path": "provisioners/chef-client",
+        "filePath": "website/content/docs/provisioners/chef-client/index.mdx"
+      },
+      {
+        "title": "Chef Solo",
+        "path": "provisioners/chef-solo",
+        "filePath": "website/content/docs/provisioners/chef-solo/index.mdx"
+      },
+      {
+        "title": "Converge",
+        "path": "provisioners/converge",
+        "filePath": "website/content/docs/provisioners/converge/index.mdx"
+      },
+      {
+        "title": "File",
+        "path": "provisioners/file",
+        "filePath": "website/content/docs/provisioners/file/index.mdx"
+      },
+      {
+        "title": "InSpec",
+        "path": "provisioners/inspec",
+        "filePath": "website/content/docs/provisioners/inspec/index.mdx"
+      },
+      {
+        "title": "PowerShell",
+        "path": "provisioners/powershell",
+        "filePath": "website/content/docs/provisioners/powershell/index.mdx"
+      },
+      {
+        "title": "Puppet Masterless",
+        "path": "provisioners/puppet-masterless",
+        "filePath": "website/content/docs/provisioners/puppet-masterless/index.mdx"
+      },
+      {
+        "title": "Puppet Server",
+        "path": "provisioners/puppet-server",
+        "filePath": "website/content/docs/provisioners/puppet-server/index.mdx"
+      },
+      {
+        "title": "Salt Masterless",
+        "path": "provisioners/salt-masterless",
+        "filePath": "website/content/docs/provisioners/salt-masterless/index.mdx"
+      },
+      {
+        "title": "Shell",
+        "path": "provisioners/shell",
+        "filePath": "website/content/docs/provisioners/shell/index.mdx"
+      },
+      {
+        "title": "Shell (Local)",
+        "path": "provisioners/shell-local",
+        "filePath": "website/content/docs/provisioners/shell-local/index.mdx"
+      },
+      {
+        "title": "Windows Shell",
+        "path": "provisioners/windows-shell",
+        "filePath": "website/content/docs/provisioners/windows-shell/index.mdx"
+      },
+      {
+        "title": "Windows Restart",
+        "path": "provisioners/windows-restart",
+        "filePath": "website/content/docs/provisioners/windows-restart/index.mdx"
+      },
+      {
+        "title": "Custom",
+        "path": "provisioners/custom",
+        "filePath": "website/content/docs/provisioners/custom/index.mdx"
+      },
+      {
+        "title": "Community-Supported",
+        "path": "provisioners/community-supported",
+        "filePath": "website/content/docs/provisioners/community-supported/index.mdx"
+      }
+    ]
+  },
+  {
+    "title": "Post-Processors",
+    "routes": [
+      {
+        "title": "Overview",
+        "path": "post-processors",
+        "filePath": "website/content/docs/post-processors/index.mdx"
+      },
+      {
+        "title": "Alicloud Import",
+        "path": "post-processors/alicloud-import",
+        "filePath": "website/content/docs/post-processors/alicloud-import/index.mdx"
+      },
+      {
+        "title": "Amazon Import",
+        "path": "post-processors/amazon-import",
+        "filePath": "website/content/docs/post-processors/amazon-import/index.mdx"
+      },
+      {
+        "title": "Artifice",
+        "path": "post-processors/artifice",
+        "filePath": "website/content/docs/post-processors/artifice/index.mdx"
+      },
+      {
+        "title": "Compress",
+        "path": "post-processors/compress",
+        "filePath": "website/content/docs/post-processors/compress/index.mdx"
+      },
+      {
+        "title": "Checksum",
+        "path": "post-processors/checksum",
+        "filePath": "website/content/docs/post-processors/checksum/index.mdx"
+      },
+      {
+        "title": "DigitalOcean Import",
+        "path": "post-processors/digitalocean-import",
+        "filePath": "website/content/docs/post-processors/digitalocean-import/index.mdx"
+      },
+      {
+        "title": "Docker Import",
+        "path": "post-processors/docker-import",
+        "filePath": "website/content/docs/post-processors/docker-import/index.mdx"
+      },
+      {
+        "title": "Docker Push",
+        "path": "post-processors/docker-push",
+        "filePath": "website/content/docs/post-processors/docker-push/index.mdx"
+      },
+      {
+        "title": "Docker Save",
+        "path": "post-processors/docker-save",
+        "filePath": "website/content/docs/post-processors/docker-save/index.mdx"
+      },
+      {
+        "title": "Docker Tag",
+        "path": "post-processors/docker-tag",
+        "filePath": "website/content/docs/post-processors/docker-tag/index.mdx"
+      },
+      {
+        "title": "Exoscale Import",
+        "path": "post-processors/exoscale-import",
+        "filePath": "website/content/docs/post-processors/exoscale-import/index.mdx"
+      },
+      {
+        "title": "Google Compute Export",
+        "path": "post-processors/googlecompute-export",
+        "filePath": "website/content/docs/post-processors/googlecompute-export/index.mdx"
+      },
+      {
+        "title": "Google Compute Import",
+        "path": "post-processors/googlecompute-import",
+        "filePath": "website/content/docs/post-processors/googlecompute-import/index.mdx"
+      },
+      {
+        "title": "Manifest",
+        "path": "post-processors/manifest",
+        "filePath": "website/content/docs/post-processors/manifest/index.mdx"
+      },
+      {
+        "title": "Shell (Local)",
+        "path": "post-processors/shell-local",
+        "filePath": "website/content/docs/post-processors/shell-local/index.mdx"
+      },
+      {
+        "title": "UCloud Import",
+        "path": "post-processors/ucloud-import",
+        "filePath": "website/content/docs/post-processors/ucloud-import/index.mdx"
+      },
+      {
+        "title": "Vagrant",
+        "path": "post-processors/vagrant",
+        "filePath": "website/content/docs/post-processors/vagrant/index.mdx"
+      },
+      {
+        "title": "Vagrant Cloud",
+        "path": "post-processors/vagrant-cloud",
+        "filePath": "website/content/docs/post-processors/vagrant-cloud/index.mdx"
+      },
+      {
+        "title": "vSphere",
+        "path": "post-processors/vsphere",
+        "filePath": "website/content/docs/post-processors/vsphere/index.mdx"
+      },
+      {
+        "title": "vSphere Template",
+        "path": "post-processors/vsphere-template",
+        "filePath": "website/content/docs/post-processors/vsphere-template/index.mdx"
+      },
+      {
+        "title": "Yandex.Cloud Compute Export",
+        "path": "post-processors/yandex-export",
+        "filePath": "website/content/docs/post-processors/yandex-export/index.mdx"
+      },
+      {
+        "title": "Yandex.Cloud Compute Import",
+        "path": "post-processors/yandex-import",
+        "filePath": "website/content/docs/post-processors/yandex-import/index.mdx"
+      },
+      {
+        "title": "Community-Supported",
+        "path": "post-processors/community-supported",
+        "filePath": "website/content/docs/post-processors/community-supported/index.mdx"
+      }
+    ]
+  },
+  {
+    "divider": true
+  },
+  {
+    "title": "Installing Packer",
+    "path": "install",
+    "filePath": "website/content/docs/install/index.mdx"
+  },
+  {
+    "title": "Configuring Packer",
+    "path": "configure",
+    "filePath": "website/content/docs/configure/index.mdx"
+  },
+  {
+    "divider": true
+  },
+  {
+    "title": "Packer Plugins",
+    "routes": [
+      {
+        "title": "Overview",
+        "path": "plugins",
+        "filePath": "website/content/docs/plugins/index.mdx"
+      },
+      {
+        "title": "Extending Packer",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "plugins/creation",
+            "filePath": "website/content/docs/plugins/creation/index.mdx"
+          },
+          {
+            "title": "Custom Builders",
+            "path": "plugins/creation/custom-builders",
+            "filePath": "website/content/docs/plugins/creation/custom-builders/index.mdx"
+          },
+          {
+            "title": "Custom Post-Processors",
+            "path": "plugins/creation/custom-post-processors",
+            "filePath": "website/content/docs/plugins/creation/custom-post-processors/index.mdx"
+          },
+          {
+            "title": "Custom Provisioners",
+            "path": "plugins/creation/custom-provisioners",
+            "filePath": "website/content/docs/plugins/creation/custom-provisioners/index.mdx"
+          },
+          {
+            "title": "Custom Data Sources",
+            "path": "plugins/creation/custom-datasources",
+            "filePath": "website/content/docs/plugins/creation/custom-datasources/index.mdx"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "divider": true
+  },
+  {
+    "title": "Debugging",
+    "path": "debugging",
+    "filePath": "website/content/docs/debugging/index.mdx"
+  }
+]
