@@ -9,6 +9,6 @@ jobs:
       - run: git config user.name "GitHub Actions"
       - run: git config user.email "actions@github.com"
       - run: npm ci
-      - run: node .github/scripts/collect-and-stage-frontmatter.js
       - run: node .github/scripts/convert-to-nav-json.js
+      - run: node .github/scripts/add-filepath-to-json.js
       - run: 'git diff-index --quiet HEAD -- || git commit -m "chore: update test file" && git push'
