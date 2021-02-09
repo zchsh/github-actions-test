@@ -430,6 +430,12 @@
     "sidebar_title": "Commands (CLI)"
   },
   {
+    "__resourcePath": "docs/commands/init.mdx",
+    "description": "The `packer init` Packer command is used to download Packer plugin binaries.\n",
+    "page_title": "packer init - Commands",
+    "sidebar_title": "<tt>init</tt>"
+  },
+  {
     "__resourcePath": "docs/commands/inspect.mdx",
     "description": "The `packer inspect` command takes a template and outputs the various\ncomponents a template defines. This can help you quickly learn about a template\nwithout having to dive into the JSON itself. The command will tell you things\nlike what variables a template accepts, the builders it defines, the\nprovisioners it defines and the order they'll run, and more.\n",
     "page_title": "packer inspect - Commands",
@@ -460,10 +466,10 @@
     "sidebar_title": "WINRM"
   },
   {
-    "__resourcePath": "docs/core-configuration.mdx",
-    "description": "There are a few configuration settings that affect Packer globally by\nconfiguring the core of Packer. These settings all have reasonable defaults, so\nyou generally don't have to worry about it until you want to tweak a\nconfiguration.\n",
-    "page_title": "Core Configuration - Other",
-    "sidebar_title": "Core Configuration"
+    "__resourcePath": "docs/configure.mdx",
+    "description": "There are various ways to configure Packer. By default Packer will use known folders,\nwhich can be changed by using environment variables.\n",
+    "page_title": "Configuring Packer",
+    "sidebar_title": "Configuring Packer"
   },
   {
     "__resourcePath": "docs/datasources/amazon/ami.mdx",
@@ -496,48 +502,6 @@
     "sidebar_title": "Debugging"
   },
   {
-    "__resourcePath": "docs/environment-variables.mdx",
-    "description": "Packer uses a variety of environmental variables.",
-    "page_title": "Environment Variables - Other",
-    "sidebar_title": "Environment Variables"
-  },
-  {
-    "__resourcePath": "docs/extending/custom-builders.mdx",
-    "description": "It is possible to write custom builders using the Packer plugin interface, and\nthis page documents how to do that.\n",
-    "page_title": "Custom Builders - Extending",
-    "sidebar_title": "Custom Builders"
-  },
-  {
-    "__resourcePath": "docs/extending/custom-datasources.mdx",
-    "description": "Packer Data Sources are the components of Packer that allow data to be fetched for use within the Packer configuration. Use of data sources allows a build to use information defined outside of Packer.\n",
-    "page_title": "Custom Data Sources - Extending",
-    "sidebar_title": "Custom Data Sources"
-  },
-  {
-    "__resourcePath": "docs/extending/custom-post-processors.mdx",
-    "description": "Packer Post-processors are the components of Packer that transform one artifact\ninto another, for example by compressing files, or uploading them.\n",
-    "page_title": "Custom Post-Processors - Extending",
-    "sidebar_title": "Custom Post-Processors"
-  },
-  {
-    "__resourcePath": "docs/extending/custom-provisioners.mdx",
-    "description": "Packer Provisioners are the components of Packer that install and configure\nsoftware into a running machine prior to turning that machine into an image. An\nexample of a provisioner is the shell provisioner, which runs shell scripts\nwithin the machines.\n",
-    "page_title": "Custom Provisioners - Extending",
-    "sidebar_title": "Custom Provisioners"
-  },
-  {
-    "__resourcePath": "docs/extending/index.mdx",
-    "description": "Packer is designed to be extensible. Because the surface area for workloads is\ninfinite, Packer supports plugins for builders, provisioners, and\npost-processors.\n",
-    "page_title": "Extending",
-    "sidebar_title": "Extending Packer"
-  },
-  {
-    "__resourcePath": "docs/extending/plugins.mdx",
-    "description": "Packer Plugins allow new functionality to be added to Packer without modifying\nthe core source code. Packer plugins are able to add new builders,\nprovisioners, hooks, and more.\n",
-    "page_title": "Plugins - Extending",
-    "sidebar_title": "Plugins"
-  },
-  {
     "__resourcePath": "docs/index.mdx",
     "description": "Welcome to the Packer documentation! This documentation is more of a reference\nguide for all available features and options in Packer. If you're just getting\nstarted with Packer, please start with the introduction and getting started\nguide instead.\n",
     "page_title": "Documentation"
@@ -547,6 +511,42 @@
     "description": "Installing Packer is simple. You can download a precompiled binary or compile\nfrom source. This page details both methods.\n",
     "page_title": "Install",
     "sidebar_title": "Installing Packer"
+  },
+  {
+    "__resourcePath": "docs/plugins/creation/custom-builders.mdx",
+    "description": "It is possible to write custom builders using the Packer plugin interface, and\nthis page documents how to do that.\n",
+    "page_title": "Custom Builders - Extending",
+    "sidebar_title": "Custom Builders"
+  },
+  {
+    "__resourcePath": "docs/plugins/creation/custom-datasources.mdx",
+    "description": "Packer Data Sources are the components of Packer that allow data to be fetched for use within the Packer configuration. Use of data sources allows a build to use information defined outside of Packer.\n",
+    "page_title": "Custom Data Sources - Extending",
+    "sidebar_title": "Custom Data Sources"
+  },
+  {
+    "__resourcePath": "docs/plugins/creation/custom-post-processors.mdx",
+    "description": "Packer Post-processors are the components of Packer that transform one artifact\ninto another, for example by compressing files, or uploading them.\n",
+    "page_title": "Custom Post-Processors - Extending",
+    "sidebar_title": "Custom Post-Processors"
+  },
+  {
+    "__resourcePath": "docs/plugins/creation/custom-provisioners.mdx",
+    "description": "Packer Provisioners are the components of Packer that install and configure\nsoftware into a running machine prior to turning that machine into an image. An\nexample of a provisioner is the shell provisioner, which runs shell scripts\nwithin the machines.\n",
+    "page_title": "Custom Provisioners - Extending",
+    "sidebar_title": "Custom Provisioners"
+  },
+  {
+    "__resourcePath": "docs/plugins/creation/index.mdx",
+    "description": "Packer is designed to be extensible. Because the surface area for workloads is\ninfinite, Packer supports plugins for builders, provisioners, and\npost-processors.\n",
+    "page_title": "Extending",
+    "sidebar_title": "Extending Packer"
+  },
+  {
+    "__resourcePath": "docs/plugins/index.mdx",
+    "description": "Packer Plugins allow new functionality to be added to Packer without modifying\nthe core source code. Packer plugins are able to add new builders,\nprovisioners, hooks, and more.\n",
+    "page_title": "Plugins",
+    "sidebar_title": "Packer Plugins"
   },
   {
     "__resourcePath": "docs/post-processors/alicloud-import.mdx",
@@ -2582,6 +2582,9 @@
   },
   {
     "__resourcePath": "partials/packer-plugin-sdk/shutdowncommand/ShutdownConfig.mdx"
+  },
+  {
+    "__resourcePath": "partials/plugins/plugin-location.mdx"
   },
   {
     "__resourcePath": "partials/post-processor/alicloud-import/Config-not-required.mdx"

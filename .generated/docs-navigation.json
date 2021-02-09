@@ -11,7 +11,11 @@
     "routes": [
       {
         "title": "Overview",
-        "path": "commands"
+        "path": "commands/index"
+      },
+      {
+        "title": "<code>init</code>",
+        "path": "commands/init"
       },
       {
         "title": "<code>build</code>",
@@ -48,14 +52,14 @@
     "routes": [
       {
         "title": "Overview",
-        "path": "templates"
+        "path": "templates/index"
       },
       {
         "title": "JSON Templates",
         "routes": [
           {
             "title": "Overview",
-            "path": "templates/legacy_json_templates"
+            "path": "templates/legacy_json_templates/index"
           },
           {
             "title": "Builders",
@@ -88,21 +92,21 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "templates/hcl_templates"
+            "path": "templates/hcl_templates/index"
           },
           {
             "title": "Blocks",
             "routes": [
               {
                 "title": "Overview",
-                "path": "templates/hcl_templates/blocks"
+                "path": "templates/hcl_templates/blocks/index"
               },
               {
                 "title": "<code>build</code>",
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/blocks/build"
+                    "path": "templates/hcl_templates/blocks/build/index"
                   },
                   {
                     "title": "<code>source</code>",
@@ -149,14 +153,14 @@
             "routes": [
               {
                 "title": "Overview",
-                "path": "templates/hcl_templates/functions"
+                "path": "templates/hcl_templates/functions/index"
               },
               {
                 "title": "Contextual Functions",
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/contextual"
+                    "path": "templates/hcl_templates/functions/contextual/index"
                   },
                   {
                     "title": "aws_secretsmanager",
@@ -181,7 +185,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/numeric"
+                    "path": "templates/hcl_templates/functions/numeric/index"
                   },
                   {
                     "title": "abs",
@@ -226,7 +230,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/string"
+                    "path": "templates/hcl_templates/functions/string/index"
                   },
                   {
                     "title": "chomp",
@@ -303,7 +307,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/collection"
+                    "path": "templates/hcl_templates/functions/collection/index"
                   },
                   {
                     "title": "chunklist",
@@ -400,7 +404,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/encoding"
+                    "path": "templates/hcl_templates/functions/encoding/index"
                   },
                   {
                     "title": "base64decode",
@@ -441,7 +445,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/file"
+                    "path": "templates/hcl_templates/functions/file/index"
                   },
                   {
                     "title": "abspath",
@@ -478,7 +482,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/datetime"
+                    "path": "templates/hcl_templates/functions/datetime/index"
                   },
                   {
                     "title": "formatdate",
@@ -499,7 +503,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/crypto"
+                    "path": "templates/hcl_templates/functions/crypto/index"
                   },
                   {
                     "title": "bcrypt",
@@ -532,7 +536,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/uuid"
+                    "path": "templates/hcl_templates/functions/uuid/index"
                   },
                   {
                     "title": "uuidv4",
@@ -549,7 +553,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/ipnet"
+                    "path": "templates/hcl_templates/functions/ipnet/index"
                   },
                   {
                     "title": "cidrhost",
@@ -570,7 +574,7 @@
                 "routes": [
                   {
                     "title": "Overview",
-                    "path": "templates/hcl_templates/functions/conversion"
+                    "path": "templates/hcl_templates/functions/conversion/index"
                   },
                   {
                     "title": "can",
@@ -636,7 +640,7 @@
     "routes": [
       {
         "title": "Overview",
-        "path": "communicators"
+        "path": "communicators/index"
       },
       {
         "title": "SSH",
@@ -653,7 +657,7 @@
     "routes": [
       {
         "title": "Overview",
-        "path": "builders"
+        "path": "builders/index"
       },
       {
         "title": "Alicloud ECS",
@@ -664,7 +668,7 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "builders/amazon"
+            "path": "builders/amazon/index"
           },
           {
             "title": "chroot",
@@ -693,7 +697,7 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "builders/azure"
+            "path": "builders/azure/index"
           },
           {
             "title": "ARM",
@@ -738,7 +742,7 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "builders/hyperv"
+            "path": "builders/hyperv/index"
           },
           {
             "title": "ISO",
@@ -783,7 +787,7 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "builders/oracle"
+            "path": "builders/oracle/index"
           },
           {
             "title": "Oracle Classic",
@@ -800,7 +804,7 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "builders/outscale"
+            "path": "builders/outscale/index"
           },
           {
             "title": "chroot",
@@ -825,7 +829,7 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "builders/parallels"
+            "path": "builders/parallels/index"
           },
           {
             "title": "ISO",
@@ -846,7 +850,7 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "builders/proxmox"
+            "path": "builders/proxmox/index"
           },
           {
             "title": "ISO",
@@ -891,7 +895,7 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "builders/virtualbox"
+            "path": "builders/virtualbox/index"
           },
           {
             "title": "ISO",
@@ -912,7 +916,7 @@
         "routes": [
           {
             "title": "Overview",
-            "path": "builders/vmware"
+            "path": "builders/vmware/index"
           },
           {
             "title": "VMWare ISO",
@@ -951,14 +955,14 @@
     "routes": [
       {
         "title": "Overview",
-        "path": "datasources"
+        "path": "datasources/index"
       },
       {
         "title": "Amazon",
         "routes": [
           {
             "title": "Overview",
-            "path": "datasources/amazon"
+            "path": "datasources/amazon/index"
           },
           {
             "title": "Amazon AMI",
@@ -977,7 +981,7 @@
     "routes": [
       {
         "title": "Overview",
-        "path": "provisioners"
+        "path": "provisioners/index"
       },
       {
         "title": "Ansible Local",
@@ -1058,7 +1062,7 @@
     "routes": [
       {
         "title": "Overview",
-        "path": "post-processors"
+        "path": "post-processors/index"
       },
       {
         "title": "Alicloud Import",
@@ -1162,47 +1166,48 @@
     "path": "install"
   },
   {
+    "title": "Configuring Packer",
+    "path": "configure"
+  },
+  {
     "divider": true
   },
   {
-    "title": "Extending Packer",
+    "title": "Packer Plugins",
     "routes": [
       {
         "title": "Overview",
-        "path": "extending"
+        "path": "plugins/index"
       },
       {
-        "title": "Plugins",
-        "path": "extending/plugins"
-      },
-      {
-        "title": "Custom Builders",
-        "path": "extending/custom-builders"
-      },
-      {
-        "title": "Custom Post-Processors",
-        "path": "extending/custom-post-processors"
-      },
-      {
-        "title": "Custom Provisioners",
-        "path": "extending/custom-provisioners"
-      },
-      {
-        "title": "Custom Data Sources",
-        "path": "extending/custom-datasources"
+        "title": "Extending Packer",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "plugins/creation/index"
+          },
+          {
+            "title": "Custom Builders",
+            "path": "plugins/creation/custom-builders"
+          },
+          {
+            "title": "Custom Post-Processors",
+            "path": "plugins/creation/custom-post-processors"
+          },
+          {
+            "title": "Custom Provisioners",
+            "path": "plugins/creation/custom-provisioners"
+          },
+          {
+            "title": "Custom Data Sources",
+            "path": "plugins/creation/custom-datasources"
+          }
+        ]
       }
     ]
   },
   {
     "divider": true
-  },
-  {
-    "title": "Environment Variables",
-    "path": "environment-variables"
-  },
-  {
-    "title": "Core Configuration",
-    "path": "core-configuration"
   },
   {
     "title": "Debugging",
