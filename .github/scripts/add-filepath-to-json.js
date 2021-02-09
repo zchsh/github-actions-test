@@ -39,7 +39,10 @@ function addFilePath(navNode) {
         `Ambiguous path "${navNode.path}". Both "${namedFilePath}" and "${indexFilePath}" exist.`
       );
     }
-    const filePath = path.join(CONTENT_DIR, indexFilePath || namedFilePath);
+    const filePath = path.join(
+      CONTENT_DIR,
+      hasIndexFile ? indexFilePath : namedFilePath
+    );
     return { ...navNode, filePath };
   }
   if (navNode.routes) {
