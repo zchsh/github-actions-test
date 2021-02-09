@@ -2,6 +2,54 @@
 
 Purpose of this repo is to play around with GitHub Actions a bit, and see what a "remote content" repo might need in terms of workflows to make the job of building the remote content easier.
 
+## 2021-02-09 - Refining next steps
+
+- `navData` is the new format proposed in the RFC, that authors write
+  - `navData` is an array of `navDataNode`s
+  - A `navDataNode` is one of...
+    - `{ divider: true }`, a presentational node to render a divider in the nav
+    - `{ title, path }`, a leaf node representing an `.mdx` document
+    - `{ title, href }`, a leaf node representing an external link
+    - `{ title, routes: [ ...navDataNodes ] }`, a branch node representing a category, which contains children nodes in its `routes` array
+- `DocsSidenav` will receive `navData` directly
+
+  - The authored `path` values correspond directly to routes
+  - We drop `matchOrderToData` - this logic is no longer necessary with our revised `navData` format
+  - The component makes the assumption that the `path` values point to valid routes, which have valid source files
+
+- `DocsPage`'s `server.js` will run a filesystem checking function `validateNavData`
+
+  - Ensures the `navData` is structured correctly
+
+    - Each item in a category should have a path that matches the parent category
+    - Each item's `path` should resolve to exactly one file - either `{path}.mdx` or `{path}/index.mdx`
+    - We will throw an error if there is a missing source for a `path`
+    - We will throw an error if there is an ambiguous source for a `path` (ie both "named" and "index" files exist)
+
+  - This function could also add a `filePath` value to each `navData` node, which would be the full path from the repo root
+    - This is not needed for our main `docs` sites at present, since the `validate
+    - For now we'll ignore this use case, we'll address changes related to "remote consumption" later
+
+- `DocsSidenav` will be moved into `DocsPage`
+
+  - `DocsSidenav` is not currently used standalone (need to confirm this, almost certain)
+  - We actually probably want to discourage standalone use (?)
+  - Alt approach: if we want standalone use, then `DocsSidenav` will get its own `server.js` file, where `validateNavData` will be run
+
+- Migration scripts...
+  - Remove `sidebar_title` from all `.mdx` files
+  - Convert from old `.js` format to new `.json` format
+  - Are there changes required in `[[...slug]].jsx` docs page routes?
+    - We could NOT import `order`, and have `DocsPage` grab it via `fs`. This would reduce boilerplate, move us closer to a "docs platform"
+
+### Next Steps
+
+- Combine notes above with [current "mini"-RFC](https://docs.google.com/document/d/1cKUwgBCKFycTo8p5C1Ka1bI_0fkrwAGLd6aYFX9-nnA/edit#) and create new RFC document
+- Add notes on changes to `DocsSidenav` / `DocsPage` to new RFC document
+- Make a PR onto `react-components` with the refactored `DocsSidenav`
+  - ... pending confirmation of "no independent use of DocsSidenav, will actually be changes to `DocsPage`
+- Open PR on [`mktg-sourcegraph-campaigns`](https://github.com/hashicorp/mktg-sourcegraph-campaigns/) that adds scripts related to this migration
+
 ## 2021-02-09 - Platform meeting
 
 ### `DocsSidenav` changes
