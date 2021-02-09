@@ -2,6 +2,22 @@
 
 Purpose of this repo is to play around with GitHub Actions a bit, and see what a "remote content" repo might need in terms of workflows to make the job of building the remote content easier.
 
+## 2021-02-09 - Platform meeting
+
+### `DocsSidenav` changes
+
+- Move `DocsSidenav` into `DocsPage`
+- Filesystem checks that currently happen in `DocsSidenav` should now happen in `DocsPage`'s `server.js` file
+- Would abstract the filesystem check into its own function, so we can export it separately if needed (eg for Packer Registry)
+- `generateStaticProps` will take in `navData` (fka `order`), and throw errors as needed
+- we won't need to read `allFrontmatter` anymore (it was only used for sidebar)
+  - Related - we'll be eliminating the `sidebar_title` frontmatter
+
+### "full" path vs "short / partial" path
+
+- We'll go with the "full" path - majority wanted it, and two folks who didn't prefer it wouldn't be upset
+- We'll need to check the "full" paths are actually valid - ie, the nesting is strict
+
 ## 2021-02-08 - For discussion
 
 1. How do we handle "Overview" / `index.mdx` files?
