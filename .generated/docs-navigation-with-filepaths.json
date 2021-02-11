@@ -5,7 +5,7 @@
   {
     "title": "Terminology",
     "path": "terminology",
-    "filePath": "website/content/docs/terminology/index.mdx"
+    "filePath": "website/content/docs/terminology.mdx"
   },
   {
     "title": "Commands (CLI)",
@@ -18,42 +18,42 @@
       {
         "title": "<code>init</code>",
         "path": "commands/init",
-        "filePath": "website/content/docs/commands/init/index.mdx"
+        "filePath": "website/content/docs/commands/init.mdx"
       },
       {
         "title": "<code>build</code>",
         "path": "commands/build",
-        "filePath": "website/content/docs/commands/build/index.mdx"
+        "filePath": "website/content/docs/commands/build.mdx"
       },
       {
         "title": "<code>console</code>",
         "path": "commands/console",
-        "filePath": "website/content/docs/commands/console/index.mdx"
+        "filePath": "website/content/docs/commands/console.mdx"
       },
       {
         "title": "<code>fix</code>",
         "path": "commands/fix",
-        "filePath": "website/content/docs/commands/fix/index.mdx"
+        "filePath": "website/content/docs/commands/fix.mdx"
       },
       {
         "title": "<code>fmt</code>",
         "path": "commands/fmt",
-        "filePath": "website/content/docs/commands/fmt/index.mdx"
+        "filePath": "website/content/docs/commands/fmt.mdx"
       },
       {
         "title": "<code>inspect</code>",
         "path": "commands/inspect",
-        "filePath": "website/content/docs/commands/inspect/index.mdx"
+        "filePath": "website/content/docs/commands/inspect.mdx"
       },
       {
         "title": "<code>validate</code>",
         "path": "commands/validate",
-        "filePath": "website/content/docs/commands/validate/index.mdx"
+        "filePath": "website/content/docs/commands/validate.mdx"
       },
       {
         "title": "<code>hcl2_upgrade</code>",
         "path": "commands/hcl2_upgrade",
-        "filePath": "website/content/docs/commands/hcl2_upgrade/index.mdx"
+        "filePath": "website/content/docs/commands/hcl2_upgrade.mdx"
       }
     ]
   },
@@ -76,32 +76,32 @@
           {
             "title": "Builders",
             "path": "templates/legacy_json_templates/builders",
-            "filePath": "website/content/docs/templates/legacy_json_templates/builders/index.mdx"
+            "filePath": "website/content/docs/templates/legacy_json_templates/builders.mdx"
           },
           {
             "title": "Communicators",
             "path": "templates/legacy_json_templates/communicator",
-            "filePath": "website/content/docs/templates/legacy_json_templates/communicator/index.mdx"
+            "filePath": "website/content/docs/templates/legacy_json_templates/communicator.mdx"
           },
           {
             "title": "Engine",
             "path": "templates/legacy_json_templates/engine",
-            "filePath": "website/content/docs/templates/legacy_json_templates/engine/index.mdx"
+            "filePath": "website/content/docs/templates/legacy_json_templates/engine.mdx"
           },
           {
             "title": "Post-Processors",
             "path": "templates/legacy_json_templates/post-processors",
-            "filePath": "website/content/docs/templates/legacy_json_templates/post-processors/index.mdx"
+            "filePath": "website/content/docs/templates/legacy_json_templates/post-processors.mdx"
           },
           {
             "title": "Provisioners",
             "path": "templates/legacy_json_templates/provisioners",
-            "filePath": "website/content/docs/templates/legacy_json_templates/provisioners/index.mdx"
+            "filePath": "website/content/docs/templates/legacy_json_templates/provisioners.mdx"
           },
           {
             "title": "User Variables",
             "path": "templates/legacy_json_templates/user-variables",
-            "filePath": "website/content/docs/templates/legacy_json_templates/user-variables/index.mdx"
+            "filePath": "website/content/docs/templates/legacy_json_templates/user-variables.mdx"
           }
         ]
       },
@@ -132,49 +132,49 @@
                   {
                     "title": "<code>source</code>",
                     "path": "templates/hcl_templates/blocks/build/source",
-                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/source/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/source.mdx"
                   },
                   {
                     "title": "<code>provisioner</code>",
                     "path": "templates/hcl_templates/blocks/build/provisioner",
-                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/provisioner/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/provisioner.mdx"
                   },
                   {
                     "title": "<code>post-processor</code>",
                     "path": "templates/hcl_templates/blocks/build/post-processor",
-                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/post-processor/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/post-processor.mdx"
                   },
                   {
                     "title": "<code>post-processors</code>",
                     "path": "templates/hcl_templates/blocks/build/post-processors",
-                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/post-processors/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/blocks/build/post-processors.mdx"
                   }
                 ]
               },
               {
                 "title": "<code>locals</code>",
                 "path": "templates/hcl_templates/blocks/locals",
-                "filePath": "website/content/docs/templates/hcl_templates/blocks/locals/index.mdx"
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/locals.mdx"
               },
               {
                 "title": "<code>source</code>",
                 "path": "templates/hcl_templates/blocks/source",
-                "filePath": "website/content/docs/templates/hcl_templates/blocks/source/index.mdx"
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/source.mdx"
               },
               {
                 "title": "<code>variable</code>",
                 "path": "templates/hcl_templates/blocks/variable",
-                "filePath": "website/content/docs/templates/hcl_templates/blocks/variable/index.mdx"
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/variable.mdx"
               },
               {
                 "title": "<code>packer</code>",
                 "path": "templates/hcl_templates/blocks/packer",
-                "filePath": "website/content/docs/templates/hcl_templates/blocks/packer/index.mdx"
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/packer.mdx"
               },
               {
                 "title": "<code>data</code>",
                 "path": "templates/hcl_templates/blocks/data",
-                "filePath": "website/content/docs/templates/hcl_templates/blocks/data/index.mdx"
+                "filePath": "website/content/docs/templates/hcl_templates/blocks/data.mdx"
               }
             ]
           },
@@ -197,22 +197,22 @@
                   {
                     "title": "aws_secretsmanager",
                     "path": "templates/hcl_templates/functions/contextual/aws_secretsmanager",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/aws_secretsmanager/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/aws_secretsmanager.mdx"
                   },
                   {
                     "title": "consul",
                     "path": "templates/hcl_templates/functions/contextual/consul",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/consul/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/consul.mdx"
                   },
                   {
                     "title": "env",
                     "path": "templates/hcl_templates/functions/contextual/env",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/env/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/env.mdx"
                   },
                   {
                     "title": "vault",
                     "path": "templates/hcl_templates/functions/contextual/vault",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/vault/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/contextual/vault.mdx"
                   }
                 ]
               },
@@ -227,47 +227,47 @@
                   {
                     "title": "abs",
                     "path": "templates/hcl_templates/functions/numeric/abs",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/abs/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/abs.mdx"
                   },
                   {
                     "title": "ceil",
                     "path": "templates/hcl_templates/functions/numeric/ceil",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/ceil/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/ceil.mdx"
                   },
                   {
                     "title": "floor",
                     "path": "templates/hcl_templates/functions/numeric/floor",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/floor/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/floor.mdx"
                   },
                   {
                     "title": "log",
                     "path": "templates/hcl_templates/functions/numeric/log",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/log/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/log.mdx"
                   },
                   {
                     "title": "max",
                     "path": "templates/hcl_templates/functions/numeric/max",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/max/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/max.mdx"
                   },
                   {
                     "title": "min",
                     "path": "templates/hcl_templates/functions/numeric/min",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/min/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/min.mdx"
                   },
                   {
                     "title": "parseint",
                     "path": "templates/hcl_templates/functions/numeric/parseint",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/parseint/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/parseint.mdx"
                   },
                   {
                     "title": "pow",
                     "path": "templates/hcl_templates/functions/numeric/pow",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/pow/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/pow.mdx"
                   },
                   {
                     "title": "signum",
                     "path": "templates/hcl_templates/functions/numeric/signum",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/signum/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/numeric/signum.mdx"
                   }
                 ]
               },
@@ -282,87 +282,87 @@
                   {
                     "title": "chomp",
                     "path": "templates/hcl_templates/functions/string/chomp",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/chomp/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/chomp.mdx"
                   },
                   {
                     "title": "format",
                     "path": "templates/hcl_templates/functions/string/format",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/format/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/format.mdx"
                   },
                   {
                     "title": "formatlist",
                     "path": "templates/hcl_templates/functions/string/formatlist",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/formatlist/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/formatlist.mdx"
                   },
                   {
                     "title": "indent",
                     "path": "templates/hcl_templates/functions/string/indent",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/indent/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/indent.mdx"
                   },
                   {
                     "title": "join",
                     "path": "templates/hcl_templates/functions/string/join",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/join/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/join.mdx"
                   },
                   {
                     "title": "lower",
                     "path": "templates/hcl_templates/functions/string/lower",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/lower/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/lower.mdx"
                   },
                   {
                     "title": "replace",
                     "path": "templates/hcl_templates/functions/string/replace",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/replace/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/replace.mdx"
                   },
                   {
                     "title": "regex_replace",
                     "path": "templates/hcl_templates/functions/string/regex_replace",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/regex_replace/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/regex_replace.mdx"
                   },
                   {
                     "title": "split",
                     "path": "templates/hcl_templates/functions/string/split",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/split/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/split.mdx"
                   },
                   {
                     "title": "strrev",
                     "path": "templates/hcl_templates/functions/string/strrev",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/strrev/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/strrev.mdx"
                   },
                   {
                     "title": "substr",
                     "path": "templates/hcl_templates/functions/string/substr",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/substr/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/substr.mdx"
                   },
                   {
                     "title": "title",
                     "path": "templates/hcl_templates/functions/string/title",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/title/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/title.mdx"
                   },
                   {
                     "title": "trim",
                     "path": "templates/hcl_templates/functions/string/trim",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trim/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trim.mdx"
                   },
                   {
                     "title": "trimprefix",
                     "path": "templates/hcl_templates/functions/string/trimprefix",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trimprefix/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trimprefix.mdx"
                   },
                   {
                     "title": "trimsuffix",
                     "path": "templates/hcl_templates/functions/string/trimsuffix",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trimsuffix/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trimsuffix.mdx"
                   },
                   {
                     "title": "trimspace",
                     "path": "templates/hcl_templates/functions/string/trimspace",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trimspace/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/trimspace.mdx"
                   },
                   {
                     "title": "upper",
                     "path": "templates/hcl_templates/functions/string/upper",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/upper/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/upper.mdx"
                   }
                 ]
               },
@@ -377,112 +377,112 @@
                   {
                     "title": "chunklist",
                     "path": "templates/hcl_templates/functions/collection/chunklist",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/chunklist/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/chunklist.mdx"
                   },
                   {
                     "title": "coalesce",
                     "path": "templates/hcl_templates/functions/collection/coalesce",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/coalesce/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/coalesce.mdx"
                   },
                   {
                     "title": "coalescelist",
                     "path": "templates/hcl_templates/functions/collection/coalescelist",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/coalescelist/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/coalescelist.mdx"
                   },
                   {
                     "title": "compact",
                     "path": "templates/hcl_templates/functions/collection/compact",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/compact/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/compact.mdx"
                   },
                   {
                     "title": "concat",
                     "path": "templates/hcl_templates/functions/collection/concat",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/concat/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/concat.mdx"
                   },
                   {
                     "title": "contains",
                     "path": "templates/hcl_templates/functions/collection/contains",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/contains/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/contains.mdx"
                   },
                   {
                     "title": "distinct",
                     "path": "templates/hcl_templates/functions/collection/distinct",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/distinct/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/distinct.mdx"
                   },
                   {
                     "title": "element",
                     "path": "templates/hcl_templates/functions/collection/element",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/element/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/element.mdx"
                   },
                   {
                     "title": "flatten",
                     "path": "templates/hcl_templates/functions/collection/flatten",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/flatten/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/flatten.mdx"
                   },
                   {
                     "title": "keys",
                     "path": "templates/hcl_templates/functions/collection/keys",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/keys/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/keys.mdx"
                   },
                   {
                     "title": "length",
                     "path": "templates/hcl_templates/functions/collection/length",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/length/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/length.mdx"
                   },
                   {
                     "title": "lookup",
                     "path": "templates/hcl_templates/functions/collection/lookup",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/lookup/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/lookup.mdx"
                   },
                   {
                     "title": "merge",
                     "path": "templates/hcl_templates/functions/collection/merge",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/merge/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/merge.mdx"
                   },
                   {
                     "title": "range",
                     "path": "templates/hcl_templates/functions/collection/range",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/range/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/range.mdx"
                   },
                   {
                     "title": "reverse",
                     "path": "templates/hcl_templates/functions/collection/reverse",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/reverse/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/reverse.mdx"
                   },
                   {
                     "title": "setintersection",
                     "path": "templates/hcl_templates/functions/collection/setintersection",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/setintersection/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/setintersection.mdx"
                   },
                   {
                     "title": "setproduct",
                     "path": "templates/hcl_templates/functions/collection/setproduct",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/setproduct/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/setproduct.mdx"
                   },
                   {
                     "title": "setunion",
                     "path": "templates/hcl_templates/functions/collection/setunion",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/setunion/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/setunion.mdx"
                   },
                   {
                     "title": "slice",
                     "path": "templates/hcl_templates/functions/collection/slice",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/slice/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/slice.mdx"
                   },
                   {
                     "title": "sort",
                     "path": "templates/hcl_templates/functions/collection/sort",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/sort/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/sort.mdx"
                   },
                   {
                     "title": "values",
                     "path": "templates/hcl_templates/functions/collection/values",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/values/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/values.mdx"
                   },
                   {
                     "title": "zipmap",
                     "path": "templates/hcl_templates/functions/collection/zipmap",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/zipmap/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/collection/zipmap.mdx"
                   }
                 ]
               },
@@ -497,42 +497,42 @@
                   {
                     "title": "base64decode",
                     "path": "templates/hcl_templates/functions/encoding/base64decode",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/base64decode/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/base64decode.mdx"
                   },
                   {
                     "title": "base64encode",
                     "path": "templates/hcl_templates/functions/encoding/base64encode",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/base64encode/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/base64encode.mdx"
                   },
                   {
                     "title": "csvdecode",
                     "path": "templates/hcl_templates/functions/encoding/csvdecode",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/csvdecode/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/csvdecode.mdx"
                   },
                   {
                     "title": "jsondecode",
                     "path": "templates/hcl_templates/functions/encoding/jsondecode",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/jsondecode/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/jsondecode.mdx"
                   },
                   {
                     "title": "jsonencode",
                     "path": "templates/hcl_templates/functions/encoding/jsonencode",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/jsonencode/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/jsonencode.mdx"
                   },
                   {
                     "title": "urlencode",
                     "path": "templates/hcl_templates/functions/encoding/urlencode",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/urlencode/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/urlencode.mdx"
                   },
                   {
                     "title": "yamldecode",
                     "path": "templates/hcl_templates/functions/encoding/yamldecode",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/yamldecode/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/yamldecode.mdx"
                   },
                   {
                     "title": "yamlencode",
                     "path": "templates/hcl_templates/functions/encoding/yamlencode",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/yamlencode/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/encoding/yamlencode.mdx"
                   }
                 ]
               },
@@ -547,37 +547,37 @@
                   {
                     "title": "abspath",
                     "path": "templates/hcl_templates/functions/file/abspath",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/abspath/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/abspath.mdx"
                   },
                   {
                     "title": "basename",
                     "path": "templates/hcl_templates/functions/file/basename",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/basename/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/basename.mdx"
                   },
                   {
                     "title": "dirname",
                     "path": "templates/hcl_templates/functions/file/dirname",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/dirname/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/dirname.mdx"
                   },
                   {
                     "title": "file",
                     "path": "templates/hcl_templates/functions/file/file",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/file/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/file.mdx"
                   },
                   {
                     "title": "fileexists",
                     "path": "templates/hcl_templates/functions/file/fileexists",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/fileexists/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/fileexists.mdx"
                   },
                   {
                     "title": "fileset",
                     "path": "templates/hcl_templates/functions/file/fileset",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/fileset/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/fileset.mdx"
                   },
                   {
                     "title": "pathexpand",
                     "path": "templates/hcl_templates/functions/file/pathexpand",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/pathexpand/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/file/pathexpand.mdx"
                   }
                 ]
               },
@@ -592,17 +592,17 @@
                   {
                     "title": "formatdate",
                     "path": "templates/hcl_templates/functions/datetime/formatdate",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/formatdate/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/formatdate.mdx"
                   },
                   {
                     "title": "timeadd",
                     "path": "templates/hcl_templates/functions/datetime/timeadd",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/timeadd/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/timeadd.mdx"
                   },
                   {
                     "title": "timestamp",
                     "path": "templates/hcl_templates/functions/datetime/timestamp",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/timestamp/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/datetime/timestamp.mdx"
                   }
                 ]
               },
@@ -617,32 +617,32 @@
                   {
                     "title": "bcrypt",
                     "path": "templates/hcl_templates/functions/crypto/bcrypt",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/bcrypt/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/bcrypt.mdx"
                   },
                   {
                     "title": "md5",
                     "path": "templates/hcl_templates/functions/crypto/md5",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/md5/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/md5.mdx"
                   },
                   {
                     "title": "rsadecrypt",
                     "path": "templates/hcl_templates/functions/crypto/rsadecrypt",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/rsadecrypt/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/rsadecrypt.mdx"
                   },
                   {
                     "title": "sha1",
                     "path": "templates/hcl_templates/functions/crypto/sha1",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/sha1/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/sha1.mdx"
                   },
                   {
                     "title": "sha256",
                     "path": "templates/hcl_templates/functions/crypto/sha256",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/sha256/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/sha256.mdx"
                   },
                   {
                     "title": "sha512",
                     "path": "templates/hcl_templates/functions/crypto/sha512",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/sha512/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/crypto/sha512.mdx"
                   }
                 ]
               },
@@ -657,12 +657,12 @@
                   {
                     "title": "uuidv4",
                     "path": "templates/hcl_templates/functions/uuid/uuidv4",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/uuid/uuidv4/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/uuid/uuidv4.mdx"
                   },
                   {
                     "title": "uuidv5",
                     "path": "templates/hcl_templates/functions/uuid/uuidv5",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/uuid/uuidv5/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/uuid/uuidv5.mdx"
                   }
                 ]
               },
@@ -677,17 +677,17 @@
                   {
                     "title": "cidrhost",
                     "path": "templates/hcl_templates/functions/ipnet/cidrhost",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/cidrhost/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/cidrhost.mdx"
                   },
                   {
                     "title": "cidrnetmask",
                     "path": "templates/hcl_templates/functions/ipnet/cidrnetmask",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/cidrnetmask/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/cidrnetmask.mdx"
                   },
                   {
                     "title": "cidrsubnet",
                     "path": "templates/hcl_templates/functions/ipnet/cidrsubnet",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/cidrsubnet/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/ipnet/cidrsubnet.mdx"
                   }
                 ]
               },
@@ -702,17 +702,17 @@
                   {
                     "title": "can",
                     "path": "templates/hcl_templates/functions/conversion/can",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/can/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/can.mdx"
                   },
                   {
                     "title": "convert",
                     "path": "templates/hcl_templates/functions/conversion/convert",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/convert/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/convert.mdx"
                   },
                   {
                     "title": "try",
                     "path": "templates/hcl_templates/functions/conversion/try",
-                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/try/index.mdx"
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/conversion/try.mdx"
                   }
                 ]
               }
@@ -721,47 +721,47 @@
           {
             "title": "Variables",
             "path": "templates/hcl_templates/variables",
-            "filePath": "website/content/docs/templates/hcl_templates/variables/index.mdx"
+            "filePath": "website/content/docs/templates/hcl_templates/variables.mdx"
           },
           {
             "title": "Locals",
             "path": "templates/hcl_templates/locals",
-            "filePath": "website/content/docs/templates/hcl_templates/locals/index.mdx"
+            "filePath": "website/content/docs/templates/hcl_templates/locals.mdx"
           },
           {
             "title": "Contextual Variables",
             "path": "templates/hcl_templates/contextual-variables",
-            "filePath": "website/content/docs/templates/hcl_templates/contextual-variables/index.mdx"
+            "filePath": "website/content/docs/templates/hcl_templates/contextual-variables.mdx"
           },
           {
             "title": "Data Sources",
             "path": "templates/hcl_templates/datasources",
-            "filePath": "website/content/docs/templates/hcl_templates/datasources/index.mdx"
+            "filePath": "website/content/docs/templates/hcl_templates/datasources.mdx"
           },
           {
             "title": "Path Variables",
             "path": "templates/hcl_templates/path-variables",
-            "filePath": "website/content/docs/templates/hcl_templates/path-variables/index.mdx"
+            "filePath": "website/content/docs/templates/hcl_templates/path-variables.mdx"
           },
           {
             "title": "Syntax",
             "path": "templates/hcl_templates/syntax",
-            "filePath": "website/content/docs/templates/hcl_templates/syntax/index.mdx"
+            "filePath": "website/content/docs/templates/hcl_templates/syntax.mdx"
           },
           {
             "title": "Only Except",
             "path": "templates/hcl_templates/onlyexcept",
-            "filePath": "website/content/docs/templates/hcl_templates/onlyexcept/index.mdx"
+            "filePath": "website/content/docs/templates/hcl_templates/onlyexcept.mdx"
           },
           {
             "title": "Expressions",
             "path": "templates/hcl_templates/expressions",
-            "filePath": "website/content/docs/templates/hcl_templates/expressions/index.mdx"
+            "filePath": "website/content/docs/templates/hcl_templates/expressions.mdx"
           },
           {
             "title": "JSON Syntax",
             "path": "templates/hcl_templates/syntax-json",
-            "filePath": "website/content/docs/templates/hcl_templates/syntax-json/index.mdx"
+            "filePath": "website/content/docs/templates/hcl_templates/syntax-json.mdx"
           }
         ]
       }
@@ -781,12 +781,12 @@
       {
         "title": "SSH",
         "path": "communicators/ssh",
-        "filePath": "website/content/docs/communicators/ssh/index.mdx"
+        "filePath": "website/content/docs/communicators/ssh.mdx"
       },
       {
         "title": "WINRM",
         "path": "communicators/winrm",
-        "filePath": "website/content/docs/communicators/winrm/index.mdx"
+        "filePath": "website/content/docs/communicators/winrm.mdx"
       }
     ]
   },
@@ -801,7 +801,7 @@
       {
         "title": "Alicloud ECS",
         "path": "builders/alicloud-ecs",
-        "filePath": "website/content/docs/builders/alicloud-ecs/index.mdx"
+        "filePath": "website/content/docs/builders/alicloud-ecs.mdx"
       },
       {
         "title": "Amazon EC2",
@@ -814,27 +814,27 @@
           {
             "title": "chroot",
             "path": "builders/amazon/chroot",
-            "filePath": "website/content/docs/builders/amazon/chroot/index.mdx"
+            "filePath": "website/content/docs/builders/amazon/chroot.mdx"
           },
           {
             "title": "EBS",
             "path": "builders/amazon/ebs",
-            "filePath": "website/content/docs/builders/amazon/ebs/index.mdx"
+            "filePath": "website/content/docs/builders/amazon/ebs.mdx"
           },
           {
             "title": "EBS Surrogate",
             "path": "builders/amazon/ebssurrogate",
-            "filePath": "website/content/docs/builders/amazon/ebssurrogate/index.mdx"
+            "filePath": "website/content/docs/builders/amazon/ebssurrogate.mdx"
           },
           {
             "title": "EBS Volume",
             "path": "builders/amazon/ebsvolume",
-            "filePath": "website/content/docs/builders/amazon/ebsvolume/index.mdx"
+            "filePath": "website/content/docs/builders/amazon/ebsvolume.mdx"
           },
           {
             "title": "Instance",
             "path": "builders/amazon/instance",
-            "filePath": "website/content/docs/builders/amazon/instance/index.mdx"
+            "filePath": "website/content/docs/builders/amazon/instance.mdx"
           }
         ]
       },
@@ -849,49 +849,49 @@
           {
             "title": "ARM",
             "path": "builders/azure/arm",
-            "filePath": "website/content/docs/builders/azure/arm/index.mdx"
+            "filePath": "website/content/docs/builders/azure/arm.mdx"
           },
           {
             "title": "chroot",
             "path": "builders/azure/chroot",
-            "filePath": "website/content/docs/builders/azure/chroot/index.mdx"
+            "filePath": "website/content/docs/builders/azure/chroot.mdx"
           }
         ]
       },
       {
         "title": "CloudStack",
         "path": "builders/cloudstack",
-        "filePath": "website/content/docs/builders/cloudstack/index.mdx"
+        "filePath": "website/content/docs/builders/cloudstack.mdx"
       },
       {
         "title": "DigitalOcean",
         "path": "builders/digitalocean",
-        "filePath": "website/content/docs/builders/digitalocean/index.mdx"
+        "filePath": "website/content/docs/builders/digitalocean.mdx"
       },
       {
         "title": "Docker",
         "path": "builders/docker",
-        "filePath": "website/content/docs/builders/docker/index.mdx"
+        "filePath": "website/content/docs/builders/docker.mdx"
       },
       {
         "title": "File",
         "path": "builders/file",
-        "filePath": "website/content/docs/builders/file/index.mdx"
+        "filePath": "website/content/docs/builders/file.mdx"
       },
       {
         "title": "Google Cloud",
         "path": "builders/googlecompute",
-        "filePath": "website/content/docs/builders/googlecompute/index.mdx"
+        "filePath": "website/content/docs/builders/googlecompute.mdx"
       },
       {
         "title": "Hetzner Cloud",
         "path": "builders/hetzner-cloud",
-        "filePath": "website/content/docs/builders/hetzner-cloud/index.mdx"
+        "filePath": "website/content/docs/builders/hetzner-cloud.mdx"
       },
       {
         "title": "HyperOne",
         "path": "builders/hyperone",
-        "filePath": "website/content/docs/builders/hyperone/index.mdx"
+        "filePath": "website/content/docs/builders/hyperone.mdx"
       },
       {
         "title": "Hyper-V",
@@ -904,49 +904,49 @@
           {
             "title": "ISO",
             "path": "builders/hyperv/iso",
-            "filePath": "website/content/docs/builders/hyperv/iso/index.mdx"
+            "filePath": "website/content/docs/builders/hyperv/iso.mdx"
           },
           {
             "title": "VMCX",
             "path": "builders/hyperv/vmcx",
-            "filePath": "website/content/docs/builders/hyperv/vmcx/index.mdx"
+            "filePath": "website/content/docs/builders/hyperv/vmcx.mdx"
           }
         ]
       },
       {
         "title": "Linode",
         "path": "builders/linode",
-        "filePath": "website/content/docs/builders/linode/index.mdx"
+        "filePath": "website/content/docs/builders/linode.mdx"
       },
       {
         "title": "LXC",
         "path": "builders/lxc",
-        "filePath": "website/content/docs/builders/lxc/index.mdx"
+        "filePath": "website/content/docs/builders/lxc.mdx"
       },
       {
         "title": "LXD",
         "path": "builders/lxd",
-        "filePath": "website/content/docs/builders/lxd/index.mdx"
+        "filePath": "website/content/docs/builders/lxd.mdx"
       },
       {
         "title": "NAVER Cloud",
         "path": "builders/ncloud",
-        "filePath": "website/content/docs/builders/ncloud/index.mdx"
+        "filePath": "website/content/docs/builders/ncloud.mdx"
       },
       {
         "title": "Null",
         "path": "builders/null",
-        "filePath": "website/content/docs/builders/null/index.mdx"
+        "filePath": "website/content/docs/builders/null.mdx"
       },
       {
         "title": "1&amp;1",
         "path": "builders/oneandone",
-        "filePath": "website/content/docs/builders/oneandone/index.mdx"
+        "filePath": "website/content/docs/builders/oneandone.mdx"
       },
       {
         "title": "OpenStack",
         "path": "builders/openstack",
-        "filePath": "website/content/docs/builders/openstack/index.mdx"
+        "filePath": "website/content/docs/builders/openstack.mdx"
       },
       {
         "title": "Oracle",
@@ -959,12 +959,12 @@
           {
             "title": "Oracle Classic",
             "path": "builders/oracle/classic",
-            "filePath": "website/content/docs/builders/oracle/classic/index.mdx"
+            "filePath": "website/content/docs/builders/oracle/classic.mdx"
           },
           {
             "title": "Oracle OCI",
             "path": "builders/oracle/oci",
-            "filePath": "website/content/docs/builders/oracle/oci/index.mdx"
+            "filePath": "website/content/docs/builders/oracle/oci.mdx"
           }
         ]
       },
@@ -979,22 +979,22 @@
           {
             "title": "chroot",
             "path": "builders/outscale/chroot",
-            "filePath": "website/content/docs/builders/outscale/chroot/index.mdx"
+            "filePath": "website/content/docs/builders/outscale/chroot.mdx"
           },
           {
             "title": "BSU",
             "path": "builders/outscale/bsu",
-            "filePath": "website/content/docs/builders/outscale/bsu/index.mdx"
+            "filePath": "website/content/docs/builders/outscale/bsu.mdx"
           },
           {
             "title": "BSU Surrogate",
             "path": "builders/outscale/bsusurrogate",
-            "filePath": "website/content/docs/builders/outscale/bsusurrogate/index.mdx"
+            "filePath": "website/content/docs/builders/outscale/bsusurrogate.mdx"
           },
           {
             "title": "BSU Volume",
             "path": "builders/outscale/bsuvolume",
-            "filePath": "website/content/docs/builders/outscale/bsuvolume/index.mdx"
+            "filePath": "website/content/docs/builders/outscale/bsuvolume.mdx"
           }
         ]
       },
@@ -1009,19 +1009,19 @@
           {
             "title": "ISO",
             "path": "builders/parallels/iso",
-            "filePath": "website/content/docs/builders/parallels/iso/index.mdx"
+            "filePath": "website/content/docs/builders/parallels/iso.mdx"
           },
           {
             "title": "PVM",
             "path": "builders/parallels/pvm",
-            "filePath": "website/content/docs/builders/parallels/pvm/index.mdx"
+            "filePath": "website/content/docs/builders/parallels/pvm.mdx"
           }
         ]
       },
       {
         "title": "ProfitBricks",
         "path": "builders/profitbricks",
-        "filePath": "website/content/docs/builders/profitbricks/index.mdx"
+        "filePath": "website/content/docs/builders/profitbricks.mdx"
       },
       {
         "title": "Proxmox",
@@ -1034,49 +1034,49 @@
           {
             "title": "ISO",
             "path": "builders/proxmox/iso",
-            "filePath": "website/content/docs/builders/proxmox/iso/index.mdx"
+            "filePath": "website/content/docs/builders/proxmox/iso.mdx"
           },
           {
             "title": "Clone",
             "path": "builders/proxmox/clone",
-            "filePath": "website/content/docs/builders/proxmox/clone/index.mdx"
+            "filePath": "website/content/docs/builders/proxmox/clone.mdx"
           }
         ]
       },
       {
         "title": "QEMU",
         "path": "builders/qemu",
-        "filePath": "website/content/docs/builders/qemu/index.mdx"
+        "filePath": "website/content/docs/builders/qemu.mdx"
       },
       {
         "title": "Scaleway",
         "path": "builders/scaleway",
-        "filePath": "website/content/docs/builders/scaleway/index.mdx"
+        "filePath": "website/content/docs/builders/scaleway.mdx"
       },
       {
         "title": "Tencent Cloud",
         "path": "builders/tencentcloud-cvm",
-        "filePath": "website/content/docs/builders/tencentcloud-cvm/index.mdx"
+        "filePath": "website/content/docs/builders/tencentcloud-cvm.mdx"
       },
       {
         "title": "JDCloud",
         "path": "builders/jdcloud",
-        "filePath": "website/content/docs/builders/jdcloud/index.mdx"
+        "filePath": "website/content/docs/builders/jdcloud.mdx"
       },
       {
         "title": "Triton",
         "path": "builders/triton",
-        "filePath": "website/content/docs/builders/triton/index.mdx"
+        "filePath": "website/content/docs/builders/triton.mdx"
       },
       {
         "title": "UCloud",
         "path": "builders/ucloud-uhost",
-        "filePath": "website/content/docs/builders/ucloud-uhost/index.mdx"
+        "filePath": "website/content/docs/builders/ucloud-uhost.mdx"
       },
       {
         "title": "Vagrant",
         "path": "builders/vagrant",
-        "filePath": "website/content/docs/builders/vagrant/index.mdx"
+        "filePath": "website/content/docs/builders/vagrant.mdx"
       },
       {
         "title": "VirtualBox",
@@ -1089,17 +1089,17 @@
           {
             "title": "ISO",
             "path": "builders/virtualbox/iso",
-            "filePath": "website/content/docs/builders/virtualbox/iso/index.mdx"
+            "filePath": "website/content/docs/builders/virtualbox/iso.mdx"
           },
           {
             "title": "OVF",
             "path": "builders/virtualbox/ovf",
-            "filePath": "website/content/docs/builders/virtualbox/ovf/index.mdx"
+            "filePath": "website/content/docs/builders/virtualbox/ovf.mdx"
           },
           {
             "title": "VM",
             "path": "builders/virtualbox/vm",
-            "filePath": "website/content/docs/builders/virtualbox/vm/index.mdx"
+            "filePath": "website/content/docs/builders/virtualbox/vm.mdx"
           }
         ]
       },
@@ -1114,39 +1114,39 @@
           {
             "title": "VMWare ISO",
             "path": "builders/vmware/iso",
-            "filePath": "website/content/docs/builders/vmware/iso/index.mdx"
+            "filePath": "website/content/docs/builders/vmware/iso.mdx"
           },
           {
             "title": "VMWare VMX",
             "path": "builders/vmware/vmx",
-            "filePath": "website/content/docs/builders/vmware/vmx/index.mdx"
+            "filePath": "website/content/docs/builders/vmware/vmx.mdx"
           },
           {
             "title": "VSphere ISO",
             "path": "builders/vmware/vsphere-iso",
-            "filePath": "website/content/docs/builders/vmware/vsphere-iso/index.mdx"
+            "filePath": "website/content/docs/builders/vmware/vsphere-iso.mdx"
           },
           {
             "title": "VSphere Clone",
             "path": "builders/vmware/vsphere-clone",
-            "filePath": "website/content/docs/builders/vmware/vsphere-clone/index.mdx"
+            "filePath": "website/content/docs/builders/vmware/vsphere-clone.mdx"
           }
         ]
       },
       {
         "title": "Yandex.Cloud",
         "path": "builders/yandex",
-        "filePath": "website/content/docs/builders/yandex/index.mdx"
+        "filePath": "website/content/docs/builders/yandex.mdx"
       },
       {
         "title": "Custom",
         "path": "builders/custom",
-        "filePath": "website/content/docs/builders/custom/index.mdx"
+        "filePath": "website/content/docs/builders/custom.mdx"
       },
       {
         "title": "Community-Supported",
         "path": "builders/community-supported",
-        "filePath": "website/content/docs/builders/community-supported/index.mdx"
+        "filePath": "website/content/docs/builders/community-supported.mdx"
       }
     ]
   },
@@ -1169,12 +1169,12 @@
           {
             "title": "Amazon AMI",
             "path": "datasources/amazon/ami",
-            "filePath": "website/content/docs/datasources/amazon/ami/index.mdx"
+            "filePath": "website/content/docs/datasources/amazon/ami.mdx"
           },
           {
             "title": "Secrets Manager",
             "path": "datasources/amazon/secretsmanager",
-            "filePath": "website/content/docs/datasources/amazon/secretsmanager/index.mdx"
+            "filePath": "website/content/docs/datasources/amazon/secretsmanager.mdx"
           }
         ]
       }
@@ -1191,92 +1191,92 @@
       {
         "title": "Ansible Local",
         "path": "provisioners/ansible-local",
-        "filePath": "website/content/docs/provisioners/ansible-local/index.mdx"
+        "filePath": "website/content/docs/provisioners/ansible-local.mdx"
       },
       {
         "title": "Ansible (Remote)",
         "path": "provisioners/ansible",
-        "filePath": "website/content/docs/provisioners/ansible/index.mdx"
+        "filePath": "website/content/docs/provisioners/ansible.mdx"
       },
       {
         "title": "Breakpoint",
         "path": "provisioners/breakpoint",
-        "filePath": "website/content/docs/provisioners/breakpoint/index.mdx"
+        "filePath": "website/content/docs/provisioners/breakpoint.mdx"
       },
       {
         "title": "Chef Client",
         "path": "provisioners/chef-client",
-        "filePath": "website/content/docs/provisioners/chef-client/index.mdx"
+        "filePath": "website/content/docs/provisioners/chef-client.mdx"
       },
       {
         "title": "Chef Solo",
         "path": "provisioners/chef-solo",
-        "filePath": "website/content/docs/provisioners/chef-solo/index.mdx"
+        "filePath": "website/content/docs/provisioners/chef-solo.mdx"
       },
       {
         "title": "Converge",
         "path": "provisioners/converge",
-        "filePath": "website/content/docs/provisioners/converge/index.mdx"
+        "filePath": "website/content/docs/provisioners/converge.mdx"
       },
       {
         "title": "File",
         "path": "provisioners/file",
-        "filePath": "website/content/docs/provisioners/file/index.mdx"
+        "filePath": "website/content/docs/provisioners/file.mdx"
       },
       {
         "title": "InSpec",
         "path": "provisioners/inspec",
-        "filePath": "website/content/docs/provisioners/inspec/index.mdx"
+        "filePath": "website/content/docs/provisioners/inspec.mdx"
       },
       {
         "title": "PowerShell",
         "path": "provisioners/powershell",
-        "filePath": "website/content/docs/provisioners/powershell/index.mdx"
+        "filePath": "website/content/docs/provisioners/powershell.mdx"
       },
       {
         "title": "Puppet Masterless",
         "path": "provisioners/puppet-masterless",
-        "filePath": "website/content/docs/provisioners/puppet-masterless/index.mdx"
+        "filePath": "website/content/docs/provisioners/puppet-masterless.mdx"
       },
       {
         "title": "Puppet Server",
         "path": "provisioners/puppet-server",
-        "filePath": "website/content/docs/provisioners/puppet-server/index.mdx"
+        "filePath": "website/content/docs/provisioners/puppet-server.mdx"
       },
       {
         "title": "Salt Masterless",
         "path": "provisioners/salt-masterless",
-        "filePath": "website/content/docs/provisioners/salt-masterless/index.mdx"
+        "filePath": "website/content/docs/provisioners/salt-masterless.mdx"
       },
       {
         "title": "Shell",
         "path": "provisioners/shell",
-        "filePath": "website/content/docs/provisioners/shell/index.mdx"
+        "filePath": "website/content/docs/provisioners/shell.mdx"
       },
       {
         "title": "Shell (Local)",
         "path": "provisioners/shell-local",
-        "filePath": "website/content/docs/provisioners/shell-local/index.mdx"
+        "filePath": "website/content/docs/provisioners/shell-local.mdx"
       },
       {
         "title": "Windows Shell",
         "path": "provisioners/windows-shell",
-        "filePath": "website/content/docs/provisioners/windows-shell/index.mdx"
+        "filePath": "website/content/docs/provisioners/windows-shell.mdx"
       },
       {
         "title": "Windows Restart",
         "path": "provisioners/windows-restart",
-        "filePath": "website/content/docs/provisioners/windows-restart/index.mdx"
+        "filePath": "website/content/docs/provisioners/windows-restart.mdx"
       },
       {
         "title": "Custom",
         "path": "provisioners/custom",
-        "filePath": "website/content/docs/provisioners/custom/index.mdx"
+        "filePath": "website/content/docs/provisioners/custom.mdx"
       },
       {
         "title": "Community-Supported",
         "path": "provisioners/community-supported",
-        "filePath": "website/content/docs/provisioners/community-supported/index.mdx"
+        "filePath": "website/content/docs/provisioners/community-supported.mdx"
       }
     ]
   },
@@ -1291,117 +1291,117 @@
       {
         "title": "Alicloud Import",
         "path": "post-processors/alicloud-import",
-        "filePath": "website/content/docs/post-processors/alicloud-import/index.mdx"
+        "filePath": "website/content/docs/post-processors/alicloud-import.mdx"
       },
       {
         "title": "Amazon Import",
         "path": "post-processors/amazon-import",
-        "filePath": "website/content/docs/post-processors/amazon-import/index.mdx"
+        "filePath": "website/content/docs/post-processors/amazon-import.mdx"
       },
       {
         "title": "Artifice",
         "path": "post-processors/artifice",
-        "filePath": "website/content/docs/post-processors/artifice/index.mdx"
+        "filePath": "website/content/docs/post-processors/artifice.mdx"
       },
       {
         "title": "Compress",
         "path": "post-processors/compress",
-        "filePath": "website/content/docs/post-processors/compress/index.mdx"
+        "filePath": "website/content/docs/post-processors/compress.mdx"
       },
       {
         "title": "Checksum",
         "path": "post-processors/checksum",
-        "filePath": "website/content/docs/post-processors/checksum/index.mdx"
+        "filePath": "website/content/docs/post-processors/checksum.mdx"
       },
       {
         "title": "DigitalOcean Import",
         "path": "post-processors/digitalocean-import",
-        "filePath": "website/content/docs/post-processors/digitalocean-import/index.mdx"
+        "filePath": "website/content/docs/post-processors/digitalocean-import.mdx"
       },
       {
         "title": "Docker Import",
         "path": "post-processors/docker-import",
-        "filePath": "website/content/docs/post-processors/docker-import/index.mdx"
+        "filePath": "website/content/docs/post-processors/docker-import.mdx"
       },
       {
         "title": "Docker Push",
         "path": "post-processors/docker-push",
-        "filePath": "website/content/docs/post-processors/docker-push/index.mdx"
+        "filePath": "website/content/docs/post-processors/docker-push.mdx"
       },
       {
         "title": "Docker Save",
         "path": "post-processors/docker-save",
-        "filePath": "website/content/docs/post-processors/docker-save/index.mdx"
+        "filePath": "website/content/docs/post-processors/docker-save.mdx"
       },
       {
         "title": "Docker Tag",
         "path": "post-processors/docker-tag",
-        "filePath": "website/content/docs/post-processors/docker-tag/index.mdx"
+        "filePath": "website/content/docs/post-processors/docker-tag.mdx"
       },
       {
         "title": "Exoscale Import",
         "path": "post-processors/exoscale-import",
-        "filePath": "website/content/docs/post-processors/exoscale-import/index.mdx"
+        "filePath": "website/content/docs/post-processors/exoscale-import.mdx"
       },
       {
         "title": "Google Compute Export",
         "path": "post-processors/googlecompute-export",
-        "filePath": "website/content/docs/post-processors/googlecompute-export/index.mdx"
+        "filePath": "website/content/docs/post-processors/googlecompute-export.mdx"
       },
       {
         "title": "Google Compute Import",
         "path": "post-processors/googlecompute-import",
-        "filePath": "website/content/docs/post-processors/googlecompute-import/index.mdx"
+        "filePath": "website/content/docs/post-processors/googlecompute-import.mdx"
       },
       {
         "title": "Manifest",
         "path": "post-processors/manifest",
-        "filePath": "website/content/docs/post-processors/manifest/index.mdx"
+        "filePath": "website/content/docs/post-processors/manifest.mdx"
       },
       {
         "title": "Shell (Local)",
         "path": "post-processors/shell-local",
-        "filePath": "website/content/docs/post-processors/shell-local/index.mdx"
+        "filePath": "website/content/docs/post-processors/shell-local.mdx"
       },
       {
         "title": "UCloud Import",
         "path": "post-processors/ucloud-import",
-        "filePath": "website/content/docs/post-processors/ucloud-import/index.mdx"
+        "filePath": "website/content/docs/post-processors/ucloud-import.mdx"
       },
       {
         "title": "Vagrant",
         "path": "post-processors/vagrant",
-        "filePath": "website/content/docs/post-processors/vagrant/index.mdx"
+        "filePath": "website/content/docs/post-processors/vagrant.mdx"
       },
       {
         "title": "Vagrant Cloud",
         "path": "post-processors/vagrant-cloud",
-        "filePath": "website/content/docs/post-processors/vagrant-cloud/index.mdx"
+        "filePath": "website/content/docs/post-processors/vagrant-cloud.mdx"
       },
       {
         "title": "vSphere",
         "path": "post-processors/vsphere",
-        "filePath": "website/content/docs/post-processors/vsphere/index.mdx"
+        "filePath": "website/content/docs/post-processors/vsphere.mdx"
       },
       {
         "title": "vSphere Template",
         "path": "post-processors/vsphere-template",
-        "filePath": "website/content/docs/post-processors/vsphere-template/index.mdx"
+        "filePath": "website/content/docs/post-processors/vsphere-template.mdx"
       },
       {
         "title": "Yandex.Cloud Compute Export",
         "path": "post-processors/yandex-export",
-        "filePath": "website/content/docs/post-processors/yandex-export/index.mdx"
+        "filePath": "website/content/docs/post-processors/yandex-export.mdx"
       },
       {
         "title": "Yandex.Cloud Compute Import",
         "path": "post-processors/yandex-import",
-        "filePath": "website/content/docs/post-processors/yandex-import/index.mdx"
+        "filePath": "website/content/docs/post-processors/yandex-import.mdx"
       },
       {
         "title": "Community-Supported",
         "path": "post-processors/community-supported",
-        "filePath": "website/content/docs/post-processors/community-supported/index.mdx"
+        "filePath": "website/content/docs/post-processors/community-supported.mdx"
       }
     ]
   },
@@ -1411,12 +1411,12 @@
   {
     "title": "Installing Packer",
     "path": "install",
-    "filePath": "website/content/docs/install/index.mdx"
+    "filePath": "website/content/docs/install.mdx"
   },
   {
     "title": "Configuring Packer",
     "path": "configure",
-    "filePath": "website/content/docs/configure/index.mdx"
+    "filePath": "website/content/docs/configure.mdx"
   },
   {
     "divider": true
@@ -1440,22 +1440,22 @@
           {
             "title": "Custom Builders",
             "path": "plugins/creation/custom-builders",
-            "filePath": "website/content/docs/plugins/creation/custom-builders/index.mdx"
+            "filePath": "website/content/docs/plugins/creation/custom-builders.mdx"
           },
           {
             "title": "Custom Post-Processors",
             "path": "plugins/creation/custom-post-processors",
-            "filePath": "website/content/docs/plugins/creation/custom-post-processors/index.mdx"
+            "filePath": "website/content/docs/plugins/creation/custom-post-processors.mdx"
           },
           {
             "title": "Custom Provisioners",
             "path": "plugins/creation/custom-provisioners",
-            "filePath": "website/content/docs/plugins/creation/custom-provisioners/index.mdx"
+            "filePath": "website/content/docs/plugins/creation/custom-provisioners.mdx"
           },
           {
             "title": "Custom Data Sources",
             "path": "plugins/creation/custom-datasources",
-            "filePath": "website/content/docs/plugins/creation/custom-datasources/index.mdx"
+            "filePath": "website/content/docs/plugins/creation/custom-datasources.mdx"
           }
         ]
       }
@@ -1467,6 +1467,6 @@
   {
     "title": "Debugging",
     "path": "debugging",
-    "filePath": "website/content/docs/debugging/index.mdx"
+    "filePath": "website/content/docs/debugging.mdx"
   }
 ]
