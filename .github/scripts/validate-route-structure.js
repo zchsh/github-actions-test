@@ -90,13 +90,6 @@ function collectEmptyPathErrors(navData, depth = 0) {
     const hasEmptyPath = hasPath && navNode.path === "";
     if (hasEmptyPath) {
       acc.push({ node: navNode, depth });
-      throw new Error(
-        `Empty strings are not valid paths.\n\nNode:\n${JSON.stringify(
-          navNode,
-          null,
-          2
-        )}`
-      );
     }
     // Handle nested routes
     if (navNode.routes) {
