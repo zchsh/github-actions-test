@@ -77,13 +77,13 @@ function collectEmptyTitleErrors(navData) {
   return errors;
 }
 // TODO - throw error if direct link nodes don't have both { title, href }
-function collectEmptyPathErrors(navData) {
+function collectDirectLinkErrors(navData) {
   const errors = [];
   return errors;
 }
 
 // TODO - throw error for empty paths
-function findEmptyPaths(navData, depth = 0) {
+function collectEmptyPathErrors(navData, depth = 0) {
   const nodesWithEmptyPaths = navData.reduce((acc, navNode) => {
     // Handle leaf nodes, which have path values
     const hasPath = typeof navNode.path !== "undefined";
@@ -100,7 +100,7 @@ function findEmptyPaths(navData, depth = 0) {
     }
     // Handle nested routes
     if (navNode.routes) {
-      acc.concat(findEmptyPaths(navNode.routes, depth + 1));
+      acc.concat(collectEmptyPathErrors(navNode.routes, depth + 1));
     }
     // Other nodes don't need to be checked, they don't have
     // paths or descendants with paths.
