@@ -66,46 +66,6 @@
         "filePath": "website/content/docs/templates/index.mdx"
       },
       {
-        "title": "JSON Templates",
-        "routes": [
-          {
-            "title": "Overview",
-            "path": "templates/legacy_json_templates",
-            "filePath": "website/content/docs/templates/legacy_json_templates/index.mdx"
-          },
-          {
-            "title": "Builders",
-            "path": "templates/legacy_json_templates/builders",
-            "filePath": "website/content/docs/templates/legacy_json_templates/builders.mdx"
-          },
-          {
-            "title": "Communicators",
-            "path": "templates/legacy_json_templates/communicator",
-            "filePath": "website/content/docs/templates/legacy_json_templates/communicator.mdx"
-          },
-          {
-            "title": "Engine",
-            "path": "templates/legacy_json_templates/engine",
-            "filePath": "website/content/docs/templates/legacy_json_templates/engine.mdx"
-          },
-          {
-            "title": "Post-Processors",
-            "path": "templates/legacy_json_templates/post-processors",
-            "filePath": "website/content/docs/templates/legacy_json_templates/post-processors.mdx"
-          },
-          {
-            "title": "Provisioners",
-            "path": "templates/legacy_json_templates/provisioners",
-            "filePath": "website/content/docs/templates/legacy_json_templates/provisioners.mdx"
-          },
-          {
-            "title": "User Variables",
-            "path": "templates/legacy_json_templates/user-variables",
-            "filePath": "website/content/docs/templates/legacy_json_templates/user-variables.mdx"
-          }
-        ]
-      },
-      {
         "title": "HCL Templates",
         "routes": [
           {
@@ -318,6 +278,16 @@
                     "title": "regex_replace",
                     "path": "templates/hcl_templates/functions/string/regex_replace",
                     "filePath": "website/content/docs/templates/hcl_templates/functions/string/regex_replace.mdx"
+                  },
+                  {
+                    "title": "regex",
+                    "path": "templates/hcl_templates/functions/string/regex",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/regex.mdx"
+                  },
+                  {
+                    "title": "regexall",
+                    "path": "templates/hcl_templates/functions/string/regexall",
+                    "filePath": "website/content/docs/templates/hcl_templates/functions/string/regexall.mdx"
                   },
                   {
                     "title": "split",
@@ -762,6 +732,46 @@
             "title": "JSON Syntax",
             "path": "templates/hcl_templates/syntax-json",
             "filePath": "website/content/docs/templates/hcl_templates/syntax-json.mdx"
+          }
+        ]
+      },
+      {
+        "title": "JSON Templates",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "templates/legacy_json_templates",
+            "filePath": "website/content/docs/templates/legacy_json_templates/index.mdx"
+          },
+          {
+            "title": "Builders",
+            "path": "templates/legacy_json_templates/builders",
+            "filePath": "website/content/docs/templates/legacy_json_templates/builders.mdx"
+          },
+          {
+            "title": "Communicators",
+            "path": "templates/legacy_json_templates/communicator",
+            "filePath": "website/content/docs/templates/legacy_json_templates/communicator.mdx"
+          },
+          {
+            "title": "Engine",
+            "path": "templates/legacy_json_templates/engine",
+            "filePath": "website/content/docs/templates/legacy_json_templates/engine.mdx"
+          },
+          {
+            "title": "Post-Processors",
+            "path": "templates/legacy_json_templates/post-processors",
+            "filePath": "website/content/docs/templates/legacy_json_templates/post-processors.mdx"
+          },
+          {
+            "title": "Provisioners",
+            "path": "templates/legacy_json_templates/provisioners",
+            "filePath": "website/content/docs/templates/legacy_json_templates/provisioners.mdx"
+          },
+          {
+            "title": "User Variables",
+            "path": "templates/legacy_json_templates/user-variables",
+            "filePath": "website/content/docs/templates/legacy_json_templates/user-variables.mdx"
           }
         ]
       }
