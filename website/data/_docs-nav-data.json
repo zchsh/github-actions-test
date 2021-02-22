@@ -1,0 +1,49 @@
+[
+  {
+    "divider": true
+  },
+  {
+    "title": "Terminology",
+    "path": "terminology"
+  },
+  {
+    "title": "Install",
+    "path": "install"
+  },
+  {
+    "title": "Builders",
+    "routes": [
+      {
+        "title": "Overview",
+        "path": "builders"
+      },
+      {
+        "title": "Alicloud ECS",
+        "path": "builders/alicloud-ecs",
+        "remoteFile": {
+          "repo": "zchsh/packer-builder-alicloud-ecs",
+          "branch": "main",
+          "filePath": "some-content-folder/content-files/alicloud-ecs.mdx"
+        }
+      },
+      {
+        "title": "Amazon EC2",
+        "path": "builders/amazon",
+        "remoteRoutes": {
+          "repo": "zchsh/packer-builder-amazon-ec2",
+          "branch": "main",
+          "filePath": "_nav-data.json"
+        }
+      },
+      {
+        "title": "VMware",
+        "path": "builders/vmware",
+        "remoteRoutes": {
+          "repo": "zchsh/packer-builder-vmware",
+          "branch": "main",
+          "filePath": "docs-nav-data.json"
+        }
+      }
+    ]
+  }
+]

@@ -55,39 +55,6 @@
         "path": "templates"
       },
       {
-        "title": "JSON Templates",
-        "routes": [
-          {
-            "title": "Overview",
-            "path": "templates/legacy_json_templates"
-          },
-          {
-            "title": "Builders",
-            "path": "templates/legacy_json_templates/builders"
-          },
-          {
-            "title": "Communicators",
-            "path": "templates/legacy_json_templates/communicator"
-          },
-          {
-            "title": "Engine",
-            "path": "templates/legacy_json_templates/engine"
-          },
-          {
-            "title": "Post-Processors",
-            "path": "templates/legacy_json_templates/post-processors"
-          },
-          {
-            "title": "Provisioners",
-            "path": "templates/legacy_json_templates/provisioners"
-          },
-          {
-            "title": "User Variables",
-            "path": "templates/legacy_json_templates/user-variables"
-          }
-        ]
-      },
-      {
         "title": "HCL Templates",
         "routes": [
           {
@@ -263,6 +230,14 @@
                   {
                     "title": "regex_replace",
                     "path": "templates/hcl_templates/functions/string/regex_replace"
+                  },
+                  {
+                    "title": "regex",
+                    "path": "templates/hcl_templates/functions/string/regex"
+                  },
+                  {
+                    "title": "regexall",
+                    "path": "templates/hcl_templates/functions/string/regexall"
                   },
                   {
                     "title": "split",
@@ -627,6 +602,39 @@
           {
             "title": "JSON Syntax",
             "path": "templates/hcl_templates/syntax-json"
+          }
+        ]
+      },
+      {
+        "title": "JSON Templates",
+        "routes": [
+          {
+            "title": "Overview",
+            "path": "templates/legacy_json_templates"
+          },
+          {
+            "title": "Builders",
+            "path": "templates/legacy_json_templates/builders"
+          },
+          {
+            "title": "Communicators",
+            "path": "templates/legacy_json_templates/communicator"
+          },
+          {
+            "title": "Engine",
+            "path": "templates/legacy_json_templates/engine"
+          },
+          {
+            "title": "Post-Processors",
+            "path": "templates/legacy_json_templates/post-processors"
+          },
+          {
+            "title": "Provisioners",
+            "path": "templates/legacy_json_templates/provisioners"
+          },
+          {
+            "title": "User Variables",
+            "path": "templates/legacy_json_templates/user-variables"
           }
         ]
       }
